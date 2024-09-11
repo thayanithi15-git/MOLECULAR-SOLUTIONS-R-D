@@ -432,7 +432,7 @@
   }
   .sidebar-img{
     width: 2.5%;
-    margin-top: -1200px;
+    margin-top: 30px;
   }
   .menu-icon {
     /* display: none; */
@@ -475,8 +475,10 @@
     height: 25vh;
   }
   .sidebar-img{
-    margin-top: -500px;    
-    width: 1.5%;
+    margin-top: 20px;    
+    /* width: 5%; */
+    height: 90px;
+    margin-left: -1%;
   }
   .header-bars.open{
     margin-top: 20%;
