@@ -161,6 +161,7 @@ export default function Home() {
   const handleGenomics = () => {
     setGenomics((prevState) => !prevState);
     setSidebars(false);
+    closeSidebar();
     if (!Genomics) {
       setBiology(false);
       setChemistry(false);
@@ -194,6 +195,7 @@ export default function Home() {
   const handleBiology = () => {
     setBiology((prevState) => !prevState);
     setSidebars(false);
+    closeSidebar();
     if (!Biology) {
       setGenomics(false);
       setChemistry(false);
@@ -226,6 +228,7 @@ export default function Home() {
   const handleChemistry = () => {
     setChemistry((prevState) => !prevState);
     setSidebars(false);
+    closeSidebar();
     if (!Chemistry) {
       setGenomics(false);
       setBiology(false);
@@ -258,6 +261,7 @@ export default function Home() {
   const handleComputationalChemistry = () => {
     setComputationalChemistry((prevState) => !prevState);
     setSidebars(false);
+    closeSidebar();
     if (!ComputationalChemistry) {
       setGenomics(false);
       setBiology(false);
@@ -290,6 +294,7 @@ export default function Home() {
   const handleDMPK = () => {
     setDMPK((prevState) => !prevState);
     setSidebars(false);
+    closeSidebar();
     if (!DMPK) {
       setGenomics(false);
       setBiology(false);
@@ -322,6 +327,7 @@ export default function Home() {
   const handleELN_LIMS = () => {
     setELN_LIMS((prevState) => !prevState);
     setSidebars(false);
+    closeSidebar();
     if (!ELN_LIMS) {
       setGenomics(false);
       setBiology(false);
@@ -354,6 +360,7 @@ export default function Home() {
   const handleVirtualReality = () => {
     setVirtualReality((prevState) => !prevState);
     setSidebars(false);
+    closeSidebar();
     if (!VirtualReality) {
       setGenomics(false);
       setBiology(false);
@@ -386,6 +393,7 @@ export default function Home() {
   const handleAIML = () => {
     setAIML((prevState) => !prevState);
     setSidebars(false);
+    closeSidebar();
     if (!AIML) {
       setGenomics(false);
       setBiology(false);
@@ -431,6 +439,7 @@ export default function Home() {
     setVirtualReality(false);
     setAIML(false);
     setCommander(true);
+    closeSidebar();
     if (!Commander) {
       setGenomics(true);
       setSidebars(true);
@@ -470,6 +479,7 @@ export default function Home() {
     setVirtualReality(false);
     setAIML(false);
     setSarVisionBiologics(true);
+    closeSidebar();
     if (!SarVisionBiologics) {
       setBiology(true);
       setSidebars(true);
@@ -509,6 +519,7 @@ export default function Home() {
     setVirtualReality(false);
     setAIML(false);
     setChemAIRS(true);
+    closeSidebar();
     if (!ChemAIRS) {
       setChemistry(true);
       setSidebars(true);
@@ -548,6 +559,7 @@ export default function Home() {
     setVirtualReality(false);
     setAIML(false);
     setSarVisionSM(true);
+    closeSidebar();
     if (!SarVisionSM) {
       setChemistry(true);
       setSidebars(true);
@@ -587,6 +599,7 @@ export default function Home() {
     setVirtualReality(false);
     setAIML(false);
     setVortex(true);
+    closeSidebar();
     if (!Vortex) {
       setChemistry(true);
       setSidebars(true);
@@ -626,6 +639,7 @@ export default function Home() {
     setVirtualReality(false);
     setAIML(false);
     setMedchemDesigner(true);
+    closeSidebar();
     if (!MedchemDesigner) {
       setChemistry(true);
       setSidebars(true);
@@ -665,6 +679,7 @@ export default function Home() {
     setVirtualReality(false);
     setAIML(false);
     setADMETpredictor(true);
+    closeSidebar();
     if (!ADMETpredictor) {
       setComputationalChemistry(true);
       setSidebars(true);
@@ -704,6 +719,7 @@ export default function Home() {
     setVirtualReality(false);
     setAIML(false);
     setGastroPlus(true);
+    closeSidebar();
     if (!GastroPlus) {
       setDMPK(true);
       setSidebars(true);
@@ -743,6 +759,7 @@ export default function Home() {
     setVirtualReality(false);
     setAIML(false);
     setILDsym(true);
+    closeSidebar();
     if (!ILDsym) {
       setDMPK(true);
       setSidebars(true);
@@ -782,6 +799,7 @@ export default function Home() {
     setVirtualReality(false);
     setAIML(false);
     setDotmaticsELN(true);
+    closeSidebar();
     if (!DotmaticsELN) {
       setELN_LIMS(true);
       setSidebars(true);
@@ -821,6 +839,7 @@ export default function Home() {
     setVirtualReality(false);
     setAIML(false);
     setLabArchives(true);
+    closeSidebar();
     if (!LabArchives) {
       setELN_LIMS(true);
       setSidebars(true);
@@ -860,6 +879,7 @@ export default function Home() {
     setVirtualReality(false);
     setAIML(false);
     setGeneCDMS(true);
+    closeSidebar();
     if (!GeneCDMS) {
       setELN_LIMS(true);
       setSidebars(true);
@@ -899,6 +919,7 @@ export default function Home() {
     setVirtualReality(false);
     setAIML(false);
     setGeneCIS(true);
+    closeSidebar();
     if (!GeneCIS) {
       setELN_LIMS(true);
       setSidebars(true);
@@ -938,6 +959,7 @@ export default function Home() {
     setVirtualReality(false);
     setAIML(false);
     setGeneATS(true);
+    closeSidebar();
     if (!GeneATS) {
       setELN_LIMS(true);
       setSidebars(true);
@@ -977,6 +999,7 @@ export default function Home() {
     setVirtualReality(false);
     setAIML(false);
     setGeneBIS(true);
+    closeSidebar();
     if (!GeneBIS) {
       setELN_LIMS(true);
       setSidebars(true);
@@ -1016,6 +1039,7 @@ export default function Home() {
     setELN_LIMS(false);
     setAIML(false);
     setNanome(true);
+    closeSidebar();
     if (!Nanome) {
       setVirtualReality(true);
       setSidebars(true);
@@ -1055,6 +1079,7 @@ export default function Home() {
     setELN_LIMS(false);
     setVirtualReality(false);
     setMara(true);
+    closeSidebar();
     if (!Mara) {
       setAIML(true);
       setSidebars(true);
@@ -1094,6 +1119,7 @@ export default function Home() {
     setELN_LIMS(false);
     setVirtualReality(false);
     setLuma(true);
+    closeSidebar();
     if (!Luma) {
       setAIML(true);
       setSidebars(true);

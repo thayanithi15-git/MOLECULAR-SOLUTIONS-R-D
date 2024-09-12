@@ -34,16 +34,16 @@ export default function ChemistryMain({handleChemAIRS,handleSarVisionSM,handleVo
   ];
 
   const handleItemClick = (item, index) => {
-    if (index === 0) {
+    if (item.title === "ChemAIRS") {
       handleChemAIRS();
     }
-    else if (index === 1) {
+    else if (item.title === "SARvision|SM") {
       handleSarVisionSM();
     }
-    else if (index === 2) {
+    else if (item.title === "Vortex") {
       handleVortex();
     }
-    else if (index === 3) {
+    else if (item.title === "Medchem Designer") {
       handleMedchemDesigner();
     }
   }

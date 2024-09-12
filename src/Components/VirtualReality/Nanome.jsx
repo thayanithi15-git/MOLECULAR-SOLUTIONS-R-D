@@ -58,7 +58,7 @@ export default function Nanome() {
             className="bronchure"
             onMouseEnter={() => setisHover(true)}
             onMouseLeave={() => setisHover(false)}
-            onClick={downloadPDF} // Trigger download on click
+            onClick={downloadPDF} 
           >
             <div style={{ fontSize: "14px", padding: "2% 2% 3% 15%" }}>
               Brochure

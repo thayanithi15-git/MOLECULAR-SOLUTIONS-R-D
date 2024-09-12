@@ -24,10 +24,10 @@ export default function DMPK({handleGastroPlus,handleILDsym}) {
   ];
 
   const handleItemClick = (item, index) => {
-    if (index === 0) {
+    if (item.title === "Gastro Plus") {
       handleGastroPlus();
     }
-    else if (index === 1) {
+    else if (item.title === "ILDsym") {
       handleILDsym();
     }
   }

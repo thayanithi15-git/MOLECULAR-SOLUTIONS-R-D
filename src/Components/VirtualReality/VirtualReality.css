@@ -1,5 +1,4 @@
 .genomics-main {
-    /* height: 100%; */
     width: 100%;
   }
   .main-content{
@@ -42,7 +41,6 @@
     .title-nav {
       font-weight: 500;
       box-shadow: black;
-      /* text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); */
       margin-top: 10px;
       font-size: 16px;
     }
@@ -50,7 +48,6 @@
     .content-nav {
       margin-top: 5px;
       font-size: 14px;
-      /* text-align: center; */
       color: rgb(135, 133, 133);
     }
     .ytvideo{
@@ -58,7 +55,6 @@
       margin-top: 3%;
     }
    
-    /* Genomics.css */
   .icon-container i {
       transition: transform 0.3s ease, opacity 0.3s ease;
   }

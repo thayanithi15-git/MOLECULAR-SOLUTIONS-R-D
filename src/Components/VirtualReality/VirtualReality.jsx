@@ -19,13 +19,12 @@ export default function VirtualRealityMain({handleNanome}) {
   ];
 
   const handleItemClick = (item, index) => {
-    if (index === 0) {
+    if (item.title === "Nanome") {
       handleNanome();
     }
   }
 
 
-  // Filter products based on the search query
   const filteredProducts = products.filter((product) =>
     product.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
     product.content.toLowerCase().includes(searchQuery.toLowerCase())
@@ -61,7 +60,7 @@ export default function VirtualRealityMain({handleNanome}) {
           placeholder="Search..."
           className="search-bar-genomics"
           value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)} // Handle search query input
+          onChange={(e) => setSearchQuery(e.target.value)}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">

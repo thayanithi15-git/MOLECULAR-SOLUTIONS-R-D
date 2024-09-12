@@ -11,7 +11,7 @@ export default function GenomicsMain({handleCommander}) {
   const [searchQuery, setSearchQuery] = useState("");
 
   const handleItemClick = (item, index) => {
-    if (index === 0) {
+    if (item.title === "Commander") {
       handleCommander();
     }
   }

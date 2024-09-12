@@ -43,26 +43,31 @@ export default function ELN_LIMS({handleDotmaticsELN, handleLabArchives, handleG
     },
   ];
 
-  const handleItemClick = (item, index) => {
-    if (index === 0) {
-      handleDotmaticsELN();
+  const handleItemClick = (item) => {
+    switch (item.title) {
+      case "Dotmatics ELN":
+        handleDotmaticsELN();
+        break;
+      case "LabArchives":
+        handleLabArchives();
+        break;
+      case "GeneCDMS":
+        handleGeneCDMS();
+        break;
+      case "GeneCIS":
+        handleGeneCIS();
+        break;
+      case "GeneATS":
+        handleGeneATS();
+        break;
+      case "GeneBIS":
+        handleGeneBIS();
+        break;
+      default:
+        console.log("No handler found for this title");
     }
-    else if (index === 1) {
-      handleLabArchives();
-    }
-    else if (index === 2) {
-      handleGeneCDMS();
-    }
-    else if (index === 3) {
-      handleGeneCIS();
-    }
-    else if (index === 4) {
-      handleGeneATS();
-    }
-    else if (index === 5) {
-      handleGeneBIS();
-    }
-  }
+  };
+  
 
   // Filter products based on the search query
   const filteredProducts = products.filter((product) =>

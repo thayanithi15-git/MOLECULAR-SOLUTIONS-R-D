@@ -19,7 +19,7 @@ export default function ComputationalChemistry({handleADMETpredictor}) {
   ];
 
   const handleItemClick = (item, index) => {
-    if (index === 0) {
+    if (item.title === "ADMET Predictor") {
       handleADMETpredictor();
     }
   }

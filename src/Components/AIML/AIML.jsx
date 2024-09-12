@@ -24,10 +24,10 @@ export default function AIML({handleMara,handleLuma}) {
   ];
 
   const handleItemClick = (item, index) => {
-    if (index === 0) {
+    if (item.title === "MARA") {
       handleMara();
     }
-    else if (index === 1) {
+    else if (item.title === "LUMA") {
       handleLuma();
     }
   }
