@@ -130,7 +130,63 @@ button:hover .icon-container i {
   margin-top: 2%;
   transition: "background-color 0.3s ease";
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
 }
+
+.bronchure:hover {
+  background-color: #1520e2;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.bronchure::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 10.01%);
+  background-size: 10px 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.bronchure:hover::before {
+  left: 0;
+  top: 0;
+  animation: ripple 1s infinite;
+}
+
+@keyframes ripple {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.icon-container {
+  display: inline-block;
+  margin-left: 10px;
+  position: relative;
+  transition: transform 0.4s ease-in-out;
+}
+
+.bronchure:hover .icon-container {
+  transform: scale(1.3) rotate(360deg);
+}
+
+#start-icons {
+  transition: opacity 0.3s ease;
+}
+
+.bronchure:hover #start-icons {
+  opacity: 0;
+}
+
 .dna-lottie {
   width: 15vw;
   margin-top: -20%;
