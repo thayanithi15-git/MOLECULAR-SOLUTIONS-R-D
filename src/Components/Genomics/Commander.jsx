@@ -15,19 +15,9 @@ export default function Commander() {
 
   return (
     <div className="right-sub-contents">
-      <div className="title-productspage" style={{ position: 'relative', width: '100%', height: '100%' }}>
+      <div className="title-productspage">
         <img src={CommanderImg} style={{width: "100%",height: "100%",borderRadius: "10px"}}/>
-        <div style={{
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    padding: '20px',
-    background: 'linear-gradient(to top, rgba(0, 0, 0, 4), transparent)',
-    borderBottomLeftRadius: '10px',
-    borderBottomRightRadius: '10px',
-    color: 'white'
-  }}>
+        <div className="title-subtitle">
           <div className="title-name" >Commander</div>
           <div className="subtitle-name" >NGS data analysis</div>
         </div>
