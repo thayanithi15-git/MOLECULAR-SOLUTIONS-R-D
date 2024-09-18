@@ -14,16 +14,16 @@ export default function GeneATS() {
   };
 
   return (
-    <div className="right-contents-products" style={{alignItems: "center"}}>
-      <div className="right-sub-contents">
-        <div>
-          <div style={{ display: "flex", marginTop: "2%" }}>
-            <div
-              className="title-productspage">
-              {/* <img src={GeneATSImg} style={{width: "7vw",marginTop: "5%"}}/> */}
-              <div style={{ marginTop: "0%", marginLeft: "0%", width: "20vw" }}>
-                GeneATS{" "}
+    <div className="right-sub-contents">
+      <div className="title-productspage">
+        <div className="title-subtitle">
+          <div className="title-name">
+                GeneATS
               </div>
+              <div
+              className="subtitle-name">
+              Analytical Ticketing System
+            </div>
             </div>
             {/* <div
             style={{
@@ -35,12 +35,8 @@ export default function GeneATS() {
             NGS data analysis
           </div> */}
           </div>
-          <div style={{ color: "#667085", fontSize: "14px", marginTop: "2%" }}>
-            <div
-              className="subtitle-productspage">
-              Analytical Ticketing System
-            </div>
-            <div className="brief-contents">
+          <div className="card-subdatas">
+          <div className="brief-contents">
             Gene ATS optimizes the workflow for analytical sample processing by
             facilitating seamless ticket generation and management. It ensures
             that sample analysis requests are efficiently tracked and processed,
@@ -54,60 +50,27 @@ export default function GeneATS() {
           </div>
 
           <button
-            className="bronchure"
-            onMouseEnter={() => setisHover(true)}
-            onMouseLeave={() => setisHover(false)}
-            onClick={downloadPDF} // Trigger download on click
-          >
-            <div style={{ fontSize: "14px", padding: "2% 2% 3% 15%" }}>
-              Brochure
-            </div>
-            <div
-              className="icon-container"
-              >
-              {!isHover && (
-                <i
-                  className="fa-solid fa-arrow-right"
-                  id="start-icons"></i>
-              )}
-              {isHover && (
-                <i
-                  className="fa-solid fa-download"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    display: "flex",
-                    opacity: isHover ? 1 : 0,
-                    transform: isHover ? "rotate(360deg)" : "rotate(0deg)",
-                  }}></i>
-              )}
-            </div>
-          </button>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-            }}>
-            {/* <iframe
-            className="ytvideo"
-            width="50%"
-            height="250"
-            src="https://www.youtube.com/embed/1Gi4Ruse2QQ?origin=https://yourdomain.com
-
-
-"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen></iframe>
-          <img src={FrameLine} alt="frameline" style={{ width: "8vw" }} /> */}
-          </div>
+        className="bronchurewithoutyt"
+        onMouseEnter={() => setisHover(true)}
+        onMouseLeave={() => setisHover(false)}
+        onClick={downloadPDF}>
+        <div style={{ fontSize: "14px", padding: "2% 2% 3% 15%" }}>
+          Brochure
         </div>
-      </div>
+        <div className="icon-container">
+        <i
+              className="fa-solid fa-download"
+               id="start-icons"
+              style={{
+                width: "100%",
+                height: "100%",
+                alignItems: "center",
+                justifyContent: "center",
+                display: "flex",
+              }}></i>
+        </div>
+      </button>
+     
     </div>
   );
 }

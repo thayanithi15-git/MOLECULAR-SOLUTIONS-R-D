@@ -94,11 +94,11 @@
 }
 .right-contents {
   width: 100vw;
-  height: 65vh;
-  padding: 2%;
+  height: 78vh;
+ margin-right: 1%;
   /* border: 20px solid #F5F9F8; */
-  border: 20px solid #f6f9fc;
-  border-radius: 50px;
+  /* border: 20px solid #EDF3F7;
+  border-radius: 50px; */
   margin-top: 2%;
   /* overflow-y: scroll;
   overflow-x: hidden; */
@@ -107,6 +107,7 @@
   /* padding-bottom: 5%; */
   /* align-items: center;
   display: flex; */
+  background-color: #EDF3F7;
 }
 .right-contents::-webkit-scrollbar,.left-navbars::-webkit-scrollbar {
   display: none;

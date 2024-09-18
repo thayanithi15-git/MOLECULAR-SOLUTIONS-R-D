@@ -1,54 +1,37 @@
 .genomics-main {
-  /* height: 100%; */
+  background-image: url("../../assets/genomicsbg.svg");
+  background-size: cover;
   width: 100%;
+  padding: 2%;
+  align-items: center;
+}
+.products-contents{
+  height: 100%;
   overflow-y: scroll;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
-.genomic-container{
-  align-items: center;
-  justify-content: center;
-  /* background-color: antiquewhite; */
-  width: 100%;
-  height: 10vh;
+
+.products-contents::-webkit-scrollbar {
+  display: none;
 }
 
-.dna-lottie {
-  width: 8vw;
-  /* margin-top: -200px; */
-}
-.main-content {
-  margin-top: 4%;
-  width: 90%;
-  font-size: 16px;
-}
-.input-container {
-  width: 300px;
-  margin-top: 3%;
-}
-
-.card-container{
-  /* gap: 1rem; */
-  /* height: 100%; */
-  /* width: 100%; */
-  background-color: antiquewhite;
+.card-container {
+  background-color: rgb(255, 255, 255);
   border-radius: 20px;
   padding: 3%;
-  /* overflow-y: scroll; */
 }
-.card-subdatas{
+.card-subdatas {
   overflow-y: scroll;
-  height: 33vh;
+  height: 34vh;
+  color: #667085;
+  font-size: 14px;
+  margin-top: 2%;
 }
-.card-container::-webkit-scrollbar,.card-subdatas::-webkit-scrollbar{
- display: none;
-}
-.ovalshape{
-  position: absolute;
-  margin-left: 30%;
-  width: 30vw;
-  z-index: 0;
+.card-container::-webkit-scrollbar,
+.card-subdatas::-webkit-scrollbar {
+  display: none;
 }
 .products {
   display: flex;
@@ -57,12 +40,6 @@
 }
 .title-nav {
   margin-top: 6%;
-}
-.products-grid {
-  margin-top: 3%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
 }
 .product-item {
   background-color: #f5f5f5;
@@ -99,8 +76,6 @@
   width: 50;
   height: 250;
 }
-
-/* Genomics.css */
 .icon-container {
   margin-left: 10%;
   border-radius: 50%;
@@ -112,41 +87,17 @@
   display: flex;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
-.icon-container i {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
 
-button:hover .icon-container i {
-  transform: rotate(360deg);
-}
-
-.right-contents-products {
-  height: 100%;
-  margin-top: 0%;
-  /* background-color: antiquewhite; */
-  overflow-y: scroll;
-  width: 100%;
-  display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
-}
-.right-contents-products::-webkit-scrollbar,
-.genomics-main::-webkit-scrollbar {
-  display: none;
-}
-.right-sub-contents {
-  /* height: ; */
-}
-.title-subtitle {
-  opacity: 0.8; /* For 80% opacity */
-  margin-top: 22.5%;
+.title-subtitle{
+  opacity: 0.8;
+  margin-top: 21%;
   padding: 0% 0% 0% 5%;
-  align-items: center;
-  /* background-color: rgb(183, 175, 175); */
-  background: linear-gradient(to bottom, #e0e0e0, #2f2f2f);
-  width: 100%;
+  background: linear-gradient(to bottom, #ededed, #2f2f2f);
   height: 40%;
   border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .title-productspage {
   font-size: 27px;
@@ -154,25 +105,30 @@ button:hover .icon-container i {
   color: #000000;
   display: flex;
   height: 25vh;
-  background-color: aqua;
+  background-color: rgb(190, 245, 245);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
 }
-.subtitle-productspage {
-  margin-bottom: 3%;
-  font-size: 17px;
+.title-name{
+  font-size: 18px;
+  font-weight: 550;
+  color: #000000;
+}
+.subtitle-name {
+  margin-top: 1%;
+  font-size: 14px;
   font-weight: 500;
   color: #000000;
 }
 
 .brief-contents {
-  line-height: 2rem;
+  line-height: 1.7rem;
   font-size: 15px;
 }
 .bronchure {
   display: flex;
-  border-radius: 20px;  
+  border-radius: 20px;
   /* padding: 0.3%; */
   border: none;
   background-color: #565add;
@@ -188,7 +144,7 @@ button:hover .icon-container i {
   position: relative;
   overflow: hidden;
 }
-.bronchure-yt {
+.bronchurewithoutyt{
   display: flex;
   border-radius: 20px;
   /* padding: 0.3%; */
@@ -198,8 +154,35 @@ button:hover .icon-container i {
   height: 5.5vh;
   width: 9.5vw;
   align-items: center;
-  margin-left: 40%;
+  margin-left: 70%;
   margin-top: 2%;
+  transition: "background-color 0.3s ease";
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+.bronchurewithoutdownload{
+  display: flex;
+  height: 5.5vh;
+  width: 9.5vw;
+  align-items: center;
+  margin-left: 90%;
+  margin-top: 2%;
+  cursor: pointer;
+}
+.bronchure-yt {
+  display: flex;
+  /* border-radius: 20px; */
+  /* padding: 0.3%; */
+  /* border: none; */
+  /* background-color: #565add; */
+  /* color: white; */
+  height: 5.5vh;
+  width: 3vw;
+  align-items: center;
+  margin-left: 60%;
+  margin-top: 3%;
   transition: "background-color 0.3s ease";
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -218,28 +201,36 @@ button:hover .icon-container i {
   display: inline-block;
   margin-left: 0px;
   position: relative;
+  align-items: center;
   transition: transform 0.4s ease-in-out;
 }
 
-.bronchure:hover,.bronchure-yt:hover {
-  background-color: #1520e2;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+.bronchure:hover,
+.bronchure-yt:hover {
+  /* background-color: #1520e2; */
+  /* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); */
   transform: translateY(-5px);
 }
 
-.bronchure::before,.bronchure-yt::before {
+.bronchure::before,
+.bronchure-yt::before {
   content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 300%;
   height: 300%;
-  background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 10.01%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 10%,
+    transparent 10.01%
+  );
   background-size: 10px 10px;
   transition: all 0.4s ease-in-out;
 }
 
-.bronchure:hover::before,.bronchure-yt::before {
+.bronchure:hover::before,
+.bronchure-yt::before {
   left: 0;
   top: 0;
   animation: ripple 1s infinite;
@@ -254,26 +245,24 @@ button:hover .icon-container i {
   }
 }
 
-
-
 .bronchure:hover .icon-container {
   /* transform: scale(1.3) rotate(360deg); */
 }
 
 #start-icons {
-  transition: opacity 0.3s ease;
+  /* transition: opacity 0.3s ease; */
 }
-
+/* 
 .bronchure:hover #start-icons {
   opacity: 0;
-}
+} */
 .img-genomics {
   width: 2vw;
 }
 .search-bar-genomics {
   width: 300px;
 }
-#start-icons{
+#start-icons {
   background-color: white;
   color: black;
   border-radius: 50%;
@@ -285,7 +274,8 @@ button:hover .icon-container i {
   display: flex;
   /* opacity: 1;  */
   /* transform: rotate(0deg);  */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  /* transition: opacity 0.3s ease, transform 0.3s ease;  */
+  /* Smooth transition */
 }
 
 /* display: "flex",
@@ -328,15 +318,15 @@ button:hover .icon-container i {
     margin-left: 0%;
     margin-top: 9%;
   }
-  #start-icons{
+  #start-icons {
     /* padding-right: 90%; */
     /* display: none; */
   }
-  .right-contents-products{
+  .right-contents-products {
     padding: 2%;
     overflow-y: scroll;
   }
-  .ytvideo{
+  .ytvideo {
     width: 90%;
     height: 90%;
     /* margin-top: 100px; */
@@ -345,43 +335,42 @@ button:hover .icon-container i {
     line-height: 1.5rem;
     font-size: 13px;
   }
-  .subtitle-productspage{
+  .subtitle-productspage {
     font-size: 15px;
   }
-  .title-productspage{
+  .title-productspage {
     font-size: 30px;
   }
-  
 }
-@media (max-width: 1278px) and (max-height: 2526px) and (min-height : 1000px){
+@media (max-width: 1278px) and (max-height: 2526px) and (min-height: 1000px) {
   .bronchure {
     width: 130px;
     height: 50px;
     margin-left: 78%;
     margin-bottom: 3%;
   }
-  .ytvideo{
+  .ytvideo {
     height: 20vh;
   }
   .brief-contents {
     line-height: 2rem;
     font-size: 15px;
   }
-  .subtitle-productspage{
+  .subtitle-productspage {
     font-size: 15px;
   }
-  .title-productspage{
+  .title-productspage {
     font-size: 55px;
   }
 }
-@media (max-width: 1278px) and (max-height: 500px){
-  .bronchure{
+@media (max-width: 1278px) and (max-height: 500px) {
+  .bronchure {
     width: 130px;
     height: 50px;
     margin-left: 78%;
     margin-bottom: 3%;
   }
-  .ytvideo{
+  .ytvideo {
     height: 60vh;
   }
 }
