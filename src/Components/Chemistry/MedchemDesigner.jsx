@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import MedchemImg from "../../assets/medchem-img.jpg"
 import "./Chemistry.css";
 
 export default function Medchem_Designer() {
@@ -13,6 +14,7 @@ export default function Medchem_Designer() {
   return (
     <div className="right-sub-contents">
       <div className="title-productspage">
+      <img src={MedchemImg} style={{width: "100%",height: "100%",borderRadius: "10px"}}/>
         <div className="title-subtitle">
           <div className="title-name">Medchem Designer</div>
           <div className="subtitle-name">
@@ -22,7 +24,7 @@ export default function Medchem_Designer() {
       </div>
       <div className="card-subdatas">
         <div className="brief-contents">
-          MedChem Designer is a chemical sketching tool that integrates advanced
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MedChem Designer is a chemical sketching tool that integrates advanced
           molecule drawing capabilities with quick and accurate ADMET property
           predictions from our top-rated ADMET Predictor software. These
           predictions include logP, logD(7.4), Polar Surface Area, and

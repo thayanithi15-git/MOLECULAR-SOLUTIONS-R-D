@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import GeneBISImg from "../../assets/geneBIS-img.jpg";
 import "./ELN_LIMS.css";
 
 export default function GeneBIS() {
@@ -13,6 +14,7 @@ export default function GeneBIS() {
   return (
     <div className="right-sub-contents">
       <div className="title-productspage">
+      <img src={GeneBISImg} style={{width: "100%",height: "100%",borderRadius: "10px"}}/>
         <div className="title-subtitle">
           <div className="title-name">GeneBIS</div>
           <div className="subtitle-name">
@@ -22,7 +24,7 @@ export default function GeneBIS() {
       </div>
       <div className="card-subdatas">
         <div className="brief-contents">
-          Gene BIS is an Inventory Management System for chemical and biologics
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gene BIS is an Inventory Management System for chemical and biologics
           materials that streamlines management with advanced features. It
           includes a barcode mechanism for labeling, printing, and storing
           materials in specified locations. The system automates expiry material

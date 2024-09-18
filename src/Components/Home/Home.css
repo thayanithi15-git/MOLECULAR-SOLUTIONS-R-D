@@ -93,12 +93,12 @@
   overflow-y: scroll;
 }
 .right-contents {
-  width: 100vw;
+  width: 100%;
   height: 78vh;
  margin-right: 1%;
   /* border: 20px solid #F5F9F8; */
-  /* border: 20px solid #EDF3F7;
-  border-radius: 50px; */
+  /* border: 20px solid #EDF3F7; */
+  border-radius: 50px;
   margin-top: 2%;
   /* overflow-y: scroll;
   overflow-x: hidden; */

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./VirtualReality.css";
 import { Dialog } from "@mui/material";
+import NanomeImg from "../../assets/nanome-img.jpg"
 import YtIcon from "../../assets/yt.svg";
 
 
@@ -26,6 +27,7 @@ export default function Nanome() {
   return (
     <div className="right-sub-contents">
       <div className="title-productspage">
+      <img src={NanomeImg} style={{width: "100%",height: "100%",borderRadius: "10px"}}/>
         <div className="title-subtitle">
           <div className="title-name">
                 Nanome
@@ -39,7 +41,7 @@ export default function Nanome() {
           </div>
           <div className="card-subdatas">
         <div className="brief-contents">
-            Nanome is a mixed virtual reality software that revolutionizes the
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nanome is a mixed virtual reality software that revolutionizes the
             way scientists, researchers, and educators interact with molecular
             structures on an atomic level. It offers a 3D immersive environment
             where users can visualize and interact with molecular formations

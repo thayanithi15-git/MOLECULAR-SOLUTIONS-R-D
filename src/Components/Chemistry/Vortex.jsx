@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import SarVisionImg from "../../assets/sarvision-img.png";
 import "./Chemistry.css";
 
 export default function Vortex() {
   return (
     <div className="right-sub-contents">
       <div className="title-productspage">
+      <img src={SarVisionImg} style={{width: "100%",height: "100%",borderRadius: "10px"}}/>
         <div className="title-subtitle">
           <div className="title-name">Vortex</div>
           <div className="subtitle-name">
@@ -15,7 +17,7 @@ export default function Vortex() {
       </div>
       <div className="card-subdatas">
         <div className="brief-contents">
-          VORTEX is an advanced data analysis and visualization module designed
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VORTEX is an advanced data analysis and visualization module designed
           for managing and interacting with massive datasets across various data
           types, including numeric, textual, image, and chemical structures. It
           includes specialized tools for cheminformatics analyses like R-group,

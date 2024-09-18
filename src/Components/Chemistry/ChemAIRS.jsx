@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Chemistry.css";
 import { Dialog } from "@mui/material";
+import ChemAIRSImg from "../../assets/chemairs-img.jpg"
 import YtIcon from "../../assets/yt.svg";
 
 export default function ChemAIRS() {
@@ -24,7 +25,9 @@ export default function ChemAIRS() {
   return (
     <div className="right-sub-contents">
       <div className="title-productspage">
+      <img src={ChemAIRSImg} style={{width: "100%",height: "100%",borderRadius: "10px"}}/>
         <div className="title-subtitle">
+        
           <div className="title-name">ChemAIRS </div>
           <div className="subtitle-name">
             Most advanced AI/ML/ Knowledge & Data driven retrosynthetic software
@@ -33,7 +36,7 @@ export default function ChemAIRS() {
       </div>
       <div className="card-subdatas">
         <div className="brief-contents">
-          SARvision | Biologics is a desktop application designed to transform
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SARvision | Biologics is a desktop application designed to transform
           biologics informatics. With its intuitive smart interface, it enables
           users to read, organize, and analyze data on peptides, proteins,
           nucleic acids, chemically modified residues, and unnatural amino

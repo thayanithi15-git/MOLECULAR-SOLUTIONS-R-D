@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import GeneCDMSImg from "../../assets/geneCDMS-img.jpg";
 import "./ELN_LIMS.css";
 
 export default function GeneCDMS() {
@@ -13,6 +14,7 @@ export default function GeneCDMS() {
   return (
     <div className="right-sub-contents">
       <div className="title-productspage">
+      <img src={GeneCDMSImg} style={{width: "100%",height: "100%",borderRadius: "10px"}}/>
         <div className="title-subtitle">
           <div className="title-name">
                 GeneCDMS
@@ -25,7 +27,7 @@ export default function GeneCDMS() {
           </div>
           <div className="card-subdatas">
         <div className="brief-contents">
-            GeneCDMS, a Compound & Data Management System (CDMS), is tailored to
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GeneCDMS, a Compound & Data Management System (CDMS), is tailored to
             manage compound registration and store structural and chemical
             information in the database. Compounds undergo validation, QC, and
             normalization steps prior to registration, with resulting reports

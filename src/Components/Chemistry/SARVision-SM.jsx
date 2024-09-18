@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Chemistry.css";
 import { Dialog } from "@mui/material";
+import SarVisionImg from "../../assets/sarvision-img.png";
 import YtIcon from "../../assets/yt.svg";
 
 export default function SarVision_SM() {
@@ -26,6 +27,7 @@ export default function SarVision_SM() {
   return (
     <div className="right-sub-contents">
       <div className="title-productspage">
+      <img src={SarVisionImg} style={{width: "100%",height: "100%",borderRadius: "10px"}}/>
         <div className="title-subtitle">
           <div className="title-name">SARvision|SM </div>
           <div className="subtitle-name">
@@ -35,7 +37,7 @@ export default function SarVision_SM() {
       </div>
       <div className="card-subdatas">
         <div className="brief-contents">
-          SAR vision|SM is a desktop application that allows users to
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SAR vision|SM is a desktop application that allows users to
           intuitively navigate chemical information and identify
           structure-property relationships. It provides a structured environment
           to identify dataset-specific scaffolds and chemotypes without using a

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./ComputationalChemistry.css";
 import { Dialog } from "@mui/material";
+import AdmetpredictorImg from "../../assets/admetpredictor-img.jpg"
 import YtIcon from "../../assets/yt.svg";
 
 export default function AdmetPredictor() {
@@ -24,6 +25,7 @@ export default function AdmetPredictor() {
   return (
     <div className="right-sub-contents">
       <div className="title-productspage">
+      <img src={AdmetpredictorImg} style={{width: "100%",height: "100%",borderRadius: "10px"}}/>
         <div className="title-subtitle">
           <div className="title-name">ADMET Predictor</div>
           <div className="subtitle-name">
@@ -33,7 +35,7 @@ export default function AdmetPredictor() {
       </div>
       <div className="card-subdatas">
         <div className="brief-contents">
-          ADMET Predictor is a machine learning platform for ADMET modeling,
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ADMET Predictor is a machine learning platform for ADMET modeling,
           offering enhanced features for data analysis, metabolism prediction,
           and AI-powered drug design.
         </div>

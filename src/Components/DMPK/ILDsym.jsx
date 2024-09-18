@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./DMPK.css";
 import { Dialog } from "@mui/material";
+import ILDsymImg from "../../assets/ILDsym-img.jpg"
 import YtIcon from "../../assets/yt.svg";
 
 export default function ILDsym() {
@@ -24,6 +25,7 @@ export default function ILDsym() {
   return (
     <div className="right-sub-contents">
       <div className="title-productspage">
+      <img src={ILDsymImg} style={{width: "100%",height: "100%",borderRadius: "10px"}}/>
         <div className="title-subtitle">
           <div className="title-name">ILDsym</div>
           <div className="subtitle-name">
@@ -34,7 +36,7 @@ export default function ILDsym() {
 
       <div className="card-subdatas">
         <div className="brief-contents">
-          The ILDsym® QSP modeling software is a mechanistic, mathematical model
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ILDsym® QSP modeling software is a mechanistic, mathematical model
           of interstitial lung disease (ILD) associated with systemic sclerosis
           (SSc)
         </div>

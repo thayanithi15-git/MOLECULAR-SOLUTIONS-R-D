@@ -5,7 +5,7 @@ import "./AIML.css";
 
 export default function AIML() {
   return (
-    <div className="genomics-main">
+    <div className="genomics-main" id="aiml-main">
       <div className="products-contents">
         <div className="card-container">
           <Mara />

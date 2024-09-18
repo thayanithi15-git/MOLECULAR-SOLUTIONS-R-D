@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Biology";
 import { Dialog } from "@mui/material";
+import SarVisionBiologyImg from "../../assets/biology-img.jpg";
 import YtIcon from "../../assets/yt.svg";
 
 export default function SarVision_Biologics() {
@@ -24,6 +25,7 @@ export default function SarVision_Biologics() {
   return (
     <div className="right-sub-contents">
       <div className="title-productspage">
+      <img src={SarVisionBiologyImg} style={{width: "100%",height: "100%",borderRadius: "10px"}}/>
         <div className="title-subtitle">
           <div className="title-name">SARvision|Biologics</div>
           <div className="subtitle-name">
@@ -34,7 +36,7 @@ export default function SarVision_Biologics() {
       </div>
       <div className="card-subdatas">
         <div className="brief-contents">
-          SARvision | Biologics is a desktop application designed to transform
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SARvision | Biologics is a desktop application designed to transform
           biologics informatics. With its intuitive smart interface, it enables
           users to read, organize, and analyze data on peptides, proteins,
           nucleic acids, chemically modified residues, and unnatural amino

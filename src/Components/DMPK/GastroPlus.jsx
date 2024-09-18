@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./DMPK.css";
 import { Dialog } from "@mui/material";
+import GastroplusImg from "../../assets/gastroplus-img.jpg"
 import YtIcon from "../../assets/yt.svg";
 
 export default function GastroPlus() {
@@ -24,6 +25,7 @@ export default function GastroPlus() {
   return (
     <div className="right-sub-contents">
       <div className="title-productspage">
+      <img src={GastroplusImg} style={{width: "100%",height: "100%",borderRadius: "10px"}}/>
         <div className="title-subtitle">
           <div className="title-name">GastroPlus</div>
           <div className="subtitle-name">
@@ -33,7 +35,7 @@ export default function GastroPlus() {
       </div>
       <div className="card-subdatas">
         <div className="brief-contents">
-          GastroPlus predicts drug behavior within the gastrointestinal tract,
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GastroPlus predicts drug behavior within the gastrointestinal tract,
           aiding in formulation optimization and dosage prediction
         </div>
       </div>

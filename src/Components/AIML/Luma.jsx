@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./AIML.css";
 import { Dialog } from "@mui/material";
+import LumaImg from "../../assets/luma-img.jpg"
 import YtIcon from "../../assets/yt.svg";
 
 export default function Luma() {
@@ -24,6 +25,7 @@ export default function Luma() {
   return (
     <div className="right-sub-contents">
       <div className="title-productspage">
+      <img src={LumaImg} style={{width: "100%",height: "100%",borderRadius: "10px"}}/>
         <div className="title-subtitle">
           <div className="title-name">
                 LUMA
@@ -37,7 +39,7 @@ export default function Luma() {
           </div>
           <div className="card-subdatas">
         <div className="brief-contents">
-            LUMA is a low-code laboratory informatics platform by Dotmatics that
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LUMA is a low-code laboratory informatics platform by Dotmatics that
             integrates with various scientific software to streamline data
             management and collaboration. It offers visualization and analysis
             tools, enabling scientists to efficiently organize and share data.
