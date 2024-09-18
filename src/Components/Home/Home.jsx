@@ -1516,17 +1516,16 @@ useEffect(() => {
                   Genomics R & D
                 </div>
                 <i
-                  className={`fa-solid fa-caret-right ${
-                    Genomics ? "rotate-down" : "rotate-right"
-                  }`}></i>
+                  className="fa-solid fa-caret-right rotate-right"></i>
               </div>
-              {Genomics && (
+              {/* {Genomics && (
                 <div style={{ marginLeft: "10%", marginTop: "5%" }}>
                   <div
                     className={`subproducts-container ${
                       Commander ? "edit" : ""
                     }`}
-                    onClick={handleCommander}>
+                    // onClick={handleCommander}
+                    >
                     <img src={SubNavbars} alt="subnav" />
                     <div style={{ marginLeft: "2%" }}>Commander</div>
                   </div>
@@ -1534,7 +1533,7 @@ useEffect(() => {
                     <div className="overlay" onClick={closeSidebar}></div>
                   )}
                 </div>
-              )}
+              )} */}
             </div>
             <div className="main-container">
               <div
@@ -1545,12 +1544,14 @@ useEffect(() => {
                 <div style={{ marginTop: "1.5%", width: "65%" }}>
                   Biology R & D
                 </div>
-                <i
+                {/* <i
                   className={`fa-solid fa-caret-right ${
                     Biology ? "rotate-down" : "rotate-right"
-                  }`}></i>
+                  }`}></i> */}
+                  <i
+                  className="fa-solid fa-caret-right rotate-right"></i>
               </div>
-              {Biology && (
+              {/* {Biology && (
                 <div style={{ marginLeft: "10%", marginTop: "5%" }}>
                   <div
                     className={`subproducts-container ${
@@ -1561,7 +1562,7 @@ useEffect(() => {
                     <div style={{ marginLeft: "2%" }}>SARvision|Biologics</div>
                   </div>
                 </div>
-              )}
+              )} */}
             </div>
             <div className="main-container">
               <div
@@ -1573,11 +1574,9 @@ useEffect(() => {
                   Chemistry R & D
                 </div>
                 <i
-                  className={`fa-solid fa-caret-right ${
-                    Chemistry ? "rotate-down" : "rotate-right"
-                  }`}></i>
+                  className="fa-solid fa-caret-right rotate-right"></i>
               </div>
-              {Chemistry && (
+              {/* {Chemistry && (
                 <div style={{ marginLeft: "10%", marginTop: "5%" }}>
                   <div
                     className={`subproducts-container ${
@@ -1618,7 +1617,7 @@ useEffect(() => {
                     </div>
                   </div>
                 </div>
-              )}
+              )} */}
             </div>
             <div className="main-container">
               <div
@@ -1630,11 +1629,9 @@ useEffect(() => {
                   Computational Chemistry
                 </div>
                 <i
-                  className={`fa-solid fa-caret-right ${
-                    ComputationalChemistry ? "rotate-down" : "rotate-right"
-                  }`}></i>
+                  className="fa-solid fa-caret-right rotate-right"></i>
               </div>
-              {ComputationalChemistry && (
+              {/* {ComputationalChemistry && (
                 <div style={{ marginLeft: "10%", marginTop: "5%" }}>
                   <div
                     className={`subproducts-container ${
@@ -1648,7 +1645,7 @@ useEffect(() => {
                     </div>
                   </div>
                 </div>
-              )}
+              )} */}
             </div>
             <div className="main-container">
               <div
@@ -1658,11 +1655,9 @@ useEffect(() => {
                 {/* <img src={ChemistryImg} alt="Chemistry img" /> */}
                 <div style={{ marginTop: "1.5%", width: "65%" }}>DMPK</div>
                 <i
-                  className={`fa-solid fa-caret-right ${
-                    DMPK ? "rotate-down" : "rotate-right"
-                  }`}></i>
+                  className="fa-solid fa-caret-right rotate-right"></i>
               </div>
-              {DMPK && (
+              {/* {DMPK && (
                 <div style={{ marginLeft: "10%", marginTop: "5%" }}>
                   <div
                     className={`subproducts-container ${
@@ -1683,7 +1678,7 @@ useEffect(() => {
                     </div>
                   </div>
                 </div>
-              )}
+              )} */}
             </div>
             <div className="main-container">
               <div
@@ -1695,11 +1690,9 @@ useEffect(() => {
                   ELN & LIMS
                 </div>
                 <i
-                  className={`fa-solid fa-caret-right ${
-                    ELN_LIMS ? "rotate-down" : "rotate-right"
-                  }`}></i>
+                  className="fa-solid fa-caret-right rotate-right"></i>
               </div>
-              {ELN_LIMS && (
+              {/* {ELN_LIMS && (
                 <div style={{ marginLeft: "10%", marginTop: "5%" }}>
                   <div
                     className={`subproducts-container ${
@@ -1760,7 +1753,7 @@ useEffect(() => {
                     </div>
                   </div>
                 </div>
-              )}
+              )} */}
             </div>
             <div className="main-container">
               <div
@@ -1772,11 +1765,9 @@ useEffect(() => {
                   Virtual Reality
                 </div>
                 <i
-                  className={`fa-solid fa-caret-right ${
-                    VirtualReality ? "rotate-down" : "rotate-right"
-                  }`}></i>
+                  className="fa-solid fa-caret-right rotate-right"></i>
               </div>
-              {VirtualReality && (
+              {/* {VirtualReality && (
                 <div style={{ marginLeft: "10%", marginTop: "5%" }}>
                   <div
                     className={`subproducts-container ${Nanome ? "edit" : ""}`}
@@ -1785,7 +1776,7 @@ useEffect(() => {
                     <div style={{ marginLeft: "2%" }}>Nanome</div>
                   </div>
                 </div>
-              )}
+              )} */}
             </div>
             <div className="main-container">
               <div
@@ -1795,11 +1786,9 @@ useEffect(() => {
                 {/* <img src={AI} alt="VirtualReality img" width={28} height={28}/> */}
                 <div style={{ marginTop: "1.5%", width: "65%" }}>AI/ML</div>
                 <i
-                  className={`fa-solid fa-caret-right ${
-                    AIML ? "rotate-down" : "rotate-right"
-                  }`}></i>
+                  className="fa-solid fa-caret-right rotate-right"></i>
               </div>
-              {AIML && (
+              {/* {AIML && (
                 <div style={{ marginLeft: "10%", marginTop: "5%" }}>
                   <div
                     className={`subproducts-container ${Mara ? "edit" : ""}`}
@@ -1814,7 +1803,7 @@ useEffect(() => {
                     <div style={{ marginLeft: "2%" }}>LUMA</div>
                   </div>
                 </div>
-              )}
+              )} */}
             </div>
           </div>
           <div className="right-contents">
