@@ -454,13 +454,13 @@
     font-size: 3vw;
   }
   .brief-contents.collapsed {
-    height: 23vh;
+    height: 20vh;
   }
   
   .brief-contents.expanded {
     max-height: none; /* Allows the full text to be shown */
     overflow-y: scroll;
-    height: 25vh;
+    height: 22vh;
   }
   
   
@@ -491,15 +491,6 @@
   }
   .card-subdatas{
     /* height: 28vh; */
-  }
-  .brief-contents.collapsed {
-    height: 25vh;
-  }
-  
-  .brief-contents.expanded {
-    max-height: none; 
-    overflow-y: scroll;
-    height: 24vh;
   }
   .icon-container-youtube{
     margin-left: 0%;
@@ -592,12 +583,14 @@
   }
   .brief-contents.collapsed {
     height: 20vh;
+    background-color: #565add;
   }
   
   .brief-contents.expanded {
     max-height: none; /* Allows the full text to be shown */
     overflow-y: scroll;
-    height: 200vh;
+    height: 20vh;
+
   }
   
   
@@ -605,10 +598,34 @@
 
 @media (min-width: 640px) and (max-width: 1300px){
   .bottom-buttons{
-    margin-top: -5%;
+    /* margin-top: -5%; */
     margin-left: 0%;
+  }
+  .yt-img{
+    width: 100%;
   }
   .card-subdatas {
     /* display: none; */
+  }
+  .title-productspage{
+    width: 80%;
+    justify-content: center;
+    display: flex;
+    height: 30vh;
+  }
+  .subtitle-name{
+    margin-top: 3%;
+  }
+  .brief-contents.collapsed{
+    margin-top: 2%;
+  }
+  .card-subdatas{
+    margin-top: 0%;
+  }
+  .view-button{
+    margin-top: 1%;
+  }
+  .products-contents{
+    height: 100%;
   }
 }

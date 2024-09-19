@@ -511,3 +511,9 @@
     height: 150vh;
   }
 }
+
+@media (min-width: 640px) and (max-width: 1300px){
+  .right-contents{
+    /* height: 78vh; */
+  }
+}
