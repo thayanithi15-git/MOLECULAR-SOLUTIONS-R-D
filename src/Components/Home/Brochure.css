@@ -1,0 +1,69 @@
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  
+    .refined-animated-button {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      padding: 12px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(135deg, #1e3c72, #2a5298); /* Dark blue gradient */
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      overflow: hidden;
+      transition: background 0.3s, transform 0.3s ease;
+      box-shadow: 0 0 20px rgba(46, 91, 146, 0.6);
+    }
+    
+    .refined-animated-button:hover {
+      background: linear-gradient(135deg, #2a5298, #3a6ea5);
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 0 30px rgba(46, 91, 146, 0.8);
+    }
+    
+    .icon {
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+      transition: transform 0.4s ease;
+    }
+    
+    .refined-animated-button:hover .icon svg {
+      transform: translateY(3px);
+    }
+    
+    /* Subtle wave animation */
+    .wave-animation {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      pointer-events: none;
+      border-radius: 50px;
+      animation: wave 3s infinite ease-in-out;
+    }
+    
+    @keyframes wave {
+      0% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      50% {
+        opacity: 1;
+        transform: translateX(100%);
+      }
+      100% {
+        opacity: 0;
+        transform: translateX(200%);
+      }
+    }
+    

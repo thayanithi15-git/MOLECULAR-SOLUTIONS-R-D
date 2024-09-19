@@ -4,7 +4,7 @@ import "./ComputationalChemistry.css";
 
 export default function ComputationalChemistry() {
   return (
-    <div className="genomics-main">
+    <div className="genomics-main" id="comchemistry-main" >
       <div className="products-contents">
         <div className="card-container">
           <AdmetPredictor />

@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Chemistry.css";
 import { Dialog } from "@mui/material";
-import ChemAIRSImg from "../../assets/chemairs-img.jpg"
+import ChemAIRSImg from "../../assets/chemairs-img.jpg";
 import YtIcon from "../../assets/yt.svg";
+import Brochure from "../Home/Brochure";
 
 export default function ChemAIRS() {
   const [openVideoDialog, setOpenVideoDialog] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [isOverflowing, setIsOverflowing] = useState(false);
+  const textRef = useRef(null);
+  useEffect(() => {
+    const element = textRef.current;
+    if (element.scrollHeight > element.clientHeight) {
+      setIsOverflowing(true);
+    }
+  }, []);
 
   const downloadPDF = () => {
     const link = document.createElement("a");
@@ -25,59 +35,67 @@ export default function ChemAIRS() {
   return (
     <div className="right-sub-contents">
       <div className="title-productspage">
-      <img src={ChemAIRSImg} style={{width: "100%",height: "100%",borderRadius: "10px"}}/>
+        <img
+          src={ChemAIRSImg}
+          style={{ width: "100%", height: "100%", borderRadius: "10px" }}
+        />
         <div className="title-subtitle">
-        
           <div className="title-name">ChemAIRS </div>
-          <div className="subtitle-name">
-            Most advanced AI/ML/ Knowledge & Data driven retrosynthetic software
-          </div>
         </div>
+      </div>
+      <div className="subtitle-name">
+        Most advanced AI/ML/ Knowledge & Data driven retrosynthetic software
       </div>
       <div className="card-subdatas">
-        <div className="brief-contents">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SARvision | Biologics is a desktop application designed to transform
-          biologics informatics. With its intuitive smart interface, it enables
-          users to read, organize, and analyze data on peptides, proteins,
-          nucleic acids, chemically modified residues, and unnatural amino
-          acids. The software has advanced visualization tools like mutation
-          cliffs, sequence maps, graphs and efficient sequence alignments for
-          large datasets. Actively filter data based on chemotype, scaffold,
-          data range and properties. Users can seamlessly export their analysis
-          to Excel and leverage advanced search capabilities for efficient data
-          retrieval. SARvision | Biologics enhances research workflow by
-          providing deeper insights and streamlining data management for more
-          impactful discoveries
+        <div
+        className={`brief-contents ${isExpanded ? 'expanded' : 'collapsed'}`}
+        ref={textRef}
+      >
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SARvision | Biologics is a desktop
+          application designed to transform biologics informatics. With its
+          intuitive smart interface, it enables users to read, organize, and
+          analyze data on peptides, proteins, nucleic acids, chemically modified
+          residues, and unnatural amino acids. The software has advanced
+          visualization tools like mutation cliffs, sequence maps, graphs and
+          efficient sequence alignments for large datasets. Actively filter data
+          based on chemotype, scaffold, data range and properties. Users can
+          seamlessly export their analysis to Excel and leverage advanced search
+          capabilities for efficient data retrieval. SARvision | Biologics
+          enhances research workflow by providing deeper insights and
+          streamlining data management for more impactful discoveries
         </div>
+        {isOverflowing && (
+        <div onClick={() => setIsExpanded(!isExpanded)} className="view-button">
+          {isExpanded ? '' : 'View More'}
+        </div>
+      )}
       </div>
 
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <div className="bronchure-yt" onClick={handleClickOpenVideoDialog}>
+      <div className="bottom-buttons">
+        <div className="bronchure-y" onClick={handleClickOpenVideoDialog}>
           <div className="icon-container-yt">
-            <img src={YtIcon} style={{ width: "2.5vw"}} />
+            <img src={YtIcon} className="yt-img" />
           </div>
         </div>
-        <button
-          className="bronchure"
-          onMouseEnter={() => setisHover(true)}
-          onMouseLeave={() => setisHover(false)}
+        <div
+          className="button-container"
+          style={{ marginLeft: "3%" }}
           onClick={downloadPDF}>
-          <div style={{ fontSize: "14px", padding: "2% 2% 3% 25%" }}>
-            Brochure
-          </div>
-          <div className="icon-container">
-            <i
-              className="fa-solid fa-download"
-              id="start-icons"
-              style={{
-                width: "100%",
-                height: "100%",
-                alignItems: "center",
-                justifyContent: "center",
-                display: "flex",
-              }}></i>
-          </div>
-        </button>
+          <a href="/brochure.pdf" download className="refined-animated-button">
+            <div style={{ fontSize: "13px" }}>Brochure</div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="white"
+              viewBox="0 0 24 24"
+              width="24px"
+              height="24px"
+              id="download-icon">
+              <path d="M12 16l-4-4h3V4h2v8h3l-4 4zm0 2c-3.86 0-7 3.14-7 7h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.86-3.14-7-7-7z" />
+            </svg>
+            <div className="wave-animation"></div>
+          </a>
+        </div>
+        </div>
 
         <Dialog
           open={openVideoDialog}
@@ -101,7 +119,6 @@ export default function ChemAIRS() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen></iframe>
         </Dialog>
-      </div>
     </div>
   );
 }

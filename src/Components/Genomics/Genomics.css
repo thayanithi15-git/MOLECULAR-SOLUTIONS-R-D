@@ -1,7 +1,5 @@
 .genomics-main {
-  background-image: url("../../assets/genomicsbg.svg");
-  /* background-size: cover; */
-  background-position: -250px;
+ 
   width: 100%;
   padding: 2%;
   border-radius: 10px;
@@ -11,6 +9,38 @@
   /* background-image: url("../../assets/genomicsbg.svg");
   background-size: cover; */
 }
+#elnlims-main{
+  /* background-image: url("../../assets/elnlimsbg.svg"); */
+  /* background-size: cover; */
+  /* background-position: -250px; */
+}
+#vr-main{
+  /* background-image: url("../../assets/genomicsbg.svg");
+  background-size: cover; */
+}
+#biology-main{
+  /* background-image: url("../../assets/biologybg.svg"); */
+  /* background-size: cover; */
+  /* background-position: -250px; */
+}
+#comchemistry-main{
+  /* background-image: url("../../assets/genomicsbg.svg");
+  background-size: cover; */
+}
+#genomics-main{
+  /* background-image: url("../../assets/genomicsbg.svg"); */
+  /* background-size: cover; */
+  /* background-position: -250px; */
+}
+#chemistry-main{
+  /* background-image: url("../../assets/genomicsbg.svg");
+  background-size: cover; */
+}
+#dmpk-main{
+  /* background-image: url("../../assets/genomicsbg.svg");
+  background-size: cover; */
+}
+
 .products-contents{
   height: 100%;
   overflow-y: scroll;
@@ -33,12 +63,13 @@
   height: 68.5vh;
 }
 .card-subdatas {
-  overflow-y: scroll;
-  height: 34vh;
+  overflow-y: hidden;
+  
   color: #667085;
   font-size: 14px;
   margin-top: 5%;
 }
+
 .card-container::-webkit-scrollbar,
 .card-subdatas::-webkit-scrollbar {
   display: none;
@@ -130,10 +161,11 @@
   color: white;
 }
 .subtitle-name {
-  margin-top: 0.5%;
-  font-size: 13px;
+  margin-top: 7%;
+  font-size: 15px;
   font-weight: 550;
-  color: white;
+  margin-left: 2%;
+  color: rgb(9, 9, 153);
 }
 
 .brief-contents {
@@ -151,7 +183,7 @@
   width: 9.5vw;
   align-items: center;
   margin-left: 1%;
-  margin-top: 2%;
+  /* margin-top: 2%; */
   transition: "background-color 0.3s ease";
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -169,7 +201,7 @@
   width: 9.5vw;
   align-items: center;
   margin-left: 50%;
-  margin-top: 2%;
+  /* margin-top: 2%; */
   transition: "background-color 0.3s ease";
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -182,7 +214,7 @@
   width: 9.5vw;
   align-items: center;
   margin-left: 70%;
-  margin-top: 2%;
+  /* margin-top: 2%; */
   cursor: pointer;
 }
 .bronchure-yt {
@@ -195,8 +227,8 @@
   height: 5.5vh;
   width: 3vw;
   align-items: center;
-  margin-left: 36%;
-  margin-top: 3%;
+  margin-left: 47%;
+  /* margin-top: 1.5%; */
   transition: "background-color 0.3s ease";
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -291,6 +323,52 @@
   /* transition: opacity 0.3s ease, transform 0.3s ease;  */
   /* Smooth transition */
 }
+.yt-img{
+  width: 40px;
+  margin-top: 5%;
+}
+#download-icon{
+  font-size: 5px;
+  width: 30px;
+  height: 20px;
+  margin-left: 5%;
+  /* display: none; */
+}
+.bottom-buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 0%;
+  justify-content: end;
+}
+.bottom-buttons-yt{
+  margin-left: 50%;
+}
+.brief-contents {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.brief-contents.collapsed {
+  height: 23vh;
+}
+
+.brief-contents.expanded {
+  max-height: none; /* Allows the full text to be shown */
+  overflow-y: scroll;
+  height: 25vh;
+}
+.brief-contents.expanded::-webkit-scrollbar{
+  display: none;
+}
+
+.view-button {
+  margin-top: 2%;
+  /* text-decoration: underline; */
+  color: rgb(35, 35, 250);
+  cursor: pointer;
+}
+
+
 
 /* display: "flex",
               borderRadius: "20px",
@@ -308,7 +386,7 @@
 @media (max-width: 1278px) {
   .bronchure {
     width: 100px;
-    margin: 4% 0% 0% 2%;
+    margin: 0% 0% 0% 2%;
     margin-bottom: 3%;
     height: 40px;
     justify-content: center;
@@ -355,6 +433,79 @@
   .title-productspage {
     font-size: 30px;
   }
+  .products-contents{
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(1,3fr);
+  }
+  .card-container{
+    /* width: 100%; */
+  }
+  .bronchurewithoutyt{
+    margin-left: 80%;
+  }
+  .card-subdatas{
+    /* height: 15vh; */
+  }
+  .bottom-buttons{
+    margin-top: 0%;
+  }
+  #download-icon{
+    font-size: 3vw;
+  }
+  .brief-contents.collapsed {
+    height: 23vh;
+  }
+  
+  .brief-contents.expanded {
+    max-height: none; /* Allows the full text to be shown */
+    overflow-y: scroll;
+    height: 25vh;
+  }
+  
+  
+}
+@media (max-width: 500px){
+  .card-subdatas{
+    /* height: 30vh; */
+    /* background-color: #565add; */
+  }
+  .bronchurewithoutyt{
+    width: 30%;
+    align-items: center;
+    display: flex;
+    margin-left: 60%;
+  }
+  .bronchure-yt{
+    /* width: 100%; */
+    margin-left: 17%;
+  }
+  .bronchure{
+    width: 30%;
+  }
+   .yt-img{
+    /* width: 100vw; */
+  }
+  .bronchure-yt{
+    width: 0vw;
+  }
+  .card-subdatas{
+    /* height: 28vh; */
+  }
+  .brief-contents.collapsed {
+    height: 25vh;
+  }
+  
+  .brief-contents.expanded {
+    max-height: none; 
+    overflow-y: scroll;
+    height: 24vh;
+  }
+  .icon-container-youtube{
+    margin-left: 0%;
+  }
+  
+  
 }
 @media (max-width: 1278px) and (max-height: 2526px) and (min-height: 1000px) {
   .bronchure {
@@ -384,6 +535,13 @@
   .card-container{
     width: 100%;
   }
+  .yt-img{
+    /* width: 100vw; */
+    display: none;
+  }
+  
+  
+  
 }
 @media (max-width: 1278px) and (max-height: 500px) {
   .bronchure {
@@ -395,18 +553,62 @@
   .ytvideo {
     height: 60vh;
   }
+  
+ 
 }
 
-@media (max-width: 1000px){
-  .products-contents{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1,3fr);
-  }
-  .card-container{
-    width: 100%;
+@media (max-width: 400px) and (max-height: 660px){
+  .yt-img{
+    /* width: 100vw; */
   }
   .bronchure-yt{
+    width: 10vw;
     margin-left: 60%;
+  }
+  .card-subdatas{
+    /* height: 10vh; */
+  }
+  .card-container{
+    /* background-color: #565add; */
+    height: 100%;
+    border-radius: 20px;
+    /* gap: 2rem; */
+  }
+  .products-contents{
+    /* align-items: center; */
+    /* border-radius: 20px; */
+    /* gap: 2rem; */
+  }
+  .genomics-main{
+    /* border-radius: 1px; */
+    padding: 2%;
+  }
+  #download-icon{
+    font-size: 3vw;
+    
+  }
+  .bottom-buttons{
+    margin-top: 0%;
+  }
+  .brief-contents.collapsed {
+    height: 20vh;
+  }
+  
+  .brief-contents.expanded {
+    max-height: none; /* Allows the full text to be shown */
+    overflow-y: scroll;
+    height: 200vh;
+  }
+  
+  
+}
+
+@media (min-width: 640px) and (max-width: 1300px){
+  .bottom-buttons{
+    margin-top: -5%;
+    margin-left: 0%;
+  }
+  .card-subdatas {
+    /* display: none; */
   }
 }

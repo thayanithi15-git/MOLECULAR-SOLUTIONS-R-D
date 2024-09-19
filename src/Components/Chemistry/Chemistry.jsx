@@ -7,7 +7,7 @@ import "./Chemistry.css";
 
 export default function ChemistryMain() {
   return (
-    <div className="genomics-main">
+    <div className="genomics-main"  id="chemistry-main">
       <div className="products-contents">
       <div className="card-container">
         <ChemAIRS />

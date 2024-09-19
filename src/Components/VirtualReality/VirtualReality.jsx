@@ -4,7 +4,7 @@ import "./VirtualReality.css";
 
 export default function VirtualRealityMain() {
   return (
-    <div className="genomics-main">
+    <div className="genomics-main"  id="vr-main">
       <div className="products-contents">
         <div className="card-container">
           <Nanome />

@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
-import "./VirtualReality.css";
+import "./DMPK.css";
 import { Dialog } from "@mui/material";
-import NanomeImg from "../../assets/nanome-img.jpg";
+import PKanalixImg from "../../assets/PKanalix-img.jpg";
 import YtIcon from "../../assets/yt.svg";
 
-export default function Nanome() {
+export default function PKanalix() {
   const [openVideoDialog, setOpenVideoDialog] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const [isOverflowing, setIsOverflowing] = useState(false);
@@ -18,8 +18,8 @@ export default function Nanome() {
 
   const downloadPDF = () => {
     const link = document.createElement("a");
-    link.href = "/Nanome_Flyer.pdf";
-    link.download = "Nanome_Flyer.pdf";
+    link.href = "/ILDsym_Flyer.pdf";
+    link.download = "ILDsym_Flyer.pdf";
     link.click();
   };
 
@@ -35,30 +35,22 @@ export default function Nanome() {
     <div className="right-sub-contents">
       <div className="title-productspage">
         <img
-          src={NanomeImg}
+          src={PKanalixImg}
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle">
-          <div className="title-name">Nanome</div>
+          <div className="title-name">PKanalix</div>
         </div>
       </div>
       <div className="subtitle-name">
-        CMolecular Design and Mixed Virtual Reality tool
+      Software for compartmental and non-compartmental analysis (NCA)
       </div>
       <div className="card-subdatas">
       <div
         className={`brief-contents ${isExpanded ? 'expanded' : 'collapsed'}`}
         ref={textRef}
       >
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nanome is a mixed virtual reality
-          software that revolutionizes the way scientists, researchers, and
-          educators interact with molecular structures on an atomic level. It
-          offers a 3D immersive environment where users can visualize and
-          interact with molecular formations intuitively. Designed for
-          collaboration, Nanome integrates seamlessly with other software and
-          databases, allowing global teams to work together in real time. This
-          platform accelerates discovery and development by making molecular
-          design more accessible and interactive.
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
         {isOverflowing && (
         <div onClick={() => setIsExpanded(!isExpanded)} className="view-button">
@@ -67,36 +59,22 @@ export default function Nanome() {
       )}
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          marginTop: "2%",
-          justifyContent: "end",
-        }}>
-        <div className="bronchure-yt" onClick={handleClickOpenVideoDialog}>
+      <div className="bottom-buttons">
+        <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
           <div className="icon-container-yt">
             <img src={YtIcon} className="yt-img" />
           </div>
         </div>
-        <div
+        {/* <div
           className="button-container"
           style={{ marginLeft: "3%" }}
           onClick={downloadPDF}>
           <a href="/brochure.pdf" download className="refined-animated-button">
             <div style={{ fontSize: "13px" }}>Brochure</div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="white"
-              viewBox="0 0 24 24"
-              width="24px"
-              height="24px"
-              id="download-icon">
-              <path d="M12 16l-4-4h3V4h2v8h3l-4 4zm0 2c-3.86 0-7 3.14-7 7h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.86-3.14-7-7-7z" />
-            </svg>
+            <i className="fa-solid fa-download" id="download-icon"></i>
             <div className="wave-animation"></div>
           </a>
-        </div>
+        </div> */}
 
         <Dialog
           open={openVideoDialog}
@@ -114,7 +92,7 @@ export default function Nanome() {
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/p8yt_7he3mU?origin=https://yourdomain.com"
+             src="https://www.youtube.com/embed/j5YJ8nh7uaA"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -4,7 +4,7 @@ import "./Biology.css";
 
 export default function BiologyMain() {
   return (
-    <div className="genomics-main">
+    <div className="genomics-main"  id="biology-main">
       <div className="products-contents">
           <div className="card-container">
             <SarVision_Biologics />
