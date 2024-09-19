@@ -51,13 +51,15 @@ export default function RENAsym() {
           (QST) software for predicting and understand drug-induced kidney
           injury
         </div>
-        {isOverflowing && (
-          <div
-            onClick={() => setIsExpanded(!isExpanded)}
-            className="view-button">
-            {isExpanded ? "" : "View More"}
-          </div>
-        )}
+        <div style={{ height: "2vh" }}>
+          {isOverflowing && (
+            <div
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="view-button">
+              {isExpanded ? "" : "View More"}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ export default function GeneBIS() {
       setIsOverflowing(true);
     }
   }, []);
-  
+
   const downloadPDF = () => {
     const link = document.createElement("a");
     link.href = "/GeneBIS.pdf";
@@ -35,10 +35,9 @@ export default function GeneBIS() {
         Chemical and Biology material Inventory Management system
       </div>
       <div className="card-subdatas">
-      <div
-        className={`brief-contents ${isExpanded ? 'expanded' : 'collapsed'}`}
-        ref={textRef}
-      >
+        <div
+          className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
+          ref={textRef}>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gene BIS is an Inventory
           Management System for chemical and biologics materials that
           streamlines management with advanced features. It includes a barcode
@@ -49,20 +48,24 @@ export default function GeneBIS() {
           into material receipt, requests, issues, zero inventory, and
           fast-moving materials, enhancing overall inventory optimization.
         </div>
-        {isOverflowing && (
-        <div onClick={() => setIsExpanded(!isExpanded)} className="view-button">
-          {isExpanded ? '' : 'View More'}
+        <div style={{ height: "2vh" }}>
+          {isOverflowing && (
+            <div
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="view-button">
+              {isExpanded ? "" : "View More"}
+            </div>
+          )}
         </div>
-      )}
       </div>
       <div className="bottom-buttons">
-      <div
-        className="button-container"
-        style={{ marginLeft: "3%", marginTop: "1%" }}
-        onClick={downloadPDF}>
-        <a href="/brochure.pdf" download className="refined-animated-button">
-          <div style={{ fontSize: "13px" }}>Brochure</div>
-          <svg
+        <div
+          className="button-container"
+          style={{ marginLeft: "3%", marginTop: "1%" }}
+          onClick={downloadPDF}>
+          <a href="/brochure.pdf" download className="refined-animated-button">
+            <div style={{ fontSize: "13px" }}>Brochure</div>
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="white"
               viewBox="0 0 24 24"
@@ -71,9 +74,9 @@ export default function GeneBIS() {
               id="download-icon">
               <path d="M12 16l-4-4h3V4h2v8h3l-4 4zm0 2c-3.86 0-7 3.14-7 7h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.86-3.14-7-7-7z" />
             </svg>
-          <div className="wave-animation"></div>
-        </a>
-      </div>
+            <div className="wave-animation"></div>
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -3,7 +3,6 @@ import GeneCISImg from "../../assets/geneCIS-img.jpg";
 import "./ELN_LIMS.css";
 
 export default function GeneCIS() {
-
   const [isExpanded, setIsExpanded] = useState(false);
   const [isOverflowing, setIsOverflowing] = useState(false);
   const textRef = useRef(null);
@@ -26,10 +25,9 @@ export default function GeneCIS() {
       </div>
       <div className="subtitle-name">Chemical Inventory System</div>
       <div className="card-subdatas">
-      <div
-        className={`brief-contents ${isExpanded ? 'expanded' : 'collapsed'}`}
-        ref={textRef}
-      >
+        <div
+          className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
+          ref={textRef}>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gene CIS optimizes chemical
           inventory management by digitizing legacy data, enabling chemists to
           seamlessly integrate and utilize historical chemicals. It tracks the
@@ -39,11 +37,15 @@ export default function GeneCIS() {
           dashboard and MIS reports, enhancing accuracy and operational
           efficiency.
         </div>
-        {isOverflowing && (
-        <div onClick={() => setIsExpanded(!isExpanded)} className="view-button">
-          {isExpanded ? '' : 'View More'}
+        <div style={{ height: "2vh" }}>
+          {isOverflowing && (
+            <div
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="view-button">
+              {isExpanded ? "" : "View More"}
+            </div>
+          )}
         </div>
-      )}
       </div>
     </div>
   );

@@ -28,10 +28,9 @@ export default function Vortex() {
         Intuitive Data Visualization & Analysis for Chemistry Decision Support
       </div>
       <div className="card-subdatas">
-      <div
-        className={`brief-contents ${isExpanded ? 'expanded' : 'collapsed'}`}
-        ref={textRef}
-      >
+        <div
+          className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
+          ref={textRef}>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VORTEX is an advanced data
           analysis and visualization module designed for managing and
           interacting with massive datasets across various data types, including
@@ -41,11 +40,15 @@ export default function Vortex() {
           large-scale datasets of millions of compounds or genomic sequences
         </div>
       </div>
-      {isOverflowing && (
-        <div onClick={() => setIsExpanded(!isExpanded)} className="view-button">
-          {isExpanded ? '' : 'View More'}
-        </div>
-      )}
+      <div style={{ height: "2vh" }}>
+        {isOverflowing && (
+          <div
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="view-button">
+            {isExpanded ? "" : "View More"}
+          </div>
+        )}
+      </div>
     </div>
   );
 }

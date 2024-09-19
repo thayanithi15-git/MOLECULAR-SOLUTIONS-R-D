@@ -36,29 +36,32 @@ export default function Medchem_Designer() {
       </div>
       <div className="card-subdatas">
         <div
-        className={`brief-contents ${isExpanded ? 'expanded' : 'collapsed'}`}
-        ref={textRef}
-      >
+          className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
+          ref={textRef}>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MedChem Designer is a chemical
           sketching tool that integrates advanced molecule drawing capabilities
           with quick and accurate ADMET property predictions from our top-rated
           ADMET Predictor software. These predictions include logP, logD(7.4),
           Polar Surface Area, and Lipinski's Rule of 5 calculations.
         </div>
-        {isOverflowing && (
-        <div onClick={() => setIsExpanded(!isExpanded)} className="view-button">
-          {isExpanded ? '' : 'View More'}
+        <div style={{ height: "2vh" }}>
+          {isOverflowing && (
+            <div
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="view-button">
+              {isExpanded ? "" : "View More"}
+            </div>
+          )}
         </div>
-      )}
       </div>
       <div className="bottom-buttons">
-      <div
-        className="button-container"
-        style={{ marginLeft: "3%", marginTop: "2%" }}
-        onClick={downloadPDF}>
-        <a href="/brochure.pdf" download className="refined-animated-button">
-          <div style={{ fontSize: "13px" }}>Brochure</div>
-          <svg
+        <div
+          className="button-container"
+          style={{ marginLeft: "3%", marginTop: "2%" }}
+          onClick={downloadPDF}>
+          <a href="/brochure.pdf" download className="refined-animated-button">
+            <div style={{ fontSize: "13px" }}>Brochure</div>
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="white"
               viewBox="0 0 24 24"
@@ -67,9 +70,9 @@ export default function Medchem_Designer() {
               id="download-icon">
               <path d="M12 16l-4-4h3V4h2v8h3l-4 4zm0 2c-3.86 0-7 3.14-7 7h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.86-3.14-7-7-7z" />
             </svg>
-          <div className="wave-animation"></div>
-        </a>
-      </div>
+            <div className="wave-animation"></div>
+          </a>
+        </div>
       </div>
     </div>
   );

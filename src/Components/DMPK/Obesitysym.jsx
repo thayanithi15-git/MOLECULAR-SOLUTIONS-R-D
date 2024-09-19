@@ -42,28 +42,31 @@ export default function Obesitysym() {
           <div className="title-name">Obesitysym</div>
         </div>
       </div>
-      <div className="subtitle-name">
-      Obesity QSP model
-      </div>
+      <div className="subtitle-name">Obesity QSP model</div>
       <div className="card-subdatas">
-      <div
-        className={`brief-contents ${isExpanded ? 'expanded' : 'collapsed'}`}
-        ref={textRef}
-      >
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OBESITYsym allows researchers and healthcare professionals to simulate the impact of obesity on drug
-metabolism, disease progression, and therapeutic interventions. This powerful tool aids in the
-development of personalized treatment strategies and enhances understanding of obesity-related health
-challenges, facilitating more effective and targeted research and clinical outcomes.
+        <div
+          className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
+          ref={textRef}>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OBESITYsym allows researchers and
+          healthcare professionals to simulate the impact of obesity on drug
+          metabolism, disease progression, and therapeutic interventions. This
+          powerful tool aids in the development of personalized treatment
+          strategies and enhances understanding of obesity-related health
+          challenges, facilitating more effective and targeted research and
+          clinical outcomes.
         </div>
-        {isOverflowing && (
-        <div onClick={() => setIsExpanded(!isExpanded)} className="view-button">
-          {isExpanded ? '' : 'View More'}
+        <div style={{ height: "2vh" }}>
+          {isOverflowing && (
+            <div
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="view-button">
+              {isExpanded ? "" : "View More"}
+            </div>
+          )}
         </div>
-      )}
       </div>
 
       <div className="bottom-buttons">
-        
         <div
           className="button-container"
           style={{ marginLeft: "3%" }}

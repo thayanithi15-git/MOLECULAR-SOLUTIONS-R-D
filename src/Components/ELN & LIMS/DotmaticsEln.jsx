@@ -27,10 +27,9 @@ export default function DotmaticsELN() {
         Simplify Scientific Discovery with a Powerful Online ELN
       </div>
       <div className="card-subdatas">
-      <div
-        className={`brief-contents ${isExpanded ? 'expanded' : 'collapsed'}`}
-        ref={textRef}
-      >
+        <div
+          className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
+          ref={textRef}>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dotmatics ELN enables seamless
           collaborative research by capturing and securely storing experimental
           data in a unified digital notebook. With flexible templates for
@@ -39,11 +38,15 @@ export default function DotmaticsELN() {
           between experiment registration, screening, and decision support,
           optimizing the innovation process.
         </div>
-        {isOverflowing && (
-        <div onClick={() => setIsExpanded(!isExpanded)} className="view-button">
-          {isExpanded ? '' : 'View More'}
+        <div style={{ height: "2vh" }}>
+          {isOverflowing && (
+            <div
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="view-button">
+              {isExpanded ? "" : "View More"}
+            </div>
+          )}
         </div>
-      )}
       </div>
     </div>
   );

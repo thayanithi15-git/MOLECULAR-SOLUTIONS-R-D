@@ -37,56 +37,59 @@ export default function Mara() {
       </div>
       <div className="subtitle-name">Your Scientific Discovery Co-pilot</div>
       <div className="card-subdatas">
-      <div
-        className={`brief-contents ${isExpanded ? 'expanded' : 'collapsed'}`}
-        ref={textRef}
-      >
+        <div
+          className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
+          ref={textRef}>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MARA (Molecular Analysis and
           Reasoning Assistant) is an advanced AI-driven system designed for
           Scientific Informatics. MARA acts as a scientific co-pilot, empowering
           your team to effortlessly build custom tools and workflows that
           integrate seamlessly with internal databases and operations.
         </div>
-        {isOverflowing && (
-        <div onClick={() => setIsExpanded(!isExpanded)} className="view-button">
-          {isExpanded ? '' : 'View More'}
+        <div style={{ height: "2vh" }}>
+          {isOverflowing && (
+            <div
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="view-button">
+              {isExpanded ? "" : "View More"}
+            </div>
+          )}
         </div>
-      )}
       </div>
 
-      <div className="bottom-buttons-yt" >
+      <div className="bottom-buttons-yt">
         <div
-          className="bronchurewithoutdownload" 
+          className="bronchurewithoutdownload"
           onClick={handleClickOpenVideoDialog}>
-          <div className="icon-container-yt" >
+          <div className="icon-container-yt">
             <img src={YtIcon} className="yt-img" />
           </div>
         </div>
-        </div>
+      </div>
 
-        <Dialog
-          open={openVideoDialog}
-          onClose={() => setOpenVideoDialog(false)}
-          fullScreen
-          PaperProps={{
-            style: {
-              margin: "16.2%",
-              height: "80vh",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            },
-          }}>
-          <video
-            className="ytvideo"
-            width="100%"
-            height="90%"
-            controls
-            src="/public/MARA.mp4"
-            title="Local video player">
-            Your browser does not support the video tag.
-          </video>
-        </Dialog>
+      <Dialog
+        open={openVideoDialog}
+        onClose={() => setOpenVideoDialog(false)}
+        fullScreen
+        PaperProps={{
+          style: {
+            margin: "16.2%",
+            height: "80vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          },
+        }}>
+        <video
+          className="ytvideo"
+          width="100%"
+          height="90%"
+          controls
+          src="/public/MARA.mp4"
+          title="Local video player">
+          Your browser does not support the video tag.
+        </video>
+      </Dialog>
     </div>
   );
 }

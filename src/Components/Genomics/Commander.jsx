@@ -48,14 +48,15 @@ export default function Commander() {
           interpretation and insights. Ideal for small labs, it streamlines
           research processes and enhances productivity.
         </div>
-
-        {isOverflowing && (
-          <div
-            onClick={() => setIsExpanded(!isExpanded)}
-            className="view-button">
-            {isExpanded ? "" : "View More"}
-          </div>
-        )}
+        <div style={{ height: "2vh" }}>
+          {isOverflowing && (
+            <div
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="view-button">
+              {isExpanded ? "" : "View More"}
+            </div>
+          )}
+        </div>
       </div>
       <div className="bottom-buttons">
         <div

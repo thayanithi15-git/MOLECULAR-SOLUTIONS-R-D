@@ -43,20 +43,23 @@ export default function PKanalix() {
         </div>
       </div>
       <div className="subtitle-name">
-      Software for compartmental and non-compartmental analysis (NCA)
+        Software for compartmental and non-compartmental analysis (NCA)
       </div>
       <div className="card-subdatas">
-      <div
-        className={`brief-contents ${isExpanded ? 'expanded' : 'collapsed'}`}
-        ref={textRef}
-      >
+        <div
+          className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
+          ref={textRef}>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
-        {isOverflowing && (
-        <div onClick={() => setIsExpanded(!isExpanded)} className="view-button">
-          {isExpanded ? '' : 'View More'}
+        <div style={{ height: "2vh" }}>
+          {isOverflowing && (
+            <div
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="view-button">
+              {isExpanded ? "" : "View More"}
+            </div>
+          )}
         </div>
-      )}
       </div>
 
       <div className="bottom-buttons">
@@ -92,7 +95,7 @@ export default function PKanalix() {
           <iframe
             width="100%"
             height="100%"
-             src="https://www.youtube.com/embed/j5YJ8nh7uaA"
+            src="https://www.youtube.com/embed/j5YJ8nh7uaA"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

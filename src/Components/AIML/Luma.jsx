@@ -46,10 +46,9 @@ export default function Luma() {
         The AI-native Multimodal Scientific Intelligence Platform
       </div>
       <div className="card-subdatas">
-      <div
-        className={`brief-contents ${isExpanded ? 'expanded' : 'collapsed'}`}
-        ref={textRef}
-      >
+        <div
+          className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
+          ref={textRef}>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LUMA is a low-code laboratory
           informatics platform by Dotmatics that integrates with various
           scientific software to streamline data management and collaboration.
@@ -57,15 +56,19 @@ export default function Luma() {
           efficiently organize and share data. LUMA enhances research
           productivity by tailoring to unique scientific needs.
         </div>
-        {isOverflowing && (
-        <div onClick={() => setIsExpanded(!isExpanded)} className="view-button">
-          {isExpanded ? '' : 'View More'}
+        <div style={{ height: "2vh" }}>
+          {isOverflowing && (
+            <div
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="view-button">
+              {isExpanded ? "" : "View More"}
+            </div>
+          )}
         </div>
-      )}
       </div>
 
       <div className="bottom-buttons">
-        <div className="bronchure-yt" onClick={handleClickOpenVideoDialog}>
+        <div className="bronchure-y" onClick={handleClickOpenVideoDialog}>
           <div className="icon-container-yt">
             <img src={YtIcon} className="yt-img" />
           </div>
@@ -88,30 +91,30 @@ export default function Luma() {
             <div className="wave-animation"></div>
           </a>
         </div>
-        </div>
+      </div>
 
-        <Dialog
-          open={openVideoDialog}
-          onClose={() => setOpenVideoDialog(false)}
-          fullScreen
-          PaperProps={{
-            style: {
-              margin: "16.2%",
-              height: "80vh",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            },
-          }}>
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/1Gi4Ruse2QQ?origin=https://yourdomain.com"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen></iframe>
-        </Dialog>
+      <Dialog
+        open={openVideoDialog}
+        onClose={() => setOpenVideoDialog(false)}
+        fullScreen
+        PaperProps={{
+          style: {
+            margin: "16.2%",
+            height: "80vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          },
+        }}>
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/1Gi4Ruse2QQ?origin=https://yourdomain.com"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen></iframe>
+      </Dialog>
     </div>
   );
 }

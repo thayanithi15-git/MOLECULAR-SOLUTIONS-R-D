@@ -54,13 +54,15 @@ export default function MonolixSuite() {
           used for preclinical and clinical population PK/PD modeling and for
           Systems Pharmacology.
         </div>
-        {isOverflowing && (
-          <div
-            onClick={() => setIsExpanded(!isExpanded)}
-            className="view-button">
-            {isExpanded ? "" : "View More"}
-          </div>
-        )}
+        <div style={{ height: "2vh" }}>
+          {isOverflowing && (
+            <div
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="view-button">
+              {isExpanded ? "" : "View More"}
+            </div>
+          )}
+        </div>
       </div>
 
       <div className="bottom-buttons">
@@ -104,7 +106,7 @@ export default function MonolixSuite() {
           <iframe
             width="100%"
             height="100%"
-             src="https://www.youtube.com/embed/Hjx5v1O85Mo"
+            src="https://www.youtube.com/embed/Hjx5v1O85Mo"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

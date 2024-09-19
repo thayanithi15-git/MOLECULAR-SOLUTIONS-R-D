@@ -46,10 +46,9 @@ export default function SarVision_Biologics() {
         Biologics SAR data analysis for Proteins, Peptides, Antibody and PROTACS
       </div>
       <div className="card-subdatas">
-      <div
-        className={`brief-contents ${isExpanded ? 'expanded' : 'collapsed'}`}
-        ref={textRef}
-      >
+        <div
+          className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
+          ref={textRef}>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SARvision | Biologics is a desktop
           application designed to transform biologics informatics. With its
           intuitive smart interface, it enables users to read, organize, and
@@ -63,15 +62,19 @@ export default function SarVision_Biologics() {
           enhances research workflow by providing deeper insights and
           streamlining data management for more impactful discoveries
         </div>
-        {isOverflowing && (
-        <div onClick={() => setIsExpanded(!isExpanded)} className="view-button">
-          {isExpanded ? '' : 'View More'}
+        <div style={{ height: "2vh" }}>
+          {isOverflowing && (
+            <div
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="view-button">
+              {isExpanded ? "" : "View More"}
+            </div>
+          )}
         </div>
-      )}
       </div>
 
       <div className="bottom-buttons">
-        <div className="bronchure-yt" onClick={handleClickOpenVideoDialog}>
+        <div className="bronchure-y" onClick={handleClickOpenVideoDialog}>
           <div className="icon-container-yt">
             <img src={YtIcon} className="yt-img" />
           </div>

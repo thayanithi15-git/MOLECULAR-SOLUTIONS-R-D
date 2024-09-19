@@ -46,10 +46,9 @@ export default function Nanome() {
         CMolecular Design and Mixed Virtual Reality tool
       </div>
       <div className="card-subdatas">
-      <div
-        className={`brief-contents ${isExpanded ? 'expanded' : 'collapsed'}`}
-        ref={textRef}
-      >
+        <div
+          className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
+          ref={textRef}>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nanome is a mixed virtual reality
           software that revolutionizes the way scientists, researchers, and
           educators interact with molecular structures on an atomic level. It
@@ -60,21 +59,19 @@ export default function Nanome() {
           platform accelerates discovery and development by making molecular
           design more accessible and interactive.
         </div>
-        {isOverflowing && (
-        <div onClick={() => setIsExpanded(!isExpanded)} className="view-button">
-          {isExpanded ? '' : 'View More'}
+        <div style={{ height: "2vh" }}>
+          {isOverflowing && (
+            <div
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="view-button">
+              {isExpanded ? "" : "View More"}
+            </div>
+          )}
         </div>
-      )}
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          marginTop: "2%",
-          justifyContent: "end",
-        }}>
-        <div className="bronchure-yt" onClick={handleClickOpenVideoDialog}>
+      <div className="bottom-buttons">
+        <div className="bronchure-y" onClick={handleClickOpenVideoDialog}>
           <div className="icon-container-yt">
             <img src={YtIcon} className="yt-img" />
           </div>

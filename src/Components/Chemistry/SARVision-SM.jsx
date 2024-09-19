@@ -47,10 +47,9 @@ export default function SarVision_SM() {
         A Comprehensive Tool for Chemical Data Analysis
       </div>
       <div className="card-subdatas">
-      <div
-        className={`brief-contents ${isExpanded ? 'expanded' : 'collapsed'}`}
-        ref={textRef}
-      >
+        <div
+          className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
+          ref={textRef}>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SAR vision|SM is a desktop
           application that allows users to intuitively navigate chemical
           information and identify structure-property relationships. It provides
@@ -62,15 +61,19 @@ export default function SarVision_SM() {
           your chemical data analysis with SAR vision advanced tools and
           user-friendly interface.
         </div>
-        {isOverflowing && (
-        <div onClick={() => setIsExpanded(!isExpanded)} className="view-button">
-          {isExpanded ? '' : 'View More'}
+        <div style={{ height: "2vh" }}>
+          {isOverflowing && (
+            <div
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="view-button">
+              {isExpanded ? "" : "View More"}
+            </div>
+          )}
         </div>
-      )}
       </div>
 
       <div className="bottom-buttons">
-        <div className="bronchure-yt" onClick={handleClickOpenVideoDialog}>
+        <div className="bronchure-y" onClick={handleClickOpenVideoDialog}>
           <div className="icon-container-yt">
             <img src={YtIcon} className="yt-img" />
           </div>

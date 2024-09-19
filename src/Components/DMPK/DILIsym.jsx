@@ -43,21 +43,25 @@ export default function DILIsym() {
         </div>
       </div>
       <div className="subtitle-name">
-      Drug-Induced Liver Injury prediction tool
+        Drug-Induced Liver Injury prediction tool
       </div>
       <div className="card-subdatas">
-      <div
-        className={`brief-contents ${isExpanded ? 'expanded' : 'collapsed'}`}
-        ref={textRef}
-      >
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DILIsym is Quantitative Systems Toxicology (QST) software capable of predicting and explaining
+        <div
+          className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
+          ref={textRef}>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DILIsym is Quantitative Systems
+          Toxicology (QST) software capable of predicting and explaining
           Drug-Induced Liver Injury (DILI)
         </div>
-        {isOverflowing && (
-        <div onClick={() => setIsExpanded(!isExpanded)} className="view-button">
-          {isExpanded ? '' : 'View More'}
+        <div style={{ height: "2vh" }}>
+          {isOverflowing && (
+            <div
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="view-button">
+              {isExpanded ? "" : "View More"}
+            </div>
+          )}
         </div>
-      )}
       </div>
 
       <div className="bottom-buttons">
@@ -101,7 +105,7 @@ export default function DILIsym() {
           <iframe
             width="100%"
             height="100%"
-             src="https://www.youtube.com/embed/rwZD7yolWJU"
+            src="https://www.youtube.com/embed/rwZD7yolWJU"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

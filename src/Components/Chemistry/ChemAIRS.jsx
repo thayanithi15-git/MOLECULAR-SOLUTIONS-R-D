@@ -48,9 +48,8 @@ export default function ChemAIRS() {
       </div>
       <div className="card-subdatas">
         <div
-        className={`brief-contents ${isExpanded ? 'expanded' : 'collapsed'}`}
-        ref={textRef}
-      >
+          className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
+          ref={textRef}>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SARvision | Biologics is a desktop
           application designed to transform biologics informatics. With its
           intuitive smart interface, it enables users to read, organize, and
@@ -64,11 +63,15 @@ export default function ChemAIRS() {
           enhances research workflow by providing deeper insights and
           streamlining data management for more impactful discoveries
         </div>
-        {isOverflowing && (
-        <div onClick={() => setIsExpanded(!isExpanded)} className="view-button">
-          {isExpanded ? '' : 'View More'}
+        <div style={{ height: "2vh" }}>
+          {isOverflowing && (
+            <div
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="view-button">
+              {isExpanded ? "" : "View More"}
+            </div>
+          )}
         </div>
-      )}
       </div>
 
       <div className="bottom-buttons">
@@ -95,30 +98,30 @@ export default function ChemAIRS() {
             <div className="wave-animation"></div>
           </a>
         </div>
-        </div>
+      </div>
 
-        <Dialog
-          open={openVideoDialog}
-          onClose={() => setOpenVideoDialog(false)}
-          fullScreen
-          PaperProps={{
-            style: {
-              margin: "16.2%",
-              height: "80vh",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            },
-          }}>
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/diU-ppGqnqI?autoplay=1"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen></iframe>
-        </Dialog>
+      <Dialog
+        open={openVideoDialog}
+        onClose={() => setOpenVideoDialog(false)}
+        fullScreen
+        PaperProps={{
+          style: {
+            margin: "16.2%",
+            height: "80vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          },
+        }}>
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/diU-ppGqnqI?autoplay=1"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen></iframe>
+      </Dialog>
     </div>
   );
 }

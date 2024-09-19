@@ -43,21 +43,26 @@ export default function NAFLDsym() {
         </div>
       </div>
       <div className="subtitle-name">
-      Software for modeling nonalcoholic fatty liver disease
+        Software for modeling nonalcoholic fatty liver disease
       </div>
       <div className="card-subdatas">
-      <div
-        className={`brief-contents ${isExpanded ? 'expanded' : 'collapsed'}`}
-        ref={textRef}
-      >
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NAFLDsym is a computational model of nonalcoholic fatty liver disease (NAFLD) and can be used to
-          predict efficacy for treatment modalities developed for treating NAFLD and NASH.
+        <div
+          className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
+          ref={textRef}>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NAFLDsym is a computational model
+          of nonalcoholic fatty liver disease (NAFLD) and can be used to predict
+          efficacy for treatment modalities developed for treating NAFLD and
+          NASH.
         </div>
-        {isOverflowing && (
-        <div onClick={() => setIsExpanded(!isExpanded)} className="view-button">
-          {isExpanded ? '' : 'View More'}
+        <div style={{ height: "2vh" }}>
+          {isOverflowing && (
+            <div
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="view-button">
+              {isExpanded ? "" : "View More"}
+            </div>
+          )}
         </div>
-      )}
       </div>
 
       <div className="bottom-buttons">

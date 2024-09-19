@@ -43,21 +43,25 @@ export default function IPFsym() {
         </div>
       </div>
       <div className="subtitle-name">
-      QSP software for Idiopathic Pulmonary Fibrosis (IPF)
+        QSP software for Idiopathic Pulmonary Fibrosis (IPF)
       </div>
       <div className="card-subdatas">
-      <div
-        className={`brief-contents ${isExpanded ? 'expanded' : 'collapsed'}`}
-        ref={textRef}
-      >
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The IPFsym® QSP modeling software is a mechanistic, mathematical model of idiopathic pulmonary
-          fibrosis (IPF).
+        <div
+          className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
+          ref={textRef}>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The IPFsym® QSP modeling software
+          is a mechanistic, mathematical model of idiopathic pulmonary fibrosis
+          (IPF).
         </div>
-        {isOverflowing && (
-        <div onClick={() => setIsExpanded(!isExpanded)} className="view-button">
-          {isExpanded ? '' : 'View More'}
+        <div style={{ height: "2vh" }}>
+          {isOverflowing && (
+            <div
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="view-button">
+              {isExpanded ? "" : "View More"}
+            </div>
+          )}
         </div>
-      )}
       </div>
 
       <div className="bottom-buttons">
@@ -101,7 +105,7 @@ export default function IPFsym() {
           <iframe
             width="100%"
             height="100%"
-           src="https://www.youtube.com/embed/SLYzK7BPW40"
+            src="https://www.youtube.com/embed/SLYzK7BPW40"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

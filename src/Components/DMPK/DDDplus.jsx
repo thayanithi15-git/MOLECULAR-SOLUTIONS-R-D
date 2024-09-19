@@ -43,24 +43,30 @@ export default function DDDplus() {
         </div>
       </div>
       <div className="subtitle-name">
-      Simulation software for the in vitro dissolution experiment of pharmaceutical
-      dosage forms
+        Simulation software for the in vitro dissolution experiment of
+        pharmaceutical dosage forms
       </div>
       <div className="card-subdatas">
-      <div
-        className={`brief-contents ${isExpanded ? 'expanded' : 'collapsed'}`}
-        ref={textRef}
-      >
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DDDPlus is the industry’s leading mechanistic in vitro dissolution software for formulation and
-analytical scientists. With DDDPlus, you can model and simulate the invitro dissolution of active
-pharmaceutical ingredients (API) and formulation excipients under various experimental conditions in
-seconds and begin making informed decisions to help improve your chances for success.
+        <div
+          className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
+          ref={textRef}>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DDDPlus is the industry’s leading
+          mechanistic in vitro dissolution software for formulation and
+          analytical scientists. With DDDPlus, you can model and simulate the
+          invitro dissolution of active pharmaceutical ingredients (API) and
+          formulation excipients under various experimental conditions in
+          seconds and begin making informed decisions to help improve your
+          chances for success.
         </div>
-        {isOverflowing && (
-        <div onClick={() => setIsExpanded(!isExpanded)} className="view-button">
-          {isExpanded ? '' : 'View More'}
+        <div style={{ height: "2vh" }}>
+          {isOverflowing && (
+            <div
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="view-button">
+              {isExpanded ? "" : "View More"}
+            </div>
+          )}
         </div>
-      )}
       </div>
 
       <div className="bottom-buttons">
