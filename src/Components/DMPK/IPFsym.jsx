@@ -18,8 +18,8 @@ export default function IPFsym() {
 
   const downloadPDF = () => {
     const link = document.createElement("a");
-    link.href = "/ILDsym_Flyer.pdf";
-    link.download = "ILDsym_Flyer.pdf";
+    link.href = "/IPFsym.pdf";
+    link.download = "IPFsym.pdf";
     link.click();
   };
 

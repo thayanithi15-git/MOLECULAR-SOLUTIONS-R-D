@@ -18,8 +18,8 @@ export default function Obesitysym() {
 
   const downloadPDF = () => {
     const link = document.createElement("a");
-    link.href = "/ILDsym_Flyer.pdf";
-    link.download = "ILDsym_Flyer.pdf";
+    link.href = "/OBESITYsym-Flyer.pdf";
+    link.download = "OBESITYsym-Flyer.pdf";
     link.click();
   };
 

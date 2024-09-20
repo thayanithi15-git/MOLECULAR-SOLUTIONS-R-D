@@ -18,8 +18,8 @@ export default function DDDplus() {
 
   const downloadPDF = () => {
     const link = document.createElement("a");
-    link.href = "/ILDsym_Flyer.pdf";
-    link.download = "ILDsym_Flyer.pdf";
+    link.href = "/DDDPlus.pdf";
+    link.download = "DDDPlus.pdf";
     link.click();
   };
 

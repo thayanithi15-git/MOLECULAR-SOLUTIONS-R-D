@@ -18,8 +18,8 @@ export default function MembranePlus() {
 
   const downloadPDF = () => {
     const link = document.createElement("a");
-    link.href = "/ILDsym_Flyer.pdf";
-    link.download = "ILDsym_Flyer.pdf";
+    link.href = "/MembranePlus-v3-Flyer.pdf";
+    link.download = "MembranePlus-v3-Flyer.pdf";
     link.click();
   };
 

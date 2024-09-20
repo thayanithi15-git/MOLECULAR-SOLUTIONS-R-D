@@ -18,8 +18,8 @@ export default function NAFLDsym() {
 
   const downloadPDF = () => {
     const link = document.createElement("a");
-    link.href = "/ILDsym_Flyer.pdf";
-    link.download = "ILDsym_Flyer.pdf";
+    link.href = "/NAFLDsym.pdf";
+    link.download = "NAFLDsym.pdf";
     link.click();
   };
 

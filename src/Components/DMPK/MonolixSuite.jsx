@@ -18,8 +18,8 @@ export default function MonolixSuite() {
 
   const downloadPDF = () => {
     const link = document.createElement("a");
-    link.href = "/ILDsym_Flyer.pdf";
-    link.download = "ILDsym_Flyer.pdf";
+    link.href = "/MonolixSuite-2023.pdf";
+    link.download = "MonolixSuite-2023.pdf";
     link.click();
   };
 
