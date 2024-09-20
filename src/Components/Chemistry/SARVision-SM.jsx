@@ -53,12 +53,12 @@ export default function SarVision_SM() {
           ref={textRef}>
           SAR vision|SM is a desktop
           application that allows users to intuitively navigate chemical
-          information and identify structure-property relationships. It provides
+          information and identify structure-property relationships. <br/><br/>It provides
           a structured environment to identify dataset-specific scaffolds and
           chemotypes without using a proprietary algorithm for fast substructure
-          identification. The application combines rapid substructure
+          identification. <br/><br/>The application combines rapid substructure
           enumeration with knowledge- based rules, facilitating dataset
-          navigation and highlighting important chemical substructures. Enhance
+          navigation and highlighting important chemical substructures. <br/><br/>Enhance
           your chemical data analysis with SAR vision advanced tools and
           user-friendly interface.
         </div>

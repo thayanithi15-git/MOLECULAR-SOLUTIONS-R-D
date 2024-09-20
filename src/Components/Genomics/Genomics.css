@@ -348,10 +348,13 @@
   display: flex;
   align-items: center;
   margin-top: 0%;
-  justify-content: end;
+  width: 100%;
+  /* border: 1px solid black; */
+  /* justify-content: end; */
 }
 .bottom-buttons-yt{
   margin-left: 50%;
+
 }
 .brief-contents {
   overflow: hidden;
@@ -375,7 +378,8 @@
 }
 
 .view-button {
-  margin-top: 2%;
+  /* margin-top: 2%; */
+  margin-bottom: 2%;
   margin-left: 2%;
   /* text-decoration: underline; */
   color: rgb(35, 35, 250);

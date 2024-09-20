@@ -36,7 +36,7 @@ export default function Vortex() {
           VORTEX is an advanced data
           analysis and visualization module designed for managing and
           interacting with massive datasets across various data types, including
-          numeric, textual, image, and chemical structures. It includes
+          numeric, textual, image, and chemical structures. <br/><br/>It includes
           specialized tools for cheminformatics analyses like R-group,
           enumeration, SAR, and matched molecular pairs, while supporting
           large-scale datasets of millions of compounds or genomic sequences

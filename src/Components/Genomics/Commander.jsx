@@ -45,7 +45,7 @@ export default function Commander() {
           sequence quality, quantity, coverage, mutations, and variants. It
           features a GUI-based interface that eliminates the need for
           command-line scripting, making complex analyses accessible with a
-          click. Compatible with major NGS platforms like Oxford Nanopore,
+          click. <br/><br/>Compatible with major NGS platforms like Oxford Nanopore,
           Illumina, Thermo Fisher Scientific, and PacBio, it supports rapid data
           interpretation and insights. Ideal for small labs, it streamlines
           research processes and enhances productivity.

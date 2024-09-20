@@ -60,7 +60,7 @@ export default function ChemAIRS() {
           documented reactions for verification. <br/><br/>ChemAIRS accelerates the
           discovery and development of new chemical entities, benefiting
           chemical and pharmaceutical sciences with its comprehensive analysis
-          capabilities and user-friendly interface. This tool is pivotal for
+          capabilities and user-friendly interface. <br/><br/>This tool is pivotal for
           chemists and researchers in optimizing synthetic routes efficiently.
         </div>
         <div style={{ height: "2vh" }}>
@@ -75,12 +75,7 @@ export default function ChemAIRS() {
       </div>
 
       <div className="bottom-buttons">
-        <div className="bronchure-y" onClick={handleClickOpenVideoDialog}>
-          <div className="icon-container-yt">
-            <img src={YtIcon} className="yt-img" />
-          </div>
-        </div>
-        <div
+      <div
           className="button-container"
           style={{ marginLeft: "3%" }}
           onClick={downloadPDF}>
@@ -97,6 +92,11 @@ export default function ChemAIRS() {
             </svg>
             <div className="wave-animation"></div>
           </a>
+        </div>
+        <div className="bronchure-y" onClick={handleClickOpenVideoDialog}>
+          <div className="icon-container-yt">
+            <img src={YtIcon} className="yt-img" />
+          </div>
         </div>
       </div>
 

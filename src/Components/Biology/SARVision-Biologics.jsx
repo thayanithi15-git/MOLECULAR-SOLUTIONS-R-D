@@ -50,16 +50,16 @@ export default function SarVision_Biologics() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          SARvision | Biologics is a desktop
+          SARvision|Biologics is a desktop
           application designed to transform biologics informatics. With its
           intuitive smart interface, it enables users to read, organize, and
           analyze data on peptides, proteins, nucleic acids, chemically modified
-          residues, and unnatural amino acids. The software has advanced
+          residues, and unnatural amino acids. <br/><br/>The software has advanced
           visualization tools like mutation cliffs, sequence maps, graphs and
           efficient sequence alignments for large datasets. Actively filter data
-          based on chemotype, scaffold, data range and properties. Users can
+          based on chemotype, scaffold, data range and properties. <br/><br/>Users can
           seamlessly export their analysis to Excel and leverage advanced search
-          capabilities for efficient data retrieval. SARvision | Biologics
+          capabilities for efficient data retrieval. SARvision|Biologics
           enhances research workflow by providing deeper insights and
           streamlining data management for more impactful discoveries
         </div>
@@ -75,12 +75,7 @@ export default function SarVision_Biologics() {
       </div>
 
       <div className="bottom-buttons">
-        <div className="bronchure-y" onClick={handleClickOpenVideoDialog}>
-          <div className="icon-container-yt">
-            <img src={YtIcon} className="yt-img" />
-          </div>
-        </div>
-        <div
+      <div
           className="button-container"
           style={{ marginLeft: "3%" }}
           onClick={downloadPDF}>
@@ -98,6 +93,12 @@ export default function SarVision_Biologics() {
             <div className="wave-animation"></div>
           </a>
         </div>
+        <div className="bronchure-y" onClick={handleClickOpenVideoDialog}>
+          <div className="icon-container-yt">
+            <img src={YtIcon} className="yt-img" />
+          </div>
+        </div>
+        
 
         <Dialog
       className="yt-dialog"
