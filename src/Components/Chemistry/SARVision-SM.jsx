@@ -70,7 +70,7 @@ export default function SarVision_SM() {
               {isExpanded ? "" : "View More"}
             </div>
           )}
-        </div>
+        </div>    
       </div>
 
       <div className="bottom-buttons">
