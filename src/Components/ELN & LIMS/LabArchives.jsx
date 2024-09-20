@@ -42,7 +42,7 @@ export default function LabArchives() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;GeneELN electronically capture /
+          GeneELN electronically capture /
           document all the research, experiments, calculations and procedures
           performed in laboratory setup.
         </div>

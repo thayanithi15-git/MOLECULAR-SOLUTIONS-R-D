@@ -38,7 +38,7 @@ export default function GeneBIS() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;Gene BIS is an Inventory
+          Gene BIS is an Inventory
           Management System for chemical and biologics materials that
           streamlines management with advanced features. It includes a barcode
           mechanism for labeling, printing, and storing materials in specified

@@ -51,7 +51,7 @@ export default function Simulx() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;The ILDsym® QSP modeling software
+         The ILDsym® QSP modeling software
           is a mechanistic, mathematical model of interstitial lung disease
           (ILD) associated with systemic sclerosis (SSc)
         </div>

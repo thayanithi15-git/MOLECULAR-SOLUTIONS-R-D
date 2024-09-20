@@ -38,7 +38,7 @@ export default function Commander() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;COMMANDER is a user-friendly
+          COMMANDER is a user-friendly
           software for NGS data analysis, generating professional reports on
           sequence quality, quantity, coverage, mutations, and variants. It
           features a GUI-based interface that eliminates the need for

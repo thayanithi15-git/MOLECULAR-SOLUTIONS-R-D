@@ -49,7 +49,7 @@ export default function DILIsym() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;DILIsym is Quantitative Systems
+          DILIsym is Quantitative Systems
           Toxicology (QST) software capable of predicting and explaining
           Drug-Induced Liver Injury (DILI)
         </div>

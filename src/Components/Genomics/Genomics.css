@@ -72,6 +72,7 @@
   color: #667085;
   font-size: 14px;
   margin-top: 5%;
+  margin-left: 1.5%;
 }
 
 .card-container::-webkit-scrollbar,
@@ -605,7 +606,7 @@
   
 }
 
-@media (min-width: 640px) and (max-width: 1270px){
+@media (min-width: 640px) and (max-width: 1300px){
   .bottom-buttons{
     /* margin-top: -5%; */
     margin-left: 0%;
@@ -641,6 +642,7 @@
   }
   .genomics-main{
     /* height: 100%; */
+    /* background-color: #565add; */
   }
   
 }

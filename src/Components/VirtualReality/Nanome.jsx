@@ -49,7 +49,7 @@ export default function Nanome() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;Nanome is a mixed virtual reality
+          Nanome is a mixed virtual reality
           software that revolutionizes the way scientists, researchers, and
           educators interact with molecular structures on an atomic level. It
           offers a 3D immersive environment where users can visualize and

@@ -47,7 +47,7 @@ export default function RENAsym() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;Quantitative systems toxicology
+          Quantitative systems toxicology
           (QST) software for predicting and understand drug-induced kidney
           injury
         </div>

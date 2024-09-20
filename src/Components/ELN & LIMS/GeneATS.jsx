@@ -47,7 +47,7 @@ export default function GeneATS() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;Gene ATS optimizes the workflow
+         Gene ATS optimizes the workflow
           for analytical sample processing by facilitating seamless ticket
           generation and management. It ensures that sample analysis requests
           are efficiently tracked and processed, enhancing communication and

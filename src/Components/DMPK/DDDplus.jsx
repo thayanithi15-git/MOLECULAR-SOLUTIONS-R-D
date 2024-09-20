@@ -49,7 +49,7 @@ export default function DDDplus() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;DDDPlus is the industry’s leading
+          DDDPlus is the industry’s leading
           mechanistic in vitro dissolution software for formulation and
           analytical scientists. With DDDPlus, you can model and simulate the
           invitro dissolution of active pharmaceutical ingredients (API) and

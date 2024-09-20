@@ -49,7 +49,7 @@ export default function AdmetPredictor() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;ADMET Predictor is a machine
+          ADMET Predictor is a machine
           learning platform for ADMET modeling, offering enhanced features for
           data analysis, metabolism prediction, and AI-powered drug design.
         </div>

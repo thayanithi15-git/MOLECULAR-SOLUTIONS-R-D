@@ -50,7 +50,7 @@ export default function ChemAIRS() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;SARvision | Biologics is a desktop
+          SARvision | Biologics is a desktop
           application designed to transform biologics informatics. With its
           intuitive smart interface, it enables users to read, organize, and
           analyze data on peptides, proteins, nucleic acids, chemically modified

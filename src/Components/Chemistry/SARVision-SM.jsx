@@ -50,7 +50,7 @@ export default function SarVision_SM() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;SAR vision|SM is a desktop
+          SAR vision|SM is a desktop
           application that allows users to intuitively navigate chemical
           information and identify structure-property relationships. It provides
           a structured environment to identify dataset-specific scaffolds and

@@ -49,7 +49,7 @@ export default function Luma() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;LUMA is a low-code laboratory
+          LUMA is a low-code laboratory
           informatics platform by Dotmatics that integrates with various
           scientific software to streamline data management and collaboration.
           It offers visualization and analysis tools, enabling scientists to

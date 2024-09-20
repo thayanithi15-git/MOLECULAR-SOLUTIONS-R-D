@@ -51,7 +51,7 @@ export default function GastroPlus() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;GastroPlus is a mechanistically based simulation software package that simulates intravenous, oral, oral cavity, ocular, inhalation, dermal, subcutaneous, and intramuscular absorption, biopharmaceutics, pharmacokinetics, and pharmacodynamics in humans and animals. This smoothly integrated platform combines a user-friendly interface with powerful science to help you make faster and more informed project decisions! GastroPlus has been separated into modules to make it easier for companies to license only the features they need in each department.
+          GastroPlus is a mechanistically based simulation software package that simulates intravenous, oral, oral cavity, ocular, inhalation, dermal, subcutaneous, and intramuscular absorption, biopharmaceutics, pharmacokinetics, and pharmacodynamics in humans and animals. This smoothly integrated platform combines a user-friendly interface with powerful science to help you make faster and more informed project decisions! GastroPlus has been separated into modules to make it easier for companies to license only the features they need in each department.
         </div>
         <div style={{ height: "2vh" }}>
           {isOverflowing && (
