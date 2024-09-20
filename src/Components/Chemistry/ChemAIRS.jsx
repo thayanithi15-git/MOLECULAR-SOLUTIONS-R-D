@@ -51,13 +51,13 @@ export default function ChemAIRS() {
           ref={textRef}>
           ChemAIRS is a retrosynthetic analysis tool that enhances chemical
           synthesis using advanced deep learning algorithms and extensive data
-          mining. It assesses reaction feasibility, functional group
+          mining. <br/><br />It assesses reaction feasibility, functional group
           compatibility, and chiral synthesis strategies to generate practical
           synthetic routes. The tool provides literature precedents for these
-          pathways, enhancing reliability. Unique features include automatic
+          pathways, enhancing reliability. <br/><br/>Unique features include automatic
           generation of multiple synthetic routes, consideration of chiral
           synthesis for enantiomerically pure compounds, and integration with
-          documented reactions for verification. ChemAIRS accelerates the
+          documented reactions for verification. <br/><br/>ChemAIRS accelerates the
           discovery and development of new chemical entities, benefiting
           chemical and pharmaceutical sciences with its comprehensive analysis
           capabilities and user-friendly interface. This tool is pivotal for

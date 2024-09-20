@@ -55,8 +55,8 @@ export default function AdmetPredictor() {
           It accurately predicts over 175 properties including solubility, logP,
           pKa, sites of CYP metabolism, and Ames mutagenicity. The ADMET
           Predictor rapidly and easily create high-quality QSAR/QSPR models
-          based on your own data. The newest module offers advanced data mining,
-          clustering, and matched molecular pair analysis.<br/><br/> The program has an
+          based on your own data. <br/><br/>The newest module offers advanced data mining,
+          clustering, and matched molecular pair analysis. The program has an
           intuitive user interface that allows one to easily manipulate and
           visualize data.
         </div>
