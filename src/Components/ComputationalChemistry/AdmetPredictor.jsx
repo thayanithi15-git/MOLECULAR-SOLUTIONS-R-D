@@ -50,12 +50,13 @@ export default function AdmetPredictor() {
           ref={textRef}>
           ADMET Predictor® is the flagship machine learning platform for ADMET
           modeling with extended capabilities for data analysis, metabolism
-          prediction, and AI-driven drug design. <br/>It accurately predicts over 175
-          properties including solubility, logP, pKa, sites of CYP metabolism,
-          and Ames mutagenicity. The ADMET Modeler™ module in ADMET Predictor
-          allows one to rapidly and easily create high-quality QSAR/QSPR models
+          prediction, and AI-driven drug design. <br />
+          <br />
+          It accurately predicts over 175 properties including solubility, logP,
+          pKa, sites of CYP metabolism, and Ames mutagenicity. The ADMET
+          Predictor rapidly and easily create high-quality QSAR/QSPR models
           based on your own data. The newest module offers advanced data mining,
-          clustering, and matched molecular pair analysis. The program has an
+          clustering, and matched molecular pair analysis.<br/><br/> The program has an
           intuitive user interface that allows one to easily manipulate and
           visualize data.
         </div>

@@ -39,9 +39,7 @@ export default function ChemAIRS() {
           src={ChemAIRSImg}
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
-        <div className="title-subtitle">
-          
-        </div>
+        <div className="title-subtitle"></div>
       </div>
       <div className="title-name">ChemAIRS </div>
       <div className="subtitle-name">
@@ -51,18 +49,19 @@ export default function ChemAIRS() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          SARvision | Biologics is a desktop
-          application designed to transform biologics informatics. With its
-          intuitive smart interface, it enables users to read, organize, and
-          analyze data on peptides, proteins, nucleic acids, chemically modified
-          residues, and unnatural amino acids. The software has advanced
-          visualization tools like mutation cliffs, sequence maps, graphs and
-          efficient sequence alignments for large datasets. Actively filter data
-          based on chemotype, scaffold, data range and properties. Users can
-          seamlessly export their analysis to Excel and leverage advanced search
-          capabilities for efficient data retrieval. SARvision | Biologics
-          enhances research workflow by providing deeper insights and
-          streamlining data management for more impactful discoveries
+          ChemAIRS is a retrosynthetic analysis tool that enhances chemical
+          synthesis using advanced deep learning algorithms and extensive data
+          mining. It assesses reaction feasibility, functional group
+          compatibility, and chiral synthesis strategies to generate practical
+          synthetic routes. The tool provides literature precedents for these
+          pathways, enhancing reliability. Unique features include automatic
+          generation of multiple synthetic routes, consideration of chiral
+          synthesis for enantiomerically pure compounds, and integration with
+          documented reactions for verification. ChemAIRS accelerates the
+          discovery and development of new chemical entities, benefiting
+          chemical and pharmaceutical sciences with its comprehensive analysis
+          capabilities and user-friendly interface. This tool is pivotal for
+          chemists and researchers in optimizing synthetic routes efficiently.
         </div>
         <div style={{ height: "2vh" }}>
           {isOverflowing && (
@@ -102,21 +101,20 @@ export default function ChemAIRS() {
       </div>
 
       <Dialog
-      className="yt-dialog"
+        className="yt-dialog"
         open={openVideoDialog}
         onClose={() => setOpenVideoDialog(false)}
         fullScreen>
-          <div 
-        className="youtube-video">
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/diU-ppGqnqI?autoplay=1"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen></iframe>
-          </div>
+        <div className="youtube-video">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/diU-ppGqnqI?autoplay=1"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen></iframe>
+        </div>
       </Dialog>
     </div>
   );

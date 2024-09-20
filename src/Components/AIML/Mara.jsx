@@ -42,14 +42,14 @@ export default function Mara() {
           ref={textRef}>
           MARA (Molecular Analysis and Reasoning Assistant) is an advanced AI
           system designed for Scientific Informatics, acting as a co-pilot for
-          your research and analysis needs.<br/> Operating entirely behind your IT
+          your research and analysis needs.<br/> <br/>Operating entirely behind your IT
           firewall, MARA enables seamless tool and workflow integration,
           allowing your team to easily create, access, and integrate internal
-          databases and tasks. MARA’s Natural Language Data Engine simplifies
+          databases and tasks. <br /><br/>MARA’s Natural Language Data Engine simplifies
           data management, enabling users to curate, manipulate, and expand
-          datasets. It ensures privacy and security by running entirely behind
+          datasets. <br/><br/>It ensures privacy and security by running entirely behind
           your IT firewall, supporting secure access through SSO-based logins
-          and monitoring via key usage. MARA is compatible with models like
+          and monitoring via key usage. <br/><br/>MARA is compatible with models like
           LLAMA 3 or privately-hosted GPT-4 on Azure, ensuring a flexible and
           secure AI experience tailored to your organization.
         </div>
