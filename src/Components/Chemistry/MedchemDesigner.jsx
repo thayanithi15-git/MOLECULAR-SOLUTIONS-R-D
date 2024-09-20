@@ -37,18 +37,15 @@ export default function Medchem_Designer() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          Monolix Suite is the most advanced and simple solution for non-linear
-          mixed-effects modeling (NLME), designed specifically for
-          pharmacometrics. It uses SAEM algorithm, which provides robust, global
-          convergence even for complex PK/PD models. Monolix is widely used for
-          preclinical and clinical population PK/PD modeling, as well as for
-          Systems Pharmacology, offering unmatched capabilities in model-based
-          drug development. Its intuitive interface allows for easy parameter
-          estimation, model diagnosis, and graphical representation, making it
-          ideal for both beginners and experts. Monolix Suite delivers reliable
-          results in population analysis, streamlining the modeling and
-          simulation process for pharmacokinetics, pharmacodynamics, and
-          clinical trial simulations.
+          MedChem Designer™ combines advanced molecule drawing capabilities with fast and
+accurate ADMET property prediction. It provides chemists working in fields such as
+pharmaceuticals, cosmetics, industrial chemicals, herbicides, pesticides, and food
+applications with an intuitive interface that offers convenience features not found in other
+molecule drawing software.
+MedChem Designer allows users to quickly sketch molecules while seamlessly integrating
+ADMET predictions, including logP, logD(7.4), Polar Surface Area, and Lipinski&#39;s Rule of 5
+calculations. This tool streamlines the design process by providing real-time insights into
+the properties of new compounds, making it an essential resource for chemical designers.
         </div>
         <div style={{ height: "2vh" }}>
           {isOverflowing && (

@@ -64,7 +64,7 @@
   transition: all 0.7s;
 }
 .card-container:hover{
-  background-color: #eafcfd;
+  background-color: #eaf6fb;
   /* background-color: red; */
   cursor: pointer;
 }

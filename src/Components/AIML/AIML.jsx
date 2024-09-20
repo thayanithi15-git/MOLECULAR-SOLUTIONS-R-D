@@ -17,6 +17,7 @@ export default function AIML() {
         <div className="card-container">
           <AdmetPredictor />
         </div>
+        
       </div>
     </div>
   );
