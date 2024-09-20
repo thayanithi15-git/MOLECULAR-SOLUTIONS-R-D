@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
-import SarVisionImg from "../../assets/sarvision-img.png";
+import SarVisionImg from "../../assets/vortex-img.jpg";
+// import Vortex from "../../assets/VORTEX.jpg";
 import "./Chemistry.css";
 
 export default function Vortex() {

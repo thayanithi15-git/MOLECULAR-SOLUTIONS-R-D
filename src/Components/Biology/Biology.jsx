@@ -1,5 +1,6 @@
 import React from "react";
 import SarVision_Biologics from "./SARVision-Biologics";
+import Commander from "../Genomics/Commander";
 import "./Biology.css";
 
 export default function BiologyMain() {
@@ -9,6 +10,9 @@ export default function BiologyMain() {
           <div className="card-container">
             <SarVision_Biologics />
           </div>
+          <div className="card-container">
+          <Commander />
+        </div>
       </div>
     </div>
   );

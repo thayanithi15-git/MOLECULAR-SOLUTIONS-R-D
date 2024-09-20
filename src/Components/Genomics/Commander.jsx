@@ -37,6 +37,7 @@ export default function Commander() {
       <div className="card-subdatas">
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
+          style={{ textAlign: "justify" }}
           ref={textRef}>
           COMMANDER is a user-friendly
           software for NGS data analysis, generating professional reports on

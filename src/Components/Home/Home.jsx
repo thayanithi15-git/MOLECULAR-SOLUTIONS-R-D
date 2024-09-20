@@ -68,14 +68,14 @@ export default function Home() {
 
   const [Sidebars, setSidebars] = useState(false);
 
-  const [Genomics, setGenomics] = useState(true);
+  const [Genomics, setGenomics] = useState(false);
   const [Biology, setBiology] = useState(false);
   const [Chemistry, setChemistry] = useState(false);
   const [ComputationalChemistry, setComputationalChemistry] = useState(false);
   const [DMPK, setDMPK] = useState(false);
   const [ELN_LIMS, setELN_LIMS] = useState(false);
   const [VirtualReality, setVirtualReality] = useState(false);
-  const [AIML, setAIML] = useState(false);
+  const [AIML, setAIML] = useState(true);
 
   const [Commander, setCommander] = useState(false);
 
@@ -1503,38 +1503,38 @@ useEffect(() => {
             
             
           </div>
+
           <div
             className={`left-navbars ${sidebarOpen ? "open" : ""}`}
             ref={sidebarRef}>
-            <div className="main-container">
+              <div className="main-container">
               <div
                 style={{ cursor: "pointer", display: "flex", gap: "0.4rem" }}
-                onClick={handleGenomics}
-                className={`Genomics ${Genomics ? "edit" : ""}`}>
-                {/* <img src={GenomicsImg} alt="Genomics img" /> */}
-                <div style={{ marginTop: "1.5%", width: "65%" }}>
-                  Genomics R & D
-                </div>
+                onClick={handleAIML}
+                className={`Genomics ${AIML ? "edit" : ""}`}>
+                {/* <img src={AI} alt="VirtualReality img" width={28} height={28}/> */}
+                <div style={{ marginTop: "1.5%", width: "65%" }}>AI/ML</div>
                 <i
                   className="fa-solid fa-caret-right rotate-right"></i>
               </div>
-              {/* {Genomics && (
+              {/* {AIML && (
                 <div style={{ marginLeft: "10%", marginTop: "5%" }}>
                   <div
-                    className={`subproducts-container ${
-                      Commander ? "edit" : ""
-                    }`}
-                    // onClick={handleCommander}
-                    >
+                    className={`subproducts-container ${Mara ? "edit" : ""}`}
+                    onClick={handleMara}>
                     <img src={SubNavbars} alt="subnav" />
-                    <div style={{ marginLeft: "2%" }}>Commander</div>
+                    <div style={{ marginLeft: "2%" }}>MARA</div>
                   </div>
-                  {sidebarOpen && (
-                    <div className="overlay" onClick={closeSidebar}></div>
-                  )}
+                  <div
+                    className={`subproducts-container ${Luma ? "edit" : ""}`}
+                    onClick={handleLuma}>
+                    <img src={SubNavbars} alt="subnav" />
+                    <div style={{ marginLeft: "2%" }}>LUMA</div>
+                  </div>
                 </div>
               )} */}
             </div>
+           
             <div className="main-container">
               <div
                 style={{ cursor: "pointer", display: "flex", gap: "0.4rem" }}
@@ -1778,33 +1778,7 @@ useEffect(() => {
                 </div>
               )} */}
             </div>
-            <div className="main-container">
-              <div
-                style={{ cursor: "pointer", display: "flex", gap: "0.4rem" }}
-                onClick={handleAIML}
-                className={`Genomics ${AIML ? "edit" : ""}`}>
-                {/* <img src={AI} alt="VirtualReality img" width={28} height={28}/> */}
-                <div style={{ marginTop: "1.5%", width: "65%" }}>AI/ML</div>
-                <i
-                  className="fa-solid fa-caret-right rotate-right"></i>
-              </div>
-              {/* {AIML && (
-                <div style={{ marginLeft: "10%", marginTop: "5%" }}>
-                  <div
-                    className={`subproducts-container ${Mara ? "edit" : ""}`}
-                    onClick={handleMara}>
-                    <img src={SubNavbars} alt="subnav" />
-                    <div style={{ marginLeft: "2%" }}>MARA</div>
-                  </div>
-                  <div
-                    className={`subproducts-container ${Luma ? "edit" : ""}`}
-                    onClick={handleLuma}>
-                    <img src={SubNavbars} alt="subnav" />
-                    <div style={{ marginLeft: "2%" }}>LUMA</div>
-                  </div>
-                </div>
-              )} */}
-            </div>
+            
           </div>
           <div className="right-contents">
             {Genomics && !Sidebars ? (

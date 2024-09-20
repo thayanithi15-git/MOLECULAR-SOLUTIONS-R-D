@@ -68,7 +68,7 @@
 }
 .card-subdatas {
   overflow-y: hidden;
-  
+  text-align: justify;
   color: #667085;
   font-size: 14px;
   margin-top: 5%;
