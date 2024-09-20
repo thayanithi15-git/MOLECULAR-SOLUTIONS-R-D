@@ -41,11 +41,11 @@ export default function GeneBIS() {
           ref={textRef}>
           Gene BIS is an Inventory
           Management System for chemical and biologics materials that
-          streamlines management with advanced features. It includes a barcode
+          streamlines management with advanced features.<br/><br/>It includes a barcode
           mechanism for labeling, printing, and storing materials in specified
-          locations. The system automates expiry material report generation with
+          locations.<br/><br/>The system automates expiry material report generation with
           weekly email notifications and displays stock availability by store
-          location. Comprehensive MIS reports and dashboards provide insights
+          location.<br/><br/>Comprehensive MIS reports and dashboards provide insights
           into material receipt, requests, issues, zero inventory, and
           fast-moving materials, enhancing overall inventory optimization.
         </div>
@@ -59,26 +59,13 @@ export default function GeneBIS() {
           )}
         </div>
       </div>
-      <div className="bottom-buttons">
-        <div
-          className="button-container"
-          style={{ marginLeft: "3%", marginTop: "1%" }}
-          onClick={downloadPDF}>
+      <div className="button-container-brochure" onClick={downloadPDF}>
           <a href="/brochure.pdf" download className="refined-animated-button">
-            <div style={{ fontSize: "13px" }}>Brochure</div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="white"
-              viewBox="0 0 24 24"
-              width="24px"
-              height="24px"
-              id="download-icon">
-              <path d="M12 16l-4-4h3V4h2v8h3l-4 4zm0 2c-3.86 0-7 3.14-7 7h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.86-3.14-7-7-7z" />
-            </svg>
+            <div style={{ fontSize: "13px" }}>BROCHURE</div>
+            <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>
           </a>
         </div>
-      </div>
     </div>
   );
 }

@@ -33,9 +33,9 @@ export default function DotmaticsELN() {
           ref={textRef}>
           Dotmatics ELN enables seamless
           collaborative research by capturing and securely storing experimental
-          data in a unified digital notebook. With flexible templates for
+          data in a unified digital notebook.<br/><br/>With flexible templates for
           chemistry, biologics, and materials science, it supports diverse
-          scientific workflows. Its integrated system ensures smooth data flow
+          scientific workflows.<br/><br/>Its integrated system ensures smooth data flow
           between experiment registration, screening, and decision support,
           optimizing the innovation process.
         </div>

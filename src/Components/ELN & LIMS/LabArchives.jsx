@@ -43,7 +43,7 @@ export default function LabArchives() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          LabArchives is a powerful suite of SaaS applications designed for research data management, enabling scientists to securely document, manage, and protect their research. Serving over 750,000 users across academic, non-profit, and commercial organizations, it acts as a central hub for lab operations. LabArchives enhances data capture, fosters secure collaboration, and streamlines workflows to boost lab efficiency. It offers the highest level of data security with features like comprehensive audit trails, access controls, and data encryption. Compliant with SOC2, ISO 27001, HIPAA, and GDPR standards, it ensures the protection of intellectual property and regulatory adherence. Its versatile tools also help manage lab inventory, samples, and resources.
+          LabArchives is a powerful suite of SaaS applications designed for research data management, enabling scientists to securely document, manage, and protect their research.<br/><br/>Serving over 750,000 users across academic, non-profit, and commercial organizations, it acts as a central hub for lab operations.<br/><br/>LabArchives enhances data capture, fosters secure collaboration, and streamlines workflows to boost lab efficiency.<br/><br/>It offers the highest level of data security with features like comprehensive audit trails, access controls, and data encryption. Compliant with SOC2, ISO 27001, HIPAA, and GDPR standards, it ensures the protection of intellectual property and regulatory adherence.
         </div>
         <div style={{ height: "2vh" }}>
           {isOverflowing && (
@@ -56,11 +56,10 @@ export default function LabArchives() {
         </div>
       </div>
       <div className="bottom-buttons-yt">
-        <div
-          className="bronchurewithoutdownload"
-          onClick={handleClickOpenVideoDialog}>
-          <div className="icon-container-yt">
+      <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
+          <div className="icon-container-yt" style={{ display: "flex" }}>
             <img src={YtIcon} className="yt-img" />
+            <p className="presentation">Video Presentation</p>
           </div>
         </div>
 

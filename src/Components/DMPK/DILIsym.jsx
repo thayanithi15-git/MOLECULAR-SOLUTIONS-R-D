@@ -49,10 +49,10 @@ export default function DILIsym() {
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
           DILIsym is a mechanistic, mathematical model of drug-induced liver
-          injury (DILI) in the form of computational software applied to predict
+          injury (DILI) applied to predict
           whether new drug candidates will cause liver signals in patients and
           to enhance the understanding of mechanisms that contribute to liver
-          safety signals already observed in the clinic. The goals of this tool
+          safety signals already observed in the clinic. <br/><br/>The goals of this tool
           is to improve patient safety, reduce the need for animal testing, and
           reduce the costs and time necessary to develop new drugs.
         </div>
@@ -68,28 +68,18 @@ export default function DILIsym() {
       </div>
 
       <div className="bottom-buttons">
-        <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
-          <div className="icon-container-yt">
-            <img src={YtIcon} className="yt-img" />
-          </div>
-        </div>
-        <div
-          className="button-container"
-          style={{ marginLeft: "3%" }}
-          onClick={downloadPDF}>
+      <div className="button-containers" onClick={downloadPDF}>
           <a href="/brochure.pdf" download className="refined-animated-button">
-            <div style={{ fontSize: "13px" }}>Brochure</div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="white"
-              viewBox="0 0 24 24"
-              width="24px"
-              height="24px"
-              id="download-icon">
-              <path d="M12 16l-4-4h3V4h2v8h3l-4 4zm0 2c-3.86 0-7 3.14-7 7h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.86-3.14-7-7-7z" />
-            </svg>
+            <div style={{ fontSize: "13px" }}>BROCHURE</div>
+            <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>
           </a>
+        </div>
+        <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
+          <div className="icon-container-yt" style={{ display: "flex" }}>
+            <img src={YtIcon} className="yt-img" />
+            <p className="presentation">Video Presentation</p>
+          </div>
         </div>
 
         <Dialog

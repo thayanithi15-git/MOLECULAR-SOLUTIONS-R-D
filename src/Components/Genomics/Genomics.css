@@ -44,10 +44,10 @@
 .products-contents{
   height: 100%;
   overflow-y: scroll;
+  overflow-x: hidden;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  width: 100%;
   justify-content: center;
   /* align-items: center; */
 }
@@ -121,8 +121,13 @@
 .ytvideo {
   border-radius: 20px;
   margin-top: 3%;
-  width: 50;
-  height: 250;
+  width: 100%;
+  height: 94%;
+  overflow-y: hidden;
+}
+.youtube-video-mara{
+  /* height: 20vh; */
+  overflow-y: hidden;
 }
 .icon-container {
   margin-left: 10%;
@@ -221,9 +226,9 @@
 .bronchurewithoutdownload{
   display: flex;
   height: 5.5vh;
-  width: 9.5vw;
+  /* width: 9.5vw; */
   align-items: center;
-  margin-left: 70%;
+  /* margin-left: 70%; */
   /* margin-top: 2%; */
   cursor: pointer;
 }
@@ -254,6 +259,7 @@
 }
 
 .icon-container-yt {
+  /* width: 150px; */
   display: inline-block;
   margin-left: 0px;
   position: relative;
@@ -347,24 +353,30 @@
 .bottom-buttons{
   display: flex;
   align-items: center;
-  margin-top: 0%;
-  width: 100%;
+  margin: 3% 0% 0% 4%;
+  /* width: 100%; */
+  gap: 4.5rem;
   /* border: 1px solid black; */
   /* justify-content: end; */
 }
 .bottom-buttons-yt{
-  margin-left: 50%;
-
+  margin-left: 60%;
+  margin-top: 3%;
+width: 40%;
 }
 .brief-contents {
   overflow: hidden;
   transition: max-height 0.3s ease;
+}
+.button-container-brochure{
+  margin: 3% 0% 0% 3%;
 }
 
 .brief-contents.collapsed {
   height: 19vh;
   margin-left: 2%;
   color: #000000;
+  /* font-size: 15px; */
 }
 
 .brief-contents.expanded {
@@ -380,7 +392,7 @@
 .view-button {
   /* margin-top: 2%; */
   margin-bottom: 2%;
-  margin-left: 2%;
+  margin-left: 80%;
   /* text-decoration: underline; */
   color: rgb(35, 35, 250);
   cursor: pointer;
@@ -420,6 +432,22 @@ dialog{
   display: none;
 }
 
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 3%;
+  
+}
+.presentation{
+  /* color: rgb(255, 0, 0); */
+  /* text-decoration: underline; */
+  width: 100%;
+  margin-left: 5%;
+  margin-top: 4%;
+  font-size: 13px;
+  font-weight: bold;
+}
 
 
 /* display: "flex",
@@ -500,6 +528,7 @@ dialog{
     /* height: 15vh; */
   }
   .bottom-buttons{
+    gap: 8.5rem;
     margin-top: 0%;
   }
   #download-icon{
@@ -524,6 +553,14 @@ dialog{
   .youtube-video{
     width: 80vw;
     height: 100%;
+  }
+  .bottom-buttons{
+    /* gap: 14rem; */
+    margin-top: 5%;
+  }
+  .bottom-buttons-yt{
+    margin-left: 70%;
+    width: 20vw;
   }
   
   
@@ -582,7 +619,7 @@ dialog{
     font-size: 55px;
   }
    .products-contents{
-    width: 100%;
+    /* width: 100%; */
     display: grid;
     grid-template-columns: repeat(1,3fr);
   }
@@ -636,6 +673,7 @@ dialog{
   .genomics-main{
     /* border-radius: 1px; */
     padding: 2%;
+    
   }
   #download-icon{
     font-size: 3vw;

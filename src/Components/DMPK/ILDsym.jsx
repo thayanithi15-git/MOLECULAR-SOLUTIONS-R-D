@@ -50,9 +50,9 @@ export default function ILDsym() {
           ref={textRef}>
           The ILDsym® QSP modeling software is a mechanistic, mathematical model
           of interstitial lung disease (ILD) associated with systemic sclerosis
-          (SSc).ILDsym® can be used to predict efficacy for treatment modalities
+          (SSc).<br/><br/>ILDsym® can be used to predict efficacy for treatment modalities
           developed for SSc-ILD (and other interstitial lung diseases with
-          custom modifications and additions). This can support evaluating
+          custom modifications and additions).<br/><br/>This can support evaluating
           compounds during drug development, help inform clinical trial design
           optimization, and guide clinical development decision-making.
         </div>
@@ -68,28 +68,18 @@ export default function ILDsym() {
       </div>
 
       <div className="bottom-buttons">
-        <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
-          <div className="icon-container-yt">
-            <img src={YtIcon} className="yt-img" />
-          </div>
-        </div>
-        <div
-          className="button-container"
-          style={{ marginLeft: "3%" }}
-          onClick={downloadPDF}>
+      <div className="button-containers" onClick={downloadPDF}>
           <a href="/brochure.pdf" download className="refined-animated-button">
-            <div style={{ fontSize: "13px" }}>Brochure</div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="white"
-              viewBox="0 0 24 24"
-              width="24px"
-              height="24px"
-              id="download-icon">
-              <path d="M12 16l-4-4h3V4h2v8h3l-4 4zm0 2c-3.86 0-7 3.14-7 7h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.86-3.14-7-7-7z" />
-            </svg>
+            <div style={{ fontSize: "13px" }}>BROCHURE</div>
+            <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>
           </a>
+        </div>
+        <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
+          <div className="icon-container-yt" style={{ display: "flex" }}>
+            <img src={YtIcon} className="yt-img" />
+            <p className="presentation">Video Presentation</p>
+          </div>
         </div>
 
         <Dialog

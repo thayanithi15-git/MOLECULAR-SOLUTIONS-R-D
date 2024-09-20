@@ -38,21 +38,24 @@ export default function GastroPlus() {
           src={GastroplusImg}
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
-        <div className="title-subtitle">
-          
-        </div>
+        <div className="title-subtitle"></div>
       </div>
       <div className="title-name">GastroPlus</div>
-      <div className="subtitle-name">
-      Next level PBPK Modeling tool
-
-
-      </div>
+      <div className="subtitle-name">Next level PBPK Modeling tool</div>
       <div className="card-subdatas">
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          GastroPlus is a mechanistically based simulation software package that simulates intravenous, oral, oral cavity, ocular, inhalation, dermal, subcutaneous, and intramuscular absorption, biopharmaceutics, pharmacokinetics, and pharmacodynamics in humans and animals. This smoothly integrated platform combines a user-friendly interface with powerful science to help you make faster and more informed project decisions! GastroPlus has been separated into modules to make it easier for companies to license only the features they need in each department.
+          GastroPlus is a mechanistically based simulation software that
+          simulates intravenous, oral, oral cavity, ocular, inhalation, dermal,
+          subcutaneous, and intramuscular absorption, biopharmaceutics,
+          pharmacokinetics, and pharmacodynamics in humans and animals. <br />
+          <br />
+          This integrated platform combines a user-friendly interface with
+          powerful science to help you make faster and more informed project
+          decisions. GastroPlus has been separated into modules to make it
+          easier for companies to license only the features they need in each
+          department.
         </div>
         <div style={{ height: "2vh" }}>
           {isOverflowing && (
@@ -66,46 +69,35 @@ export default function GastroPlus() {
       </div>
 
       <div className="bottom-buttons">
-        <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
-          <div className="icon-container-yt">
-            <img src={YtIcon} className="yt-img" />
-          </div>
-        </div>
-        <div
-          className="button-container"
-          style={{ marginLeft: "3%" }}
-          onClick={downloadPDF}>
+        <div className="button-containers" onClick={downloadPDF}>
           <a href="/brochure.pdf" download className="refined-animated-button">
-            <div style={{ fontSize: "13px" }}>Brochure</div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="white"
-              viewBox="0 0 24 24"
-              width="24px"
-              height="24px"
-              id="download-icon">
-              <path d="M12 16l-4-4h3V4h2v8h3l-4 4zm0 2c-3.86 0-7 3.14-7 7h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.86-3.14-7-7-7z" />
-            </svg>
+            <div style={{ fontSize: "13px" }}>BROCHURE</div>
+            <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>
           </a>
         </div>
+        <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
+          <div className="icon-container-yt" style={{ display: "flex" }}>
+            <img src={YtIcon} className="yt-img" />
+            <p className="presentation">Video Presentation</p>
+          </div>
+        </div>
 
         <Dialog
-      className="yt-dialog"
-        open={openVideoDialog}
-        onClose={() => setOpenVideoDialog(false)}
-        fullScreen>
-          <div 
-        className="youtube-video">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/rHszkTC-uYo?origin=https://yourdomain.com"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen></iframe>
-            </div>
+          className="yt-dialog"
+          open={openVideoDialog}
+          onClose={() => setOpenVideoDialog(false)}
+          fullScreen>
+          <div className="youtube-video">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/rHszkTC-uYo?origin=https://yourdomain.com"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen></iframe>
+          </div>
         </Dialog>
       </div>
     </div>

@@ -31,9 +31,9 @@ export default function GeneCIS() {
           ref={textRef}>
           Gene CIS optimizes chemical
           inventory management by digitizing legacy data, enabling chemists to
-          seamlessly integrate and utilize historical chemicals. It tracks the
+          seamlessly integrate and utilize historical chemicals.<br/><br/>It tracks the
           lifecycle of chemicals, including procurement, storage, handling,
-          usage, cleanup, and disposal. The system provides detailed insights
+          usage, cleanup, and disposal.<br/><br/>The system provides detailed insights
           into chemical usage, expiry dates, and inventory status through its
           dashboard and MIS reports, enhancing accuracy and operational
           efficiency.

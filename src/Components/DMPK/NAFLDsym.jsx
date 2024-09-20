@@ -51,13 +51,13 @@ export default function NAFLDsym() {
           The NAFLDsym modeling software is a mechanistic, mathematical model of
           nonalcoholic fatty liver disease (NAFLD), designed to predict the
           efficacy of treatment strategies for both NAFLD and nonalcoholic
-          steatohepatitis (NASH). It has been used by several large
+          steatohepatitis (NASH). <br/><br/>It has been used by several large
           pharmaceutical companies to assess various compounds, helping to
           optimize clinical trial designs and support decisions in clinical
-          development. NAFLDsym utilizes QSP (quantitative systems pharmacology)
+          development.<br/><br/> NAFLDsym utilizes QSP (quantitative systems pharmacology)
           modeling techniques by integrating predictions of compound exposure
-          with the pharmacodynamic properties of a drug, evaluating how these
-          factors may drive efficacy across a diverse population with varying
+          with the pharmacodynamic properties of a drug, evaluating these
+          factors which drive efficacy across a diverse population with varying
           pathophysiologic profiles.
         </div>
         <div style={{ height: "2vh" }}>
@@ -72,28 +72,18 @@ export default function NAFLDsym() {
       </div>
 
       <div className="bottom-buttons">
-        <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
-          <div className="icon-container-yt">
-            <img src={YtIcon} className="yt-img" />
-          </div>
-        </div>
-        <div
-          className="button-container"
-          style={{ marginLeft: "3%" }}
-          onClick={downloadPDF}>
+      <div className="button-containers" onClick={downloadPDF}>
           <a href="/brochure.pdf" download className="refined-animated-button">
-            <div style={{ fontSize: "13px" }}>Brochure</div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="white"
-              viewBox="0 0 24 24"
-              width="24px"
-              height="24px"
-              id="download-icon">
-              <path d="M12 16l-4-4h3V4h2v8h3l-4 4zm0 2c-3.86 0-7 3.14-7 7h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.86-3.14-7-7-7z" />
-            </svg>
+            <div style={{ fontSize: "13px" }}>BROCHURE</div>
+            <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>
           </a>
+        </div>
+        <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
+          <div className="icon-container-yt" style={{ display: "flex" }}>
+            <img src={YtIcon} className="yt-img" />
+            <p className="presentation">Video Presentation</p>
+          </div>
         </div>
 
         <Dialog

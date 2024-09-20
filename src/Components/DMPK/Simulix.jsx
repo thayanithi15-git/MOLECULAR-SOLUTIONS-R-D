@@ -47,12 +47,12 @@ export default function Simulx() {
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
           Simulx is a powerful clinical trial simulation tool that helps
-          pharmaceutical companies make informed decisions. It allows users to
+          pharmaceutical companies make informed decisions. <br/><br/>It allows users to
           explore dosing regimens and model parameters interactively while
-          generating real-time predictions. Simulx can quickly simulate large
+          generating real-time predictions. <br/><br/>Simulx can quickly simulate large
           populations, enabling researchers to anticipate trial outcomes, saving
-          time and resources. Its flexible setup and post-processing tools allow
-          users to focus on analysis rather than implementation. Simulx is
+          time and resources.<br/><br/> Its flexible setup and post-processing tools allow
+          users to focus on analysis rather than implementation. <br/><br/>Simulx is
           widely used to compare dosing regimens, assess safety, calculate study
           power, and optimize trial designs across phases.
         </div>
@@ -66,31 +66,30 @@ export default function Simulx() {
           )}
         </div>
       </div>
-
-      <div className="bottom-buttons">
-        <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
-          <div className="icon-container-yt">
+      <div className="bottom-buttons-yt">
+      <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
+          <div className="icon-container-yt" style={{ display: "flex" }}>
             <img src={YtIcon} className="yt-img" />
+            <p className="presentation">Video Presentation</p>
           </div>
         </div>
-
-        <Dialog
-          className="yt-dialog"
-          open={openVideoDialog}
-          onClose={() => setOpenVideoDialog(false)}
-          fullScreen>
-          <div className="youtube-video">
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/j5YJ8nh7uaA?origin=https://yourdomain.com"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen></iframe>
-          </div>
-        </Dialog>
       </div>
+      <Dialog
+        className="yt-dialog"
+        open={openVideoDialog}
+        onClose={() => setOpenVideoDialog(false)}
+        fullScreen>
+        <div className="youtube-video">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/j5YJ8nh7uaA?origin=https://yourdomain.com"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen></iframe>
+        </div>
+      </Dialog>
     </div>
   );
 }

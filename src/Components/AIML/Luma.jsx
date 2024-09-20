@@ -38,9 +38,7 @@ export default function Luma() {
           src={LumaImg}
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
-        <div className="title-subtitle">
-          
-        </div>
+        <div className="title-subtitle"></div>
       </div>
       <div className="title-name">LUMA</div>
       <div className="subtitle-name">
@@ -50,9 +48,10 @@ export default function Luma() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          LUMA is a low-code laboratory
-          informatics platform by Dotmatics that integrates with various
-          scientific software to streamline data management and collaboration.<br/><br/>
+          LUMA is a low-code laboratory informatics platform by Dotmatics
+          integrating various scientific software to streamline data
+          management and collaboration.
+          <br />
           It offers visualization and analysis tools, enabling scientists to
           efficiently organize and share data. LUMA enhances research
           productivity by tailoring to unique scientific needs.
@@ -69,47 +68,36 @@ export default function Luma() {
       </div>
 
       <div className="bottom-buttons">
-        <div className="bronchure-y" onClick={handleClickOpenVideoDialog}>
-          <div className="icon-container-yt">
-            <img src={YtIcon} className="yt-img" />
-          </div>
-        </div>
-        <div
-          className="button-container"
-          style={{ marginLeft: "3%" }}
-          onClick={downloadPDF}>
+      <div className="button-containers" onClick={downloadPDF}>
           <a href="/brochure.pdf" download className="refined-animated-button">
-            <div style={{ fontSize: "13px" }}>Brochure</div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="white"
-              viewBox="0 0 24 24"
-              width="24px"
-              height="24px"
-              id="download-icon">
-              <path d="M12 16l-4-4h3V4h2v8h3l-4 4zm0 2c-3.86 0-7 3.14-7 7h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.86-3.14-7-7-7z" />
-            </svg>
+            <div style={{ fontSize: "13px" }}>BROCHURE</div>
+            <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>
           </a>
+        </div>
+        <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
+          <div className="icon-container-yt" style={{ display: "flex" }}>
+            <img src={YtIcon} className="yt-img" />
+            <p className="presentation">Video Presentation</p>
+          </div>
         </div>
       </div>
 
       <Dialog
-      className="yt-dialog"
+        className="yt-dialog"
         open={openVideoDialog}
         onClose={() => setOpenVideoDialog(false)}
         fullScreen>
-          <div 
-        className="youtube-video">
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/1Gi4Ruse2QQ?origin=https://yourdomain.com"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen></iframe>
-          </div>
+        <div className="youtube-video">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/1Gi4Ruse2QQ?origin=https://yourdomain.com"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen></iframe>
+        </div>
       </Dialog>
     </div>
   );

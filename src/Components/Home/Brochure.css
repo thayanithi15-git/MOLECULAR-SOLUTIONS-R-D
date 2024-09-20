@@ -1,14 +1,10 @@
-.button-container {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-  }
+
   
     .refined-animated-button {
       position: relative;
       display: inline-flex;
       align-items: center;
-      padding: 12px 20px;
+      padding: 12px 15px;
       font-size: 18px;
       font-weight: bold;
       color: white;
@@ -19,6 +15,7 @@
       overflow: hidden;
       transition: background 0.3s, transform 0.3s ease;
       box-shadow: 0 0 20px rgba(46, 91, 146, 0.6);
+      gap: 0.5rem;
     }
     
     .refined-animated-button:hover {

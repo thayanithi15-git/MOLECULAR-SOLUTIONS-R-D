@@ -50,10 +50,10 @@ export default function GeneATS() {
           ref={textRef}>
          Gene ATS optimizes the workflow
           for analytical sample processing by facilitating seamless ticket
-          generation and management. It ensures that sample analysis requests
+          generation and management.<br/><br/>It ensures that sample analysis requests
           are efficiently tracked and processed, enhancing communication and
-          coordination among team members. The system integrates robust features
-          that reduce turnaround time and improve overall efficiency. By
+          coordination among team members.<br/><br/>The system integrates robust features
+          that reduce turnaround time and improve overall efficiency.<br/><br/>By
           streamlining the entire process, Gene ATS supports better resource
           allocation and timely completion of analytical tasks, ultimately
           boosting productivity and operational efficiency in laboratory
@@ -69,26 +69,13 @@ export default function GeneATS() {
           )}
         </div>
       </div>
-      <div className="bottom-buttons">
-        <div
-          className="button-container"
-          style={{ marginLeft: "3%", marginTop: "1%" }}
-          onClick={downloadPDF}>
+      <div className="button-container-brochure" onClick={downloadPDF}>
           <a href="/brochure.pdf" download className="refined-animated-button">
-            <div style={{ fontSize: "13px" }}>Brochure</div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="white"
-              viewBox="0 0 24 24"
-              width="24px"
-              height="24px"
-              id="download-icon">
-              <path d="M12 16l-4-4h3V4h2v8h3l-4 4zm0 2c-3.86 0-7 3.14-7 7h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.86-3.14-7-7-7z" />
-            </svg>
+            <div style={{ fontSize: "13px" }}>BROCHURE</div>
+            <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>
           </a>
         </div>
-      </div>
     </div>
   );
 }

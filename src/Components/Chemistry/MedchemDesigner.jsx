@@ -57,26 +57,13 @@ export default function Medchem_Designer() {
           )}
         </div>
       </div>
-      <div className="bottom-buttons">
-        <div
-          className="button-container"
-          style={{ marginLeft: "3%", marginTop: "2%" }}
-          onClick={downloadPDF}>
+      <div className="button-container-brochure" onClick={downloadPDF}>
           <a href="/brochure.pdf" download className="refined-animated-button">
-            <div style={{ fontSize: "13px" }}>Brochure</div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="white"
-              viewBox="0 0 24 24"
-              width="24px"
-              height="24px"
-              id="download-icon">
-              <path d="M12 16l-4-4h3V4h2v8h3l-4 4zm0 2c-3.86 0-7 3.14-7 7h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.86-3.14-7-7-7z" />
-            </svg>
+            <div style={{ fontSize: "13px" }}>BROCHURE</div>
+            <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>
           </a>
         </div>
-      </div>
     </div>
   );
 }

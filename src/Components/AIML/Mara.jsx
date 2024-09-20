@@ -40,18 +40,24 @@ export default function Mara() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          MARA (Molecular Analysis and Reasoning Assistant) is an advanced AI
+          MARA is an advanced AI
           system designed for Scientific Informatics, acting as a co-pilot for
-          your research and analysis needs.<br/> <br/>Operating entirely behind your IT
-          firewall, MARA enables seamless tool and workflow integration,
-          allowing your team to easily create, access, and integrate internal
-          databases and tasks. <br /><br/>MARA’s Natural Language Data Engine simplifies
-          data management, enabling users to curate, manipulate, and expand
-          datasets. <br/><br/>It ensures privacy and security by running entirely behind
-          your IT firewall, supporting secure access through SSO-based logins
-          and monitoring via key usage. <br/><br/>MARA is compatible with models like
-          LLAMA 3 or privately-hosted GPT-4 on Azure, ensuring a flexible and
-          secure AI experience tailored to your organization.
+          your research and analysis needs.
+          <br/>
+            It enables seamless tool
+          and workflow integration, allowing your team to easily create, access,
+          and integrate internal databases and tasks. <br />
+          <br />
+          MARA’s Natural Language Data Engine simplifies data management,
+          enabling users to curate, manipulate, and expand datasets. <br />
+          <br />
+          It ensures privacy and security by running entirely behind your IT
+          firewall, supporting secure access through SSO-based logins and
+          monitoring via key usage. <br />
+          <br />
+          MARA is compatible with models like LLAMA 3 or privately-hosted GPT-4
+          on Azure, ensuring a flexible and secure AI experience tailored to
+          your organization.
         </div>
         <div style={{ height: "2vh" }}>
           {isOverflowing && (
@@ -65,16 +71,16 @@ export default function Mara() {
       </div>
 
       <div className="bottom-buttons-yt">
-        <div
-          className="bronchurewithoutdownload"
-          onClick={handleClickOpenVideoDialog}>
-          <div className="icon-container-yt">
+      <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
+          <div className="icon-container-yt" style={{ display: "flex" }}>
             <img src={YtIcon} className="yt-img" />
+            <p className="presentation">Video Presentation</p>
           </div>
         </div>
       </div>
 
       <Dialog
+      style={{backgroundColor: "black"}}
         className="yt-dialog-mara"
         open={openVideoDialog}
         onClose={() => setOpenVideoDialog(false)}
@@ -82,8 +88,6 @@ export default function Mara() {
         <div className="youtube-video-mara">
           <video
             className="ytvideo"
-            width="100%"
-            height="90%"
             controls
             src={Video}
             title="Local video player">

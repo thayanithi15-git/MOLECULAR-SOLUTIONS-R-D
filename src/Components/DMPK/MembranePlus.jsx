@@ -48,19 +48,17 @@ export default function MembranePlus() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          Membrane Plus is a comprehensive permeability modeling platform
+          MembranePlus is a comprehensive permeability modeling platform
           designed to simulate in vitro permeability and hepatocyte
           concentrations, offering valuable insights into drug absorption and
-          distribution. It has been used for screening compound libraries,
+          distribution. <br/><br/>It has been used for screening compound libraries,
           predicting permeability processes, and estimating intracellular
-          concentrations (membrane, cytosol, lysosome). The tool allows users to
+          concentrations (membrane, cytosol, lysosome). <br/><br/>The tool allows users to
           analyze in vitro data, calculate enzyme and transporter kinetics, and
           assess complex phenomena like lysosomal trapping and biliary
-          excretion. Membrane Plus supports single simulations, parameter
+          excretion. <br/><br/>MembranePlus supports single simulations, parameter
           sensitivity analysis (PSA), and batch mode processing for large
-          compound libraries. It helps prioritize compounds for testing and
-          streamline resource allocation. By integrating predicted or measured
-          drug properties, MembranePlus aids in optimizing experimental designs
+          compound libraries. <br/><br/> MembranePlus aids in optimizing experimental designs
           and unlocking critical insights for early-stage drug development.
         </div>
         <div style={{ height: "2vh" }}>
@@ -75,28 +73,18 @@ export default function MembranePlus() {
       </div>
 
       <div className="bottom-buttons">
-        <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
-          <div className="icon-container-yt">
-            <img src={YtIcon} className="yt-img" />
-          </div>
-        </div>
-        <div
-          className="button-container"
-          style={{ marginLeft: "3%" }}
-          onClick={downloadPDF}>
+      <div className="button-containers" onClick={downloadPDF}>
           <a href="/brochure.pdf" download className="refined-animated-button">
-            <div style={{ fontSize: "13px" }}>Brochure</div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="white"
-              viewBox="0 0 24 24"
-              width="24px"
-              height="24px"
-              id="download-icon">
-              <path d="M12 16l-4-4h3V4h2v8h3l-4 4zm0 2c-3.86 0-7 3.14-7 7h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.86-3.14-7-7-7z" />
-            </svg>
+            <div style={{ fontSize: "13px" }}>BROCHURE</div>
+            <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>
           </a>
+        </div>
+        <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
+          <div className="icon-container-yt" style={{ display: "flex" }}>
+            <img src={YtIcon} className="yt-img" />
+            <p className="presentation">Video Presentation</p>
+          </div>
         </div>
 
         <Dialog

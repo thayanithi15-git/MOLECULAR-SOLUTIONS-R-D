@@ -50,7 +50,7 @@ export default function PKanalix() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-         PKanalix is a powerful pharmacokinetic analysis software designed to streamline and simplify the analysis of drug concentration data. It provides users with a comprehensive platform for performing both Non-compartmental Analysis (NCA) and Compartmental Analysis, offering flexibility through a user-friendly graphical interface and advanced scripting capabilities via R. PKanalix stands out by offering industry-standard methods for calculating key pharmacokinetic parameters, automatically generating visualizations, and ensuring reliable, reproducible results. Its seamless integration with Monolix also enables easy transition to population modeling, making it an ideal solution for researchers and scientists looking to gain clear insights into drug behavior and pharmacokinetic profiles.
+         PKanalix is a powerful pharmacokinetic analysis software designed to streamline and simplify the analysis of drug concentration data.<br/><br/> It provides users with a comprehensive platform for performing both Non-compartmental Analysis (NCA) and Compartmental Analysis, offering flexibility through a user-friendly graphical interface and advanced scripting capabilities via R.<br/><br/> PKanalix stands out by offering industry-standard methods for calculating key pharmacokinetic parameters, automatically generating visualizations, and ensuring reliable, reproducible results.<br/><br/> Its seamless integration with Monolix also enables easy transition to population modeling, making it an ideal solution for researchers and scientists looking to gain clear insights into drug behavior and pharmacokinetic profiles.
         </div>
         <div style={{ height: "2vh" }}>
           {isOverflowing && (
@@ -63,12 +63,14 @@ export default function PKanalix() {
         </div>
       </div>
 
-      <div className="bottom-buttons">
-        <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
-          <div className="icon-container-yt">
+      <div className="bottom-buttons-yt">
+      <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
+          <div className="icon-container-yt" style={{ display: "flex" }}>
             <img src={YtIcon} className="yt-img" />
+            <p className="presentation">Video Presentation</p>
           </div>
         </div>
+      </div>  
         {/* <div
           className="button-container"
           style={{ marginLeft: "3%" }}
@@ -97,7 +99,6 @@ export default function PKanalix() {
             allowFullScreen></iframe>
             </div>
         </Dialog>
-      </div>
     </div>
   );
 }

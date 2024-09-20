@@ -52,11 +52,11 @@ export default function Nanome() {
           ref={textRef}>
           Nanome is a mixed virtual reality
           software that revolutionizes the way scientists, researchers, and
-          educators interact with molecular structures on an atomic level. It
+          educators interact with molecular structures on an atomic level.<br/><br/>It
           offers a 3D immersive environment where users can visualize and
-          interact with molecular formations intuitively. Designed for
+          interact with molecular formations intuitively.<br/><br/>Designed for
           collaboration, Nanome integrates seamlessly with other software and
-          databases, allowing global teams to work together in real time. This
+          databases, allowing global teams to work together in real time.<br/><br/>This
           platform accelerates discovery and development by making molecular
           design more accessible and interactive.
         </div>
@@ -72,28 +72,18 @@ export default function Nanome() {
       </div>
 
       <div className="bottom-buttons">
-        <div className="bronchure-y" onClick={handleClickOpenVideoDialog}>
-          <div className="icon-container-yt">
-            <img src={YtIcon} className="yt-img" />
-          </div>
-        </div>
-        <div
-          className="button-container"
-          style={{ marginLeft: "3%" }}
-          onClick={downloadPDF}>
+      <div className="button-containers" onClick={downloadPDF}>
           <a href="/brochure.pdf" download className="refined-animated-button">
-            <div style={{ fontSize: "13px" }}>Brochure</div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="white"
-              viewBox="0 0 24 24"
-              width="24px"
-              height="24px"
-              id="download-icon">
-              <path d="M12 16l-4-4h3V4h2v8h3l-4 4zm0 2c-3.86 0-7 3.14-7 7h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.86-3.14-7-7-7z" />
-            </svg>
+            <div style={{ fontSize: "13px" }}>BROCHURE</div>
+            <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>
           </a>
+        </div>
+        <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
+          <div className="icon-container-yt" style={{ display: "flex" }}>
+            <img src={YtIcon} className="yt-img" />
+            <p className="presentation">Video Presentation</p>
+          </div>
         </div>
 
         <Dialog
