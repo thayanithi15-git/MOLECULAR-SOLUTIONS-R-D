@@ -38,10 +38,9 @@ export default function AdmetPredictor() {
           src={AdmetpredictorImg}
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
-        <div className="title-subtitle">
-          <div className="title-name">ADMET Predictor</div>
-        </div>
+        <div className="title-subtitle"></div>
       </div>
+      <div className="title-name">ADMET Predictor</div>
       <div className="subtitle-name">
         Machine learning platform for ADMET modeling
       </div>
@@ -49,9 +48,16 @@ export default function AdmetPredictor() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          ADMET Predictor is a machine
-          learning platform for ADMET modeling, offering enhanced features for
-          data analysis, metabolism prediction, and AI-powered drug design.
+          ADMET Predictor® is the flagship machine learning platform for ADMET
+          modeling with extended capabilities for data analysis, metabolism
+          prediction, and AI-driven drug design. It accurately predicts over 175
+          properties including solubility, logP, pKa, sites of CYP metabolism,
+          and Ames mutagenicity. The ADMET Modeler™ module in ADMET Predictor
+          allows one to rapidly and easily create high-quality QSAR/QSPR models
+          based on your own data. The newest module offers advanced data mining,
+          clustering, and matched molecular pair analysis. The program has an
+          intuitive user interface that allows one to easily manipulate and
+          visualize data.
         </div>
         <div style={{ height: "2vh" }}>
           {isOverflowing && (
@@ -90,21 +96,20 @@ export default function AdmetPredictor() {
         </div>
 
         <Dialog
-      className="yt-dialog"
-        open={openVideoDialog}
-        onClose={() => setOpenVideoDialog(false)}
-        fullScreen>
-          <div 
-        className="youtube-video">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/AoZ6j5sWCFk?origin=https://yourdomain.com"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen></iframe>
-            </div>
+          className="yt-dialog"
+          open={openVideoDialog}
+          onClose={() => setOpenVideoDialog(false)}
+          fullScreen>
+          <div className="youtube-video">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/AoZ6j5sWCFk?origin=https://yourdomain.com"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen></iframe>
+          </div>
         </Dialog>
       </div>
     </div>

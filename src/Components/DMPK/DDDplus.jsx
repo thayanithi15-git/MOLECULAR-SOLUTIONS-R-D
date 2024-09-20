@@ -39,9 +39,10 @@ export default function DDDplus() {
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle">
-          <div className="title-name">DDDplus</div>
+          
         </div>
       </div>
+      <div className="title-name">DDDplus</div>
       <div className="subtitle-name">
       Invitro pharmaceutical dosage forms simulation tool
       </div>

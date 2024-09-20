@@ -38,20 +38,30 @@ export default function MembranePlus() {
           src={MembranePlusImg}
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
-        <div className="title-subtitle">
-          <div className="title-name">MembranePlus</div>
-        </div>
+        <div className="title-subtitle"></div>
       </div>
+      <div className="title-name">MembranePlus</div>
       <div className="subtitle-name">
-      Interstitial lung disease (ILD) modeling tool
+        IVIVE of absorption and systemic clearance/distribution modeling tool
       </div>
       <div className="card-subdatas">
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          The ILDsym® QSP modeling software
-          is a mechanistic, mathematical model of interstitial lung disease
-          (ILD) associated with systemic sclerosis (SSc)
+          Membrane Plus is a comprehensive permeability modeling platform
+          designed to simulate in vitro permeability and hepatocyte
+          concentrations, offering valuable insights into drug absorption and
+          distribution. It has been used for screening compound libraries,
+          predicting permeability processes, and estimating intracellular
+          concentrations (membrane, cytosol, lysosome). The tool allows users to
+          analyze in vitro data, calculate enzyme and transporter kinetics, and
+          assess complex phenomena like lysosomal trapping and biliary
+          excretion. Membrane Plus supports single simulations, parameter
+          sensitivity analysis (PSA), and batch mode processing for large
+          compound libraries. It helps prioritize compounds for testing and
+          streamline resource allocation. By integrating predicted or measured
+          drug properties, MembranePlus aids in optimizing experimental designs
+          and unlocking critical insights for early-stage drug development.
         </div>
         <div style={{ height: "2vh" }}>
           {isOverflowing && (
@@ -90,21 +100,20 @@ export default function MembranePlus() {
         </div>
 
         <Dialog
-      className="yt-dialog"
-        open={openVideoDialog}
-        onClose={() => setOpenVideoDialog(false)}
-        fullScreen>
-          <div 
-        className="youtube-video">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/j5YJ8nh7uaA?origin=https://yourdomain.com"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen></iframe>
-            </div>
+          className="yt-dialog"
+          open={openVideoDialog}
+          onClose={() => setOpenVideoDialog(false)}
+          fullScreen>
+          <div className="youtube-video">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/j5YJ8nh7uaA?origin=https://yourdomain.com"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen></iframe>
+          </div>
         </Dialog>
       </div>
     </div>

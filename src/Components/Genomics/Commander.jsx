@@ -30,9 +30,10 @@ export default function Commander() {
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle">
-          <div className="title-name">Commander</div>
+          
         </div>
       </div>
+      <div className="title-name">Commander</div>
       <div className="subtitle-name">NGS data analysis</div>
       <div className="card-subdatas">
         <div

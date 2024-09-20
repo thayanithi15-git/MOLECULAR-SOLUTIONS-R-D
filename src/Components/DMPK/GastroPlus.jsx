@@ -39,9 +39,10 @@ export default function GastroPlus() {
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle">
-          <div className="title-name">GastroPlus</div>
+          
         </div>
       </div>
+      <div className="title-name">GastroPlus</div>
       <div className="subtitle-name">
       Next level PBPK Modeling tool
 

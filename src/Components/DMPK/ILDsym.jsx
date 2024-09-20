@@ -38,20 +38,23 @@ export default function ILDsym() {
           src={ILDsymImg}
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
-        <div className="title-subtitle">
-          <div className="title-name">ILDsym</div>
-        </div>
+        <div className="title-subtitle"></div>
       </div>
+      <div className="title-name">ILDsym</div>
       <div className="subtitle-name">
-      Interstitial lung disease (ILD) modeling tool
+        Interstitial lung disease (ILD) modeling tool
       </div>
       <div className="card-subdatas">
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          The ILDsym® QSP modeling software
-          is a mechanistic, mathematical model of interstitial lung disease
-          (ILD) associated with systemic sclerosis (SSc)
+          The ILDsym® QSP modeling software is a mechanistic, mathematical model
+          of interstitial lung disease (ILD) associated with systemic sclerosis
+          (SSc).ILDsym® can be used to predict efficacy for treatment modalities
+          developed for SSc-ILD (and other interstitial lung diseases with
+          custom modifications and additions). This can support evaluating
+          compounds during drug development, help inform clinical trial design
+          optimization, and guide clinical development decision-making.
         </div>
         <div style={{ height: "2vh" }}>
           {isOverflowing && (
@@ -90,21 +93,20 @@ export default function ILDsym() {
         </div>
 
         <Dialog
-      className="yt-dialog"
-        open={openVideoDialog}
-        onClose={() => setOpenVideoDialog(false)}
-        fullScreen>
-          <div 
-        className="youtube-video">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/j5YJ8nh7uaA?origin=https://yourdomain.com"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen></iframe>
-            </div>
+          className="yt-dialog"
+          open={openVideoDialog}
+          onClose={() => setOpenVideoDialog(false)}
+          fullScreen>
+          <div className="youtube-video">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/j5YJ8nh7uaA?origin=https://yourdomain.com"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen></iframe>
+          </div>
         </Dialog>
       </div>
     </div>

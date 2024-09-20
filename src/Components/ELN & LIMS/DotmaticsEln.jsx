@@ -20,9 +20,10 @@ export default function DotmaticsELN() {
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle">
-          <div className="title-name">Dotmatics ELN</div>
+         
         </div>
       </div>
+      <div className="title-name">Dotmatics ELN</div>
       <div className="subtitle-name">
         Simplify Scientific Discovery with a Powerful Online ELN
       </div>

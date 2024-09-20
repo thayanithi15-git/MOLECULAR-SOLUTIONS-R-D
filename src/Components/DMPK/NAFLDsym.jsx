@@ -38,21 +38,27 @@ export default function NAFLDsym() {
           src={NAFLDsymImg}
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
-        <div className="title-subtitle">
-          <div className="title-name">NAFLDsym</div>
-        </div>
+        <div className="title-subtitle"></div>
       </div>
+      <div className="title-name">NAFLDsym</div>
       <div className="subtitle-name">
-      Nonalcoholic fatty liver disease modeling tool
+        Nonalcoholic fatty liver disease modeling tool
       </div>
       <div className="card-subdatas">
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          NAFLDsym is a computational model
-          of nonalcoholic fatty liver disease (NAFLD) and can be used to predict
-          efficacy for treatment modalities developed for treating NAFLD and
-          NASH.
+          The NAFLDsym modeling software is a mechanistic, mathematical model of
+          nonalcoholic fatty liver disease (NAFLD), designed to predict the
+          efficacy of treatment strategies for both NAFLD and nonalcoholic
+          steatohepatitis (NASH). It has been used by several large
+          pharmaceutical companies to assess various compounds, helping to
+          optimize clinical trial designs and support decisions in clinical
+          development. NAFLDsym utilizes QSP (quantitative systems pharmacology)
+          modeling techniques by integrating predictions of compound exposure
+          with the pharmacodynamic properties of a drug, evaluating how these
+          factors may drive efficacy across a diverse population with varying
+          pathophysiologic profiles.
         </div>
         <div style={{ height: "2vh" }}>
           {isOverflowing && (
@@ -91,21 +97,20 @@ export default function NAFLDsym() {
         </div>
 
         <Dialog
-      className="yt-dialog"
-        open={openVideoDialog}
-        onClose={() => setOpenVideoDialog(false)}
-        fullScreen>
-          <div 
-        className="youtube-video">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/qgstoi0Slfg"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen></iframe>
-            </div>
+          className="yt-dialog"
+          open={openVideoDialog}
+          onClose={() => setOpenVideoDialog(false)}
+          fullScreen>
+          <div className="youtube-video">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/qgstoi0Slfg"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen></iframe>
+          </div>
         </Dialog>
       </div>
     </div>

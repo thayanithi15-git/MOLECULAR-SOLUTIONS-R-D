@@ -32,9 +32,10 @@ export default function LabArchives() {
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle">
-          <div className="title-name">LabArchives</div>
+          
         </div>
       </div>
+      <div className="title-name">LabArchives</div>
       <div className="subtitle-name">
         The Easy-to-use Electronic Lab Notebook
       </div>

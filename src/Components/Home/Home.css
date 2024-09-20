@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* font-family: "Open Sans", sans-serif; */
   font-family: "Roboto", sans-serif;
 }
 .home-page {
@@ -80,6 +79,7 @@
 .left-navbars {
   font-size: 15px;
   font-weight: 549;
+  
   height: 75vh;
   width: 20vw;
   display: flex;
@@ -113,9 +113,10 @@
   display: none;
 }
 .Genomics {
-  color: rgb(99, 98, 98);
+  /* color: rgb(99, 98, 98); */
   font-size: 16px;
   font-weight: 550;
+
 }
 .Genomics.edit {
   color: #4773e1;
@@ -341,7 +342,8 @@
     margin-left: 0%;
     width: 250px;
     height: 100%;
-    background-color: #f1f1f1;
+    background-color: rgba(241, 241, 241, 0.7); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
     z-index: 1000;
     transform: translateX(0);
     transition: transform 0.3s ease;
@@ -356,24 +358,24 @@
   .main-container{
     margin-left: 10%;
   }
-  .header-bars.open{
-    /* display: block; */
+  .header-bars.open {
     position: fixed;
     margin-top: 50%;
     margin-left: 40%;
-     width: 60%; 
-    height: 280px; 
+    width: 60%;
+    height: 280px;
     align-items: center;
-    background-color: #f1f1f1;
+    background-color: rgba(241, 241, 241, 0.7); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
     z-index: 1000;
-    /* transform: translateX(0); */
     transition: transform 0.3s ease;
     font-size: 15px;
     font-weight: 549;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-  }
+}
+
   .titles.open{
     margin-top: 5%;
     font-size: 16px;
@@ -498,7 +500,8 @@
     margin-left: 0%;
     width: 250px;
     height: 50%;
-    background-color: #f1f1f1;
+    background-color: rgba(241, 241, 241, 0.7); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
     z-index: 1000;
     transform: translateX(0);
     transition: transform 0.3s ease;
@@ -519,7 +522,6 @@
 @media (min-width: 640px) and (max-width: 1300px){
   .right-contents{
     height: 80vh;
-    /* background-color: #1d72f0; */
   }
   
   .header-bars.open{
@@ -530,7 +532,8 @@
      width: 30%; 
     height: 250px; 
     align-items: center;
-    background-color: #f1f1f1;
+    background-color: rgba(241, 241, 241, 0.7); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
     z-index: 1000;
     /* transform: translateX(0); */
     transition: transform 0.3s ease;

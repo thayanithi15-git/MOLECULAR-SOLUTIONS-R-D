@@ -28,9 +28,10 @@ export default function GeneBIS() {
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle">
-          <div className="title-name">GeneBIS</div>
+          
         </div>
       </div>
+      <div className="title-name">GeneBIS</div>
       <div className="subtitle-name">
         Chemical and Biology material Inventory Management system
       </div>

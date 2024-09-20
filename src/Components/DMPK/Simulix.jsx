@@ -38,22 +38,23 @@ export default function Simulx() {
           src={SimulxImg}
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
-        <div className="title-subtitle">
-          <div className="title-name">Simulx</div>
-        </div>
+        <div className="title-subtitle"></div>
       </div>
-      <div className="subtitle-name">
-      Interstitial lung disease (ILD) modeling tool
-
-
-      </div>
+      <div className="title-name">Simulx</div>
+      <div className="subtitle-name">Clinical trial simulations tool</div>
       <div className="card-subdatas">
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-         The ILDsym® QSP modeling software
-          is a mechanistic, mathematical model of interstitial lung disease
-          (ILD) associated with systemic sclerosis (SSc)
+          Simulx is a powerful clinical trial simulation tool that helps
+          pharmaceutical companies make informed decisions. It allows users to
+          explore dosing regimens and model parameters interactively while
+          generating real-time predictions. Simulx can quickly simulate large
+          populations, enabling researchers to anticipate trial outcomes, saving
+          time and resources. Its flexible setup and post-processing tools allow
+          users to focus on analysis rather than implementation. Simulx is
+          widely used to compare dosing regimens, assess safety, calculate study
+          power, and optimize trial designs across phases.
         </div>
         <div style={{ height: "2vh" }}>
           {isOverflowing && (
@@ -72,24 +73,22 @@ export default function Simulx() {
             <img src={YtIcon} className="yt-img" />
           </div>
         </div>
-       
 
         <Dialog
-      className="yt-dialog"
-        open={openVideoDialog}
-        onClose={() => setOpenVideoDialog(false)}
-        fullScreen>
-          <div 
-        className="youtube-video">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/j5YJ8nh7uaA?origin=https://yourdomain.com"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen></iframe>
-            </div>
+          className="yt-dialog"
+          open={openVideoDialog}
+          onClose={() => setOpenVideoDialog(false)}
+          fullScreen>
+          <div className="youtube-video">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/j5YJ8nh7uaA?origin=https://yourdomain.com"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen></iframe>
+          </div>
         </Dialog>
       </div>
     </div>

@@ -61,9 +61,11 @@
   border-radius: 20px;
   padding: 3%;
   height: 68.5vh;
+  transition: all 0.7s;
 }
-.card-container.card-container:hover{
-  background-color: #eeeeff;
+.card-container:hover{
+  background-color: #eafcfd;
+  /* background-color: red; */
   cursor: pointer;
 }
 .card-subdatas {
@@ -161,12 +163,14 @@
   width: 100%;
 }
 .title-name{
+  margin-top: 5%;
   font-size: 18px;
   font-weight: 800;
-  color: white;
+  color: #E87A0C;
+  margin-left: 12px;
 }
 .subtitle-name {
-  margin-top: 7%;
+  margin-top: 2%;
   font-size: 15px;
   font-weight: 550;
   margin-left: 12px;
@@ -175,7 +179,7 @@
 }
 
 .brief-contents {
-  line-height: 1.7rem;
+  line-height: 1.4rem;
   font-size: 15px;
 }
 .bronchure {
@@ -355,14 +359,15 @@
 }
 
 .brief-contents.collapsed {
-  height: 22vh;
+  height: 19vh;
   margin-left: 2%;
+  color: #000000;
 }
 
 .brief-contents.expanded {
   max-height: none; /* Allows the full text to be shown */
   overflow-y: scroll;
-  height: 25vh;
+  height: 20vh;
 }
 .brief-contents.expanded::-webkit-scrollbar,.youtube-video::-webkit-scrollbar,.yt-dialog::-webkit-scrollbar{
   display: none;
@@ -496,13 +501,13 @@ dialog{
     font-size: 3vw;
   }
   .brief-contents.collapsed {
-    height: 20vh;
+    height: 16vh;
   }
   
   .brief-contents.expanded {
     max-height: none; /* Allows the full text to be shown */
     overflow-y: scroll;
-    height: 22vh;
+    height: 17vh;
   }
   .yt-dialog{
     /* width: 10vw; */
@@ -686,6 +691,9 @@ dialog{
   .genomics-main{
     /* height: 100%; */
     /* background-color: #565add; */
+  }
+  .genomics-main::-webkit-scrollbar{
+    display: none;
   }
   .yt-dialog{
     /* width: 10vw; */

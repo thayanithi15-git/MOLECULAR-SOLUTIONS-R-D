@@ -38,10 +38,9 @@ export default function DILIsym() {
           src={DILIsymImg}
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
-        <div className="title-subtitle">
-          <div className="title-name">DILIsym</div>
-        </div>
+        <div className="title-subtitle"></div>
       </div>
+      <div className="title-name">DILIsym</div>
       <div className="subtitle-name">
         Drug-Induced Liver Injury prediction tool
       </div>
@@ -49,9 +48,13 @@ export default function DILIsym() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          DILIsym is Quantitative Systems
-          Toxicology (QST) software capable of predicting and explaining
-          Drug-Induced Liver Injury (DILI)
+          DILIsym is a mechanistic, mathematical model of drug-induced liver
+          injury (DILI) in the form of computational software applied to predict
+          whether new drug candidates will cause liver signals in patients and
+          to enhance the understanding of mechanisms that contribute to liver
+          safety signals already observed in the clinic. The goals of this tool
+          is to improve patient safety, reduce the need for animal testing, and
+          reduce the costs and time necessary to develop new drugs.
         </div>
         <div style={{ height: "2vh" }}>
           {isOverflowing && (
@@ -90,21 +93,20 @@ export default function DILIsym() {
         </div>
 
         <Dialog
-      className="yt-dialog"
-        open={openVideoDialog}
-        onClose={() => setOpenVideoDialog(false)}
-        fullScreen>
-          <div 
-        className="youtube-video">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/rwZD7yolWJU"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen></iframe>
-            </div>
+          className="yt-dialog"
+          open={openVideoDialog}
+          onClose={() => setOpenVideoDialog(false)}
+          fullScreen>
+          <div className="youtube-video">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/rwZD7yolWJU"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen></iframe>
+          </div>
         </Dialog>
       </div>
     </div>

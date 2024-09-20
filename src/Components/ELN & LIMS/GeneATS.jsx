@@ -30,7 +30,7 @@ export default function GeneATS() {
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle">
-          <div className="title-name">GeneATS</div>
+          
         </div>
         {/* <div
             style={{
@@ -42,6 +42,7 @@ export default function GeneATS() {
             NGS data analysis
           </div> */}
       </div>
+      <div className="title-name">GeneATS</div>
       <div className="subtitle-name">Analytical Ticketing System</div>
       <div className="card-subdatas">
         <div

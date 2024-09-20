@@ -38,10 +38,9 @@ export default function IPFsym() {
           src={IPFsymImg}
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
-        <div className="title-subtitle">
-          <div className="title-name">IPFsym</div>
-        </div>
+        <div className="title-subtitle"></div>
       </div>
+      <div className="title-name">IPFsym</div>
       <div className="subtitle-name">
         QSP software for Idiopathic Pulmonary Fibrosis (IPF)
       </div>
@@ -49,9 +48,13 @@ export default function IPFsym() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          The IPFsym® QSP modeling software
-          is a mechanistic, mathematical model of idiopathic pulmonary fibrosis
-          (IPF).
+          IPFsym ® a platform to support the development of effective treatments
+          for IPF patients. IPFsym ®  can be used to predict efficacy for
+          treatment modalities developed for IPF (and other lung diseases with
+          custom modifications and additions).  IPFsym has been utilized to
+          evaluate a number of compounds within drug development, supporting
+          clinical trial design optimization and clinical development decision
+          making.
         </div>
         <div style={{ height: "2vh" }}>
           {isOverflowing && (
@@ -89,21 +92,20 @@ export default function IPFsym() {
           </a>
         </div>
         <Dialog
-      className="yt-dialog"
-        open={openVideoDialog}
-        onClose={() => setOpenVideoDialog(false)}
-        fullScreen>
-          <div 
-        className="youtube-video">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/SLYzK7BPW40"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen></iframe>
-            </div>
+          className="yt-dialog"
+          open={openVideoDialog}
+          onClose={() => setOpenVideoDialog(false)}
+          fullScreen>
+          <div className="youtube-video">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/SLYzK7BPW40"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen></iframe>
+          </div>
         </Dialog>
       </div>
     </div>

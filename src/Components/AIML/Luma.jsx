@@ -39,9 +39,10 @@ export default function Luma() {
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle">
-          <div className="title-name">LUMA</div>
+          
         </div>
       </div>
+      <div className="title-name">LUMA</div>
       <div className="subtitle-name">
         The AI-native Multimodal Scientific Intelligence Platform
       </div>

@@ -38,18 +38,19 @@ export default function RENAsym() {
           src={MonolixImg}
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
-        <div className="title-subtitle">
-          <div className="title-name">RENAsym</div>
-        </div>
+        <div className="title-subtitle"></div>
       </div>
+      <div className="title-name">RENAsym</div>
       <div className="subtitle-name">Renal disease modeling</div>
       <div className="card-subdatas">
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          Quantitative systems toxicology
-          (QST) software for predicting and understand drug-induced kidney
-          injury
+          RENAsym is a mechanistic, mathematical model of drug-induced kidney
+          injury, in the form of computational software applied to predict
+          whether new drug candidates will cause renal injury signals in
+          patients and to enhance the understanding of mechanisms that
+          contribute to renal safety signals already observed in the clinic.
         </div>
         <div style={{ height: "2vh" }}>
           {isOverflowing && (

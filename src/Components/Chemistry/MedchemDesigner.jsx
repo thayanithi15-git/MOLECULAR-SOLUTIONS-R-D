@@ -27,22 +27,28 @@ export default function Medchem_Designer() {
           src={MedchemImg}
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
-        <div className="title-subtitle">
-          <div className="title-name">Medchem Designer</div>
-        </div>
+        <div className="title-subtitle"></div>
       </div>
+      <div className="title-name">Medchem Designer</div>
       <div className="subtitle-name">
-        Chemical Structure Drawing and Property Prediction tool
+      Model Based Drug Development tool
       </div>
       <div className="card-subdatas">
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          MedChem Designer is a chemical
-          sketching tool that integrates advanced molecule drawing capabilities
-          with quick and accurate ADMET property predictions from our top-rated
-          ADMET Predictor software. These predictions include logP, logD(7.4),
-          Polar Surface Area, and Lipinski's Rule of 5 calculations.
+          Monolix Suite is the most advanced and simple solution for non-linear
+          mixed-effects modeling (NLME), designed specifically for
+          pharmacometrics. It uses SAEM algorithm, which provides robust, global
+          convergence even for complex PK/PD models. Monolix is widely used for
+          preclinical and clinical population PK/PD modeling, as well as for
+          Systems Pharmacology, offering unmatched capabilities in model-based
+          drug development. Its intuitive interface allows for easy parameter
+          estimation, model diagnosis, and graphical representation, making it
+          ideal for both beginners and experts. Monolix Suite delivers reliable
+          results in population analysis, streamlining the modeling and
+          simulation process for pharmacokinetics, pharmacodynamics, and
+          clinical trial simulations.
         </div>
         <div style={{ height: "2vh" }}>
           {isOverflowing && (
