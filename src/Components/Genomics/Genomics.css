@@ -364,7 +364,7 @@
   overflow-y: scroll;
   height: 25vh;
 }
-.brief-contents.expanded::-webkit-scrollbar{
+.brief-contents.expanded::-webkit-scrollbar,.youtube-video::-webkit-scrollbar,.yt-dialog::-webkit-scrollbar{
   display: none;
 }
 
@@ -376,6 +376,38 @@
   cursor: pointer;
   /* height: 5vh;
   background-color: #667085; */
+}
+.yt-dialog{
+  margin: 4% 0% 0% 0%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.youtube-video{
+  width: 80vw;
+  height: 100%;
+  overflow-y: hidden;
+}
+.yt-dialog-mara{
+  margin: 4% 0% 0% 10%;
+  width: 80vw;
+  height: 77vh;
+  /* overflow-y: hidden; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.youtube-video-mara{
+  height: 100%;
+  width: 100%;
+  /* overflow-y: hidden; */
+}
+.youtube-video::-webkit-scrollbar,.yt-dialog::-webkit-scrollbar{
+  display: none;
+}
+dialog{
+  display: none;
 }
 
 
@@ -471,6 +503,17 @@
     max-height: none; /* Allows the full text to be shown */
     overflow-y: scroll;
     height: 22vh;
+  }
+  .yt-dialog{
+    /* width: 10vw; */
+    margin-top: 40%;
+    height: 40vh;
+    /* width: 100%; */
+    background-color: transparent;
+  }
+  .youtube-video{
+    width: 80vw;
+    height: 100%;
   }
   
   
@@ -643,6 +686,17 @@
   .genomics-main{
     /* height: 100%; */
     /* background-color: #565add; */
+  }
+  .yt-dialog{
+    /* width: 10vw; */
+    margin-top: 20%;
+    height: 40vh;
+    /* width: 100%; */
+    background-color: transparent;
+  }
+  .youtube-video{
+    width: 50vw;
+    height: 100%;
   }
   
 }

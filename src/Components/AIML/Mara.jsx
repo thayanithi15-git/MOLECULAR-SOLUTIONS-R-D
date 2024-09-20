@@ -3,6 +3,7 @@ import "./AIML.css";
 import { Dialog } from "@mui/material";
 import MaraImg from "../../assets/mara-img.jpg";
 import YtIcon from "../../assets/yt.svg";
+import Video from "../../assets/MARA.mp4";
 
 export default function Mara() {
   const [openVideoDialog, setOpenVideoDialog] = useState(false);
@@ -40,11 +41,11 @@ export default function Mara() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          MARA (Molecular Analysis and
-          Reasoning Assistant) is an advanced AI-driven system designed for
-          Scientific Informatics. MARA acts as a scientific co-pilot, empowering
-          your team to effortlessly build custom tools and workflows that
-          integrate seamlessly with internal databases and operations.
+          MARA (Molecular Analysis and Reasoning Assistant) is an advanced
+          AI-driven system designed for Scientific Informatics. MARA acts as a
+          scientific co-pilot, empowering your team to effortlessly build custom
+          tools and workflows that integrate seamlessly with internal databases
+          and operations.
         </div>
         <div style={{ height: "2vh" }}>
           {isOverflowing && (
@@ -68,27 +69,22 @@ export default function Mara() {
       </div>
 
       <Dialog
+       className="yt-dialog-mara"
         open={openVideoDialog}
         onClose={() => setOpenVideoDialog(false)}
-        fullScreen
-        PaperProps={{
-          style: {
-            margin: "16.2%",
-            height: "80vh",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          },
-        }}>
+        fullScreen>
+           <div 
+        className="youtube-video-mara">
         <video
           className="ytvideo"
           width="100%"
           height="90%"
           controls
-          src="/public/MARA.mp4"
+          src={Video}
           title="Local video player">
           Your browser does not support the video tag.
         </video>
+        </div>
       </Dialog>
     </div>
   );
