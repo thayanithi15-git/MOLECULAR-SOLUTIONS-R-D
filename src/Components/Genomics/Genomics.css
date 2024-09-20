@@ -368,6 +368,7 @@
   max-height: none; /* Allows the full text to be shown */
   overflow-y: scroll;
   height: 20vh;
+  color: black;
 }
 .brief-contents.expanded::-webkit-scrollbar,.youtube-video::-webkit-scrollbar,.yt-dialog::-webkit-scrollbar{
   display: none;
