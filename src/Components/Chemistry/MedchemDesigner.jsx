@@ -38,7 +38,7 @@ export default function Medchem_Designer() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MedChem Designer is a chemical
+          &nbsp;&nbsp;MedChem Designer is a chemical
           sketching tool that integrates advanced molecule drawing capabilities
           with quick and accurate ADMET property predictions from our top-rated
           ADMET Predictor software. These predictions include logP, logD(7.4),

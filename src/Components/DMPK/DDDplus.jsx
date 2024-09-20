@@ -43,14 +43,13 @@ export default function DDDplus() {
         </div>
       </div>
       <div className="subtitle-name">
-        Simulation software for the in vitro dissolution experiment of
-        pharmaceutical dosage forms
+      Invitro pharmaceutical dosage forms simulation tool
       </div>
       <div className="card-subdatas">
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DDDPlus is the industry’s leading
+          &nbsp;&nbsp;DDDPlus is the industry’s leading
           mechanistic in vitro dissolution software for formulation and
           analytical scientists. With DDDPlus, you can model and simulate the
           invitro dissolution of active pharmaceutical ingredients (API) and

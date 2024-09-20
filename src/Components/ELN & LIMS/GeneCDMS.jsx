@@ -36,7 +36,7 @@ export default function GeneCDMS() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GeneCDMS, a Compound & Data
+          &nbsp;&nbsp;GeneCDMS, a Compound & Data
           Management System (CDMS), is tailored to manage compound registration
           and store structural and chemical information in the database.
           Compounds undergo validation, QC, and normalization steps prior to

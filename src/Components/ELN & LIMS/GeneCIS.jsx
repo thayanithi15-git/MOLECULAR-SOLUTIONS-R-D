@@ -28,7 +28,7 @@ export default function GeneCIS() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gene CIS optimizes chemical
+          &nbsp;&nbsp;Gene CIS optimizes chemical
           inventory management by digitizing legacy data, enabling chemists to
           seamlessly integrate and utilize historical chemicals. It tracks the
           lifecycle of chemicals, including procurement, storage, handling,

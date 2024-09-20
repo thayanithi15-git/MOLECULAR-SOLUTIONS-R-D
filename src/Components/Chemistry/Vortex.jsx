@@ -31,7 +31,7 @@ export default function Vortex() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VORTEX is an advanced data
+          &nbsp;&nbsp;VORTEX is an advanced data
           analysis and visualization module designed for managing and
           interacting with massive datasets across various data types, including
           numeric, textual, image, and chemical structures. It includes

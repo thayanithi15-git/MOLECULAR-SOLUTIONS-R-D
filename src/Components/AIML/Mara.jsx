@@ -40,7 +40,7 @@ export default function Mara() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MARA (Molecular Analysis and
+          &nbsp;&nbsp;MARA (Molecular Analysis and
           Reasoning Assistant) is an advanced AI-driven system designed for
           Scientific Informatics. MARA acts as a scientific co-pilot, empowering
           your team to effortlessly build custom tools and workflows that

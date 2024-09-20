@@ -47,7 +47,7 @@ export default function MonolixSuite() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monolix is the most advanced and
+          &nbsp;&nbsp;Monolix is the most advanced and
           simple solution for non-linear mixed effects modeling (NLME) for
           pharmacometrics. It is based on the SAEM algorithm and provides
           robust, global convergence even for complex PK/PD models. Monolix is

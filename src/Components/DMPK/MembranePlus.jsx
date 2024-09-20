@@ -43,13 +43,13 @@ export default function MembranePlus() {
         </div>
       </div>
       <div className="subtitle-name">
-        Software for modeling interstitial lung disease (ILD) 
+      Interstitial lung disease (ILD) modeling tool
       </div>
       <div className="card-subdatas">
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ILDsym® QSP modeling software
+          &nbsp;&nbsp;The ILDsym® QSP modeling software
           is a mechanistic, mathematical model of interstitial lung disease
           (ILD) associated with systemic sclerosis (SSc)
         </div>

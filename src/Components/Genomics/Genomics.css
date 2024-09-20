@@ -134,7 +134,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 20px;
+  padding: 20px 20px 20px 12px;
   background: linear-gradient(to top, rgba(0, 0, 0, 4), transparent); /* Adjust the rgba value */
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -164,7 +164,7 @@
   margin-top: 7%;
   font-size: 15px;
   font-weight: 550;
-  margin-left: 2%;
+  margin-left: 12px;
   height: 5vh;
   color: rgb(9, 9, 153);
 }
@@ -351,6 +351,7 @@
 
 .brief-contents.collapsed {
   height: 22vh;
+  margin-left: 2%;
 }
 
 .brief-contents.expanded {
@@ -364,6 +365,7 @@
 
 .view-button {
   margin-top: 2%;
+  margin-left: 2%;
   /* text-decoration: underline; */
   color: rgb(35, 35, 250);
   cursor: pointer;

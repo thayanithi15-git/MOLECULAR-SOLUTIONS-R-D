@@ -1,6 +1,7 @@
 import React from "react";
 import Luma from "./Luma";
 import Mara from "./Mara";
+import AdmetPredictor from "../ComputationalChemistry/AdmetPredictor";
 import "./AIML.css";
 
 export default function AIML() {
@@ -12,6 +13,9 @@ export default function AIML() {
         </div>
         <div className="card-container">
           <Luma />
+        </div>
+        <div className="card-container">
+          <AdmetPredictor />
         </div>
       </div>
     </div>

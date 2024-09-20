@@ -43,13 +43,13 @@ export default function NAFLDsym() {
         </div>
       </div>
       <div className="subtitle-name">
-        Software for modeling nonalcoholic fatty liver disease
+      Nonalcoholic fatty liver disease modeling tool
       </div>
       <div className="card-subdatas">
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NAFLDsym is a computational model
+          &nbsp;&nbsp;NAFLDsym is a computational model
           of nonalcoholic fatty liver disease (NAFLD) and can be used to predict
           efficacy for treatment modalities developed for treating NAFLD and
           NASH.

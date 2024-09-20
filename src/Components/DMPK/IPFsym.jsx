@@ -49,7 +49,7 @@ export default function IPFsym() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The IPFsym® QSP modeling software
+          &nbsp;&nbsp;The IPFsym® QSP modeling software
           is a mechanistic, mathematical model of idiopathic pulmonary fibrosis
           (IPF).
         </div>

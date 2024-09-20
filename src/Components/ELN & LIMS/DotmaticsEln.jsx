@@ -30,7 +30,7 @@ export default function DotmaticsELN() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dotmatics ELN enables seamless
+          &nbsp;&nbsp;Dotmatics ELN enables seamless
           collaborative research by capturing and securely storing experimental
           data in a unified digital notebook. With flexible templates for
           chemistry, biologics, and materials science, it supports diverse

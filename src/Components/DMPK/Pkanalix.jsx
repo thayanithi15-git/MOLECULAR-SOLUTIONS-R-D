@@ -43,13 +43,13 @@ export default function PKanalix() {
         </div>
       </div>
       <div className="subtitle-name">
-        Software for compartmental and non-compartmental analysis (NCA)
+      Compartmental and non-compartmental analysis (NCA) tool
       </div>
       <div className="card-subdatas">
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;PKanalix is a powerful pharmacokinetic analysis software designed to streamline and simplify the analysis of drug concentration data. It provides users with a comprehensive platform for performing both Non-compartmental Analysis (NCA) and Compartmental Analysis, offering flexibility through a user-friendly graphical interface and advanced scripting capabilities via R. PKanalix stands out by offering industry-standard methods for calculating key pharmacokinetic parameters, automatically generating visualizations, and ensuring reliable, reproducible results. Its seamless integration with Monolix also enables easy transition to population modeling, making it an ideal solution for researchers and scientists looking to gain clear insights into drug behavior and pharmacokinetic profiles.
         </div>
         <div style={{ height: "2vh" }}>
           {isOverflowing && (

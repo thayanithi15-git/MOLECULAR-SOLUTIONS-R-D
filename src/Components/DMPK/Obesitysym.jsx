@@ -47,7 +47,7 @@ export default function Obesitysym() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OBESITYsym allows researchers and
+          &nbsp;&nbsp;OBESITYsym allows researchers and
           healthcare professionals to simulate the impact of obesity on drug
           metabolism, disease progression, and therapeutic interventions. This
           powerful tool aids in the development of personalized treatment

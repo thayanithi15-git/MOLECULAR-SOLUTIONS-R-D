@@ -43,13 +43,15 @@ export default function Simulx() {
         </div>
       </div>
       <div className="subtitle-name">
-        Software for modeling interstitial lung disease (ILD) 
+      Interstitial lung disease (ILD) modeling tool
+
+
       </div>
       <div className="card-subdatas">
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ILDsym® QSP modeling software
+          &nbsp;&nbsp;The ILDsym® QSP modeling software
           is a mechanistic, mathematical model of interstitial lung disease
           (ILD) associated with systemic sclerosis (SSc)
         </div>
@@ -70,24 +72,7 @@ export default function Simulx() {
             <img src={YtIcon} className="yt-img" />
           </div>
         </div>
-        <div
-          className="button-container"
-          style={{ marginLeft: "3%" }}
-          onClick={downloadPDF}>
-          <a href="/brochure.pdf" download className="refined-animated-button">
-            <div style={{ fontSize: "13px" }}>Brochure</div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="white"
-              viewBox="0 0 24 24"
-              width="24px"
-              height="24px"
-              id="download-icon">
-              <path d="M12 16l-4-4h3V4h2v8h3l-4 4zm0 2c-3.86 0-7 3.14-7 7h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.86-3.14-7-7-7z" />
-            </svg>
-            <div className="wave-animation"></div>
-          </a>
-        </div>
+       
 
         <Dialog
           open={openVideoDialog}
