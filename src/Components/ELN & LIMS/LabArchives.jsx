@@ -43,9 +43,7 @@ export default function LabArchives() {
         <div
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
-          GeneELN electronically capture /
-          document all the research, experiments, calculations and procedures
-          performed in laboratory setup.
+          LabArchives is a powerful suite of SaaS applications designed for research data management, enabling scientists to securely document, manage, and protect their research. Serving over 750,000 users across academic, non-profit, and commercial organizations, it acts as a central hub for lab operations. LabArchives enhances data capture, fosters secure collaboration, and streamlines workflows to boost lab efficiency. It offers the highest level of data security with features like comprehensive audit trails, access controls, and data encryption. Compliant with SOC2, ISO 27001, HIPAA, and GDPR standards, it ensures the protection of intellectual property and regulatory adherence. Its versatile tools also help manage lab inventory, samples, and resources.
         </div>
         <div style={{ height: "2vh" }}>
           {isOverflowing && (
