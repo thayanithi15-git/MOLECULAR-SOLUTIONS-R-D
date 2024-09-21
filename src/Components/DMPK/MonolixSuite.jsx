@@ -17,10 +17,19 @@ export default function MonolixSuite() {
   }, []);
 
   const downloadPDF = () => {
-    const link = document.createElement("a");
-    link.href = "/MonolixSuite-2023.pdf";
-    link.download = "MonolixSuite-2023.pdf";
-    link.click();
+    fetch("https://molecularsolutions.co.in/products/MonolixSuite-2023.pdf")
+      .then(response => response.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(blob); 
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "MonolixSuite-2023.pdf"); 
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+      })
+      .catch(err => console.error("Error downloading PDF:", err));
   };
 
   const handleClickOpenVideoDialog = () => {
@@ -35,7 +44,7 @@ export default function MonolixSuite() {
     <div className="right-sub-contents">
       <div className="title-productspage">
         <img
-          src={MonolixSuiteImg}
+          src="https://molecularsolutions.co.in/products/assets/MonolixSuite-img-DrVXX6KB.jpg"
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle">
@@ -55,7 +64,7 @@ export default function MonolixSuite() {
           used for preclinical and clinical population PK/PD modeling and for
           Systems Pharmacology.
         </div>
-        <div style={{ height: "2vh" }}>
+        <div>
           {isOverflowing && (
             <div
               onClick={() => setIsExpanded(!isExpanded)}
@@ -68,7 +77,7 @@ export default function MonolixSuite() {
 
       <div className="bottom-buttons">
       <div className="button-containers" onClick={downloadPDF}>
-          <a href="/brochure.pdf" download className="refined-animated-button">
+          <a className="refined-animated-button">
             <div style={{ fontSize: "13px" }}>BROCHURE</div>
             <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>

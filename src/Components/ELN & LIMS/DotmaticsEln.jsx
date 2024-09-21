@@ -16,7 +16,7 @@ export default function DotmaticsELN() {
     <div className="right-sub-contents">
       <div className="title-productspage">
         <img
-          src={DotmaticsImg}
+          src="https://molecularsolutions.co.in/products/assets/dotmatics-img-3Yoc_wsg.jpg"
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle">
@@ -39,7 +39,7 @@ export default function DotmaticsELN() {
           between experiment registration, screening, and decision support,
           optimizing the innovation process.
         </div>
-        <div style={{ height: "2vh" }}>
+        <div>
           {isOverflowing && (
             <div
               onClick={() => setIsExpanded(!isExpanded)}

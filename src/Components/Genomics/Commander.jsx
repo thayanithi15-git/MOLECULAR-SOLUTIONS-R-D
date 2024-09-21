@@ -16,17 +16,26 @@ export default function Commander() {
   }, []);
 
   const downloadPDF = () => {
-    const link = document.createElement("a");
-    link.href = "/Commander.pdf";
-    link.download = "Commander.pdf";
-    link.click();
+    fetch("https://molecularsolutions.co.in/products/Commander.pdf")
+      .then(response => response.blob()) // Convert response to a blob
+      .then(blob => {
+        const url = window.URL.createObjectURL(blob); // Create a URL for the blob
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "Commander.pdf"); // Set the download attribute
+        document.body.appendChild(link);
+        link.click(); // Simulate click to trigger download
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url); // Clean up
+      })
+      .catch(err => console.error("Error downloading PDF:", err));
   };
 
   return (
     <div className="right-sub-contents">
       <div className="title-productspage">
         <img
-          src={CommanderImg}
+          src="https://molecularsolutions.co.in/products/assets/commander-img-SwXbBybO.jpg"
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle">
@@ -50,18 +59,18 @@ export default function Commander() {
           interpretation and insights. Ideal for small labs, it streamlines
           research processes and enhances productivity.
         </div>
-        <div style={{ height: "2vh" }}>
+        <div>
           {isOverflowing && (
             <div
               onClick={() => setIsExpanded(!isExpanded)}
-              className="view-button">
+              className="view-button" >
               {isExpanded ? "" : "View More"}
             </div>
           )}
         </div>
       </div>
         <div className="button-container-brochure" onClick={downloadPDF}>
-          <a href="/brochure.pdf" download className="refined-animated-button">
+          <a className="refined-animated-button">
             <div style={{ fontSize: "13px" }}>BROCHURE</div>
             <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>

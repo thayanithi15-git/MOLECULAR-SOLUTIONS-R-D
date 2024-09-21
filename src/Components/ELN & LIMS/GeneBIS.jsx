@@ -13,18 +13,28 @@ export default function GeneBIS() {
     }
   }, []);
 
+
   const downloadPDF = () => {
-    const link = document.createElement("a");
-    link.href = "/GeneBIS.pdf";
-    link.download = "GeneBIS.pdf";
-    link.click();
+    fetch("https://molecularsolutions.co.in/products/GeneBIS.pdf")
+      .then(response => response.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(blob); 
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "GeneBIS.pdf"); 
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+      })
+      .catch(err => console.error("Error downloading PDF:", err));
   };
 
   return (
     <div className="right-sub-contents">
       <div className="title-productspage">
         <img
-          src={GeneBISImg}
+          src="https://molecularsolutions.co.in/products/assets/geneBIS-img-B3dykO5Q.jpg"
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle">
@@ -49,7 +59,7 @@ export default function GeneBIS() {
           into material receipt, requests, issues, zero inventory, and
           fast-moving materials, enhancing overall inventory optimization.
         </div>
-        <div style={{ height: "2vh" }}>
+        <div>
           {isOverflowing && (
             <div
               onClick={() => setIsExpanded(!isExpanded)}
@@ -60,7 +70,7 @@ export default function GeneBIS() {
         </div>
       </div>
       <div className="button-container-brochure" onClick={downloadPDF}>
-          <a href="/brochure.pdf" download className="refined-animated-button">
+          <a className="refined-animated-button">
             <div style={{ fontSize: "13px" }}>BROCHURE</div>
             <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>

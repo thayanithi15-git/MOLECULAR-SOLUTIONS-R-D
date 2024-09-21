@@ -35,7 +35,7 @@ export default function Simulx() {
     <div className="right-sub-contents">
       <div className="title-productspage">
         <img
-          src={SimulxImg}
+          src="https://molecularsolutions.co.in/products/assets/Simulx-img-3e65wHJ0.jpg"
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle"></div>
@@ -56,7 +56,7 @@ export default function Simulx() {
           widely used to compare dosing regimens, assess safety, calculate study
           power, and optimize trial designs across phases.
         </div>
-        <div style={{ height: "2vh" }}>
+        <div>
           {isOverflowing && (
             <div
               onClick={() => setIsExpanded(!isExpanded)}

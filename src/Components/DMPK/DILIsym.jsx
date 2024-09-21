@@ -15,12 +15,21 @@ export default function DILIsym() {
       setIsOverflowing(true);
     }
   }, []);
-
+  
   const downloadPDF = () => {
-    const link = document.createElement("a");
-    link.href = "/DILIsym.pdf";
-    link.download = "DILIsym.pdf";
-    link.click();
+    fetch("https://molecularsolutions.co.in/products/DILIsym.pdf")
+      .then(response => response.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(blob); 
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "DILIsym.pdf"); 
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+      })
+      .catch(err => console.error("Error downloading PDF:", err));
   };
 
   const handleClickOpenVideoDialog = () => {
@@ -35,7 +44,7 @@ export default function DILIsym() {
     <div className="right-sub-contents">
       <div className="title-productspage">
         <img
-          src={DILIsymImg}
+          src="https://molecularsolutions.co.in/products/assets/DILIsym-img-DhFvJeDm.jpg"
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle"></div>
@@ -56,7 +65,7 @@ export default function DILIsym() {
           is to improve patient safety, reduce the need for animal testing, and
           reduce the costs and time necessary to develop new drugs.
         </div>
-        <div style={{ height: "2vh" }}>
+        <div>
           {isOverflowing && (
             <div
               onClick={() => setIsExpanded(!isExpanded)}
@@ -69,7 +78,7 @@ export default function DILIsym() {
 
       <div className="bottom-buttons">
       <div className="button-containers" onClick={downloadPDF}>
-          <a href="/brochure.pdf" download className="refined-animated-button">
+          <a className="refined-animated-button">
             <div style={{ fontSize: "13px" }}>BROCHURE</div>
             <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>

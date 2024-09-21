@@ -14,17 +14,27 @@ export default function Medchem_Designer() {
   }, []);
 
   const downloadPDF = () => {
-    const link = document.createElement("a");
-    link.href = "/Medchem_Designer_Flyer.pdf";
-    link.download = "Medchem_Designer_Flyer.pdf";
-    link.click();
+    fetch("https://molecularsolutions.co.in/products/Medchem_Designer_Flyer.pdf")
+      .then(response => response.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(blob); 
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "Medchem_Designer_Flyer.pdf"); 
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+      })
+      .catch(err => console.error("Error downloading PDF:", err));
   };
+
 
   return (
     <div className="right-sub-contents">
       <div className="title-productspage">
         <img
-          src={MedchemImg}
+          src="https://molecularsolutions.co.in/products/assets/medchem-img-DJLiAe2Z.jpg"
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle"></div>
@@ -47,7 +57,7 @@ export default function Medchem_Designer() {
           design process by providing real-time insights into the properties of
           new compounds, making it an essential resource for chemical designers.
         </div>
-        <div style={{ height: "2vh" }}>
+        <div>
           {isOverflowing && (
             <div
               onClick={() => setIsExpanded(!isExpanded)}
@@ -58,7 +68,7 @@ export default function Medchem_Designer() {
         </div>
       </div>
       <div className="button-container-brochure" onClick={downloadPDF}>
-          <a href="/brochure.pdf" download className="refined-animated-button">
+          <a className="refined-animated-button">
             <div style={{ fontSize: "13px" }}>BROCHURE</div>
             <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>

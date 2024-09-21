@@ -3,7 +3,9 @@ import "./AIML.css";
 import { Dialog } from "@mui/material";
 import MaraImg from "../../assets/mara-img.jpg";
 import YtIcon from "../../assets/yt.svg";
-import Video from "../../assets/MARA.mp4";
+import { IoVideocam } from "react-icons/io5";
+
+// import Video from "https://molecularsolutions.co.in/products/assets/MARA-BQoUcnH0.mp4";
 
 export default function Mara() {
   const [openVideoDialog, setOpenVideoDialog] = useState(false);
@@ -29,7 +31,7 @@ export default function Mara() {
     <div className="right-sub-contents">
       <div className="title-productspage">
         <img
-          src={MaraImg}
+          src="https://molecularsolutions.co.in/products/assets/mara-img-C-swd0ES.jpg"
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle"></div>
@@ -59,7 +61,7 @@ export default function Mara() {
           on Azure, ensuring a flexible and secure AI experience tailored to
           your organization.
         </div>
-        <div style={{ height: "2vh" }}>
+        <div>
           {isOverflowing && (
             <div
               onClick={() => setIsExpanded(!isExpanded)}
@@ -73,8 +75,12 @@ export default function Mara() {
       <div className="bottom-buttons-yt">
       <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
           <div className="icon-container-yt" style={{ display: "flex" }}>
-            <img src={YtIcon} className="yt-img" />
-            <p className="presentation">Video Presentation</p>
+            {/* <img src={YtIcon} className="yt-img" /> */}
+            <div className="refined-animated-button-yt">
+            <p className="presentation">VIDEO</p>
+            <IoVideocam style={{width: "2vw",textAlign: "center"}}/>
+</div>
+            
           </div>
         </div>
       </div>
@@ -89,7 +95,7 @@ export default function Mara() {
           <video
             className="ytvideo"
             controls
-            src={Video}
+            src="https://molecularsolutions.co.in/products/assets/MARA-BQoUcnH0.mp4"
             title="Local video player">
             Your browser does not support the video tag.
           </video>

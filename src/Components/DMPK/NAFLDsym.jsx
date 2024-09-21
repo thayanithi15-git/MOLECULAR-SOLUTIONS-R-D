@@ -16,11 +16,22 @@ export default function NAFLDsym() {
     }
   }, []);
 
+
+  
   const downloadPDF = () => {
-    const link = document.createElement("a");
-    link.href = "/NAFLDsym.pdf";
-    link.download = "NAFLDsym.pdf";
-    link.click();
+    fetch("https://molecularsolutions.co.in/products/NAFLDsym.pdf")
+      .then(response => response.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(blob); 
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "NAFLDsym.pdf"); 
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+      })
+      .catch(err => console.error("Error downloading PDF:", err));
   };
 
   const handleClickOpenVideoDialog = () => {
@@ -35,7 +46,7 @@ export default function NAFLDsym() {
     <div className="right-sub-contents">
       <div className="title-productspage">
         <img
-          src={NAFLDsymImg}
+          src="https://molecularsolutions.co.in/products/assets/NAFLDsym-img-BgzkTXUM.jpg"
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle"></div>
@@ -60,7 +71,7 @@ export default function NAFLDsym() {
           factors which drive efficacy across a diverse population with varying
           pathophysiologic profiles.
         </div>
-        <div style={{ height: "2vh" }}>
+        <div>
           {isOverflowing && (
             <div
               onClick={() => setIsExpanded(!isExpanded)}
@@ -73,7 +84,7 @@ export default function NAFLDsym() {
 
       <div className="bottom-buttons">
       <div className="button-containers" onClick={downloadPDF}>
-          <a href="/brochure.pdf" download className="refined-animated-button">
+          <a className="refined-animated-button">
             <div style={{ fontSize: "13px" }}>BROCHURE</div>
             <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>

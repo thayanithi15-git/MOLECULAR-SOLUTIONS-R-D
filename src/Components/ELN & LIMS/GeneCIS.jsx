@@ -16,7 +16,7 @@ export default function GeneCIS() {
     <div className="right-sub-contents">
       <div className="title-productspage">
         <img
-          src={GeneCISImg}
+          src="https://molecularsolutions.co.in/products/assets/geneCIS-img-Choah13X.jpg"
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle">
@@ -38,7 +38,7 @@ export default function GeneCIS() {
           dashboard and MIS reports, enhancing accuracy and operational
           efficiency.
         </div>
-        <div style={{ height: "2vh" }}>
+        <div>
           {isOverflowing && (
             <div
               onClick={() => setIsExpanded(!isExpanded)}

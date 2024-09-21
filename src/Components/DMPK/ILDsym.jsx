@@ -15,13 +15,23 @@ export default function ILDsym() {
       setIsOverflowing(true);
     }
   }, []);
-
+  
   const downloadPDF = () => {
-    const link = document.createElement("a");
-    link.href = "/ILDsym_Flyer.pdf";
-    link.download = "ILDsym_Flyer.pdf";
-    link.click();
+    fetch("https://molecularsolutions.co.in/products/ILDsym_Flyer.pdf")
+      .then(response => response.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(blob); 
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "ILDsym_Flyer.pdf"); 
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+      })
+      .catch(err => console.error("Error downloading PDF:", err));
   };
+
 
   const handleClickOpenVideoDialog = () => {
     setOpenVideoDialog(true);
@@ -35,7 +45,7 @@ export default function ILDsym() {
     <div className="right-sub-contents">
       <div className="title-productspage">
         <img
-          src={ILDsymImg}
+          src="https://molecularsolutions.co.in/products/assets/ILDsym-img-9K4BCB35.jpg"
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle"></div>
@@ -56,7 +66,7 @@ export default function ILDsym() {
           compounds during drug development, help inform clinical trial design
           optimization, and guide clinical development decision-making.
         </div>
-        <div style={{ height: "2vh" }}>
+        <div>
           {isOverflowing && (
             <div
               onClick={() => setIsExpanded(!isExpanded)}
@@ -69,7 +79,7 @@ export default function ILDsym() {
 
       <div className="bottom-buttons">
       <div className="button-containers" onClick={downloadPDF}>
-          <a href="/brochure.pdf" download className="refined-animated-button">
+          <a className="refined-animated-button">
             <div style={{ fontSize: "13px" }}>BROCHURE</div>
             <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>

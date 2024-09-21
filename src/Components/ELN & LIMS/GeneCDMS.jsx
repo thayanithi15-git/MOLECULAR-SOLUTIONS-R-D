@@ -14,17 +14,27 @@ export default function GeneCDMS() {
   }, []);
 
   const downloadPDF = () => {
-    const link = document.createElement("a");
-    link.href = "/GeneCDMS.pdf";
-    link.download = "GeneCDMS.pdf";
-    link.click();
+    fetch("https://molecularsolutions.co.in/products/GeneCDMS.pdf")
+      .then(response => response.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(blob); 
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "GeneCDMS.pdf"); 
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+      })
+      .catch(err => console.error("Error downloading PDF:", err));
   };
+
 
   return (
     <div className="right-sub-contents">
       <div className="title-productspage">
         <img
-          src={GeneCDMSImg}
+          src="https://molecularsolutions.co.in/products/assets/geneCDMS-img-DffotWZD.jpg"
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle">
@@ -43,7 +53,7 @@ export default function GeneCDMS() {
           Compounds undergo validation, QC, and normalization steps prior to
           registration, with resulting reports exportable to an Excel sheet.
         </div>
-        <div style={{ height: "2vh" }}>
+        <div>
           {isOverflowing && (
             <div
               onClick={() => setIsExpanded(!isExpanded)}
@@ -54,7 +64,7 @@ export default function GeneCDMS() {
         </div>
       </div>
       <div className="button-container-brochure" onClick={downloadPDF}>
-          <a href="/brochure.pdf" download className="refined-animated-button">
+          <a className="refined-animated-button">
             <div style={{ fontSize: "13px" }}>BROCHURE</div>
             <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>

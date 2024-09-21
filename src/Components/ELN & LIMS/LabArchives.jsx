@@ -28,7 +28,7 @@ export default function LabArchives() {
     <div className="right-sub-contents">
       <div className="title-productspage">
         <img
-          src={LabarchivesImg}
+          src="https://molecularsolutions.co.in/products/assets/labarchives-img-DV9FPAZx.jpg"
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle">
@@ -45,7 +45,7 @@ export default function LabArchives() {
           ref={textRef}>
           LabArchives is a powerful suite of SaaS applications designed for research data management, enabling scientists to securely document, manage, and protect their research.<br/><br/>Serving over 750,000 users across academic, non-profit, and commercial organizations, it acts as a central hub for lab operations.<br/><br/>LabArchives enhances data capture, fosters secure collaboration, and streamlines workflows to boost lab efficiency.<br/><br/>It offers the highest level of data security with features like comprehensive audit trails, access controls, and data encryption. Compliant with SOC2, ISO 27001, HIPAA, and GDPR standards, it ensures the protection of intellectual property and regulatory adherence.
         </div>
-        <div style={{ height: "2vh" }}>
+        <div>
           {isOverflowing && (
             <div
               onClick={() => setIsExpanded(!isExpanded)}

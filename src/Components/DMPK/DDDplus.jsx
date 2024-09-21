@@ -17,10 +17,19 @@ export default function DDDplus() {
   }, []);
 
   const downloadPDF = () => {
-    const link = document.createElement("a");
-    link.href = "/DDDPlus.pdf";
-    link.download = "DDDPlus.pdf";
-    link.click();
+    fetch("https://molecularsolutions.co.in/products/DDDPlus.pdf")
+      .then(response => response.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(blob); 
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "DDDPlus.pdf"); 
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+      })
+      .catch(err => console.error("Error downloading PDF:", err));
   };
 
   const handleClickOpenVideoDialog = () => {
@@ -35,7 +44,7 @@ export default function DDDplus() {
     <div className="right-sub-contents">
       <div className="title-productspage">
         <img
-          src={DDDplusImg}
+          src="https://molecularsolutions.co.in/products/assets/DDDplus-img-1r4xwTi5.jpg"
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle">
@@ -58,7 +67,7 @@ export default function DDDplus() {
           seconds and begin making informed decisions to help improve your
           chances for success.
         </div>
-        <div style={{ height: "2vh" }}>
+        <div>
           {isOverflowing && (
             <div
               onClick={() => setIsExpanded(!isExpanded)}
@@ -71,7 +80,7 @@ export default function DDDplus() {
 
       <div className="bottom-buttons">
       <div className="button-containers" onClick={downloadPDF}>
-          <a href="/brochure.pdf" download className="refined-animated-button">
+          <a className="refined-animated-button">
             <div style={{ fontSize: "13px" }}>BROCHURE</div>
             <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>

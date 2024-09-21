@@ -17,10 +17,19 @@ export default function Nanome() {
   }, []);
 
   const downloadPDF = () => {
-    const link = document.createElement("a");
-    link.href = "/Nanome_Flyer.pdf";
-    link.download = "Nanome_Flyer.pdf";
-    link.click();
+    fetch("https://molecularsolutions.co.in/products/Nanome_Flyer.pdf")
+      .then(response => response.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(blob); 
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "Nanome_Flyer.pdf"); 
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+      })
+      .catch(err => console.error("Error downloading PDF:", err));
   };
 
   const handleClickOpenVideoDialog = () => {
@@ -35,7 +44,7 @@ export default function Nanome() {
     <div className="right-sub-contents">
       <div className="title-productspage">
         <img
-          src={NanomeImg}
+          src="https://molecularsolutions.co.in/products/assets/nanome-img-D8rbApd9.jpg"
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle">
@@ -60,7 +69,7 @@ export default function Nanome() {
           platform accelerates discovery and development by making molecular
           design more accessible and interactive.
         </div>
-        <div style={{ height: "2vh" }}>
+        <div>
           {isOverflowing && (
             <div
               onClick={() => setIsExpanded(!isExpanded)}
@@ -73,7 +82,7 @@ export default function Nanome() {
 
       <div className="bottom-buttons">
       <div className="button-containers" onClick={downloadPDF}>
-          <a href="/brochure.pdf" download className="refined-animated-button">
+          <a className="refined-animated-button">
             <div style={{ fontSize: "13px" }}>BROCHURE</div>
             <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>

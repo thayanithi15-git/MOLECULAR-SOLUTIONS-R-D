@@ -35,7 +35,7 @@ export default function RENAsym() {
     <div className="right-sub-contents">
       <div className="title-productspage">
         <img
-          src={MonolixImg}
+          src="https://molecularsolutions.co.in/products/assets/Monolix-img-CPaKe1OD.jpg"
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle"></div>
@@ -52,7 +52,7 @@ export default function RENAsym() {
           patients and to enhance the understanding of mechanisms that
           contribute to renal safety signals already observed in the clinic.
         </div>
-        <div style={{ height: "2vh" }}>
+        <div>
           {isOverflowing && (
             <div
               onClick={() => setIsExpanded(!isExpanded)}

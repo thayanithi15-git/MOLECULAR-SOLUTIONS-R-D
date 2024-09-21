@@ -1,47 +1,47 @@
 .genomics-main {
- 
+  font-family: "Roboto", sans-serif;
   width: 100%;
   padding: 2%;
   border-radius: 10px;
   align-items: center;
 }
-#aiml-main{
+#aiml-main {
   /* background-image: url("../../assets/genomicsbg.svg");
   background-size: cover; */
 }
-#elnlims-main{
+#elnlims-main {
   /* background-image: url("../../assets/elnlimsbg.svg"); */
   /* background-size: cover; */
   /* background-position: -250px; */
 }
-#vr-main{
+#vr-main {
   /* background-image: url("../../assets/genomicsbg.svg");
   background-size: cover; */
 }
-#biology-main{
+#biology-main {
   /* background-image: url("../../assets/biologybg.svg"); */
   /* background-size: cover; */
   /* background-position: -250px; */
 }
-#comchemistry-main{
+#comchemistry-main {
   /* background-image: url("../../assets/genomicsbg.svg");
   background-size: cover; */
 }
-#genomics-main{
+#genomics-main {
   /* background-image: url("../../assets/genomicsbg.svg"); */
   /* background-size: cover; */
   /* background-position: -250px; */
 }
-#chemistry-main{
+#chemistry-main {
   /* background-image: url("../../assets/genomicsbg.svg");
   background-size: cover; */
 }
-#dmpk-main{
+#dmpk-main {
   /* background-image: url("../../assets/genomicsbg.svg");
   background-size: cover; */
 }
 
-.products-contents{
+.products-contents {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -63,7 +63,7 @@
   height: 68.5vh;
   transition: all 0.7s;
 }
-.card-container:hover{
+.card-container:hover {
   background-color: #eaf6fb;
   /* background-color: red; */
   cursor: pointer;
@@ -125,7 +125,7 @@
   height: 94%;
   overflow-y: hidden;
 }
-.youtube-video-mara{
+.youtube-video-mara {
   /* height: 20vh; */
   overflow-y: hidden;
 }
@@ -141,18 +141,17 @@
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.title-subtitle{
+.title-subtitle {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 20px 20px 20px 12px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 4), transparent); /* Adjust the rgba value */
+  /* background: linear-gradient(to top, rgba(0, 0, 0, 4), transparent); */
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   color: white;
 }
-
 
 .title-productspage {
   font-size: 27px;
@@ -167,11 +166,11 @@
   position: relative;
   width: 100%;
 }
-.title-name{
+.title-name {
   margin-top: 5%;
   font-size: 18px;
   font-weight: 800;
-  color: #E87A0C;
+  color: #e87a0c;
   margin-left: 12px;
 }
 .subtitle-name {
@@ -205,7 +204,7 @@
   position: relative;
   overflow: hidden;
 }
-.bronchurewithoutyt{
+.bronchurewithoutyt {
   display: flex;
   border-radius: 20px;
   /* padding: 0.3%; */
@@ -223,7 +222,7 @@
   position: relative;
   overflow: hidden;
 }
-.bronchurewithoutdownload{
+.bronchurewithoutdownload {
   display: flex;
   height: 5.5vh;
   /* width: 9.5vw; */
@@ -339,36 +338,36 @@
   /* transition: opacity 0.3s ease, transform 0.3s ease;  */
   /* Smooth transition */
 }
-.yt-img{
+.yt-img {
   /* width: 40px; */
   margin-top: 5%;
 }
-#download-icon{
+#download-icon {
   font-size: 5px;
   width: 30px;
   height: 20px;
   margin-left: 5%;
   /* display: none; */
 }
-.bottom-buttons{
+.bottom-buttons {
   display: flex;
   align-items: center;
-  margin: 3% 0% 0% 4%;
+  margin: 3% 0% 0% 2%;
   /* width: 100%; */
-  gap: 4.5rem;
+  gap: 6.8rem;
   /* border: 1px solid black; */
   /* justify-content: end; */
 }
-.bottom-buttons-yt{
-  margin-left: 60%;
+.bottom-buttons-yt {
+  margin-left: 68%;
   margin-top: 3%;
-width: 40%;
+  width: 40%;
 }
 .brief-contents {
   overflow: hidden;
   transition: max-height 0.3s ease;
 }
-.button-container-brochure{
+.button-container-brochure {
   margin: 3% 0% 0% 3%;
 }
 
@@ -385,7 +384,9 @@ width: 40%;
   height: 20vh;
   color: black;
 }
-.brief-contents.expanded::-webkit-scrollbar,.youtube-video::-webkit-scrollbar,.yt-dialog::-webkit-scrollbar{
+.brief-contents.expanded::-webkit-scrollbar,
+.youtube-video::-webkit-scrollbar,
+.yt-dialog::-webkit-scrollbar {
   display: none;
 }
 
@@ -399,19 +400,19 @@ width: 40%;
   /* height: 5vh;
   background-color: #667085; */
 }
-.yt-dialog{
+.yt-dialog {
   margin: 4% 0% 0% 0%;
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.youtube-video{
+.youtube-video {
   width: 80vw;
   height: 100%;
   overflow-y: hidden;
 }
-.yt-dialog-mara{
+.yt-dialog-mara {
   margin: 4% 0% 0% 10%;
   width: 80vw;
   height: 77vh;
@@ -420,15 +421,16 @@ width: 40%;
   /* justify-content: center; */
   /* align-items: center; */
 }
-.youtube-video-mara{
+.youtube-video-mara {
   height: 100%;
   width: 100%;
   /* overflow-y: hidden; */
 }
-.youtube-video::-webkit-scrollbar,.yt-dialog::-webkit-scrollbar{
+.youtube-video::-webkit-scrollbar,
+.yt-dialog::-webkit-scrollbar {
   display: none;
 }
-dialog{
+dialog {
   display: none;
 }
 
@@ -437,9 +439,8 @@ dialog{
   align-items: center;
   justify-content: end;
   margin-top: 3%;
-  
 }
-.presentation{
+.presentation {
   /* color: rgb(255, 0, 0); */
   /* text-decoration: underline; */
   width: 100%;
@@ -447,9 +448,12 @@ dialog{
   margin-top: 4%;
   font-size: 13px;
   font-weight: bold;
+  text-align: center;
 }
-
-
+.video-icon{
+  width: 2vw;
+  text-align: center;
+}
 /* display: "flex",
               borderRadius: "20px",
               padding: "0.3%",
@@ -463,6 +467,9 @@ dialog{
               marginTop: "2%",
               transition: "background-color 0.3s ease",
               cursor: "pointer", */
+
+
+/* mobile responsive*/
 @media (max-width: 1278px) {
   .bronchure {
     width: 100px;
@@ -513,90 +520,82 @@ dialog{
   .title-productspage {
     font-size: 30px;
   }
-  .products-contents{
+  .products-contents {
     /* width: 100%; */
     display: grid;
-    grid-template-columns: repeat(1,3fr);
+    grid-template-columns: repeat(1, 3fr);
   }
-  .card-container{
+  .card-container {
     /* width: 100%; */
   }
-  .bronchurewithoutyt{
+  .bronchurewithoutyt {
     margin-left: 80%;
   }
-  .card-subdatas{
+  .card-subdatas {
     /* height: 15vh; */
   }
-  .bottom-buttons{
+  .bottom-buttons {
     gap: 8.5rem;
     margin-top: 0%;
   }
-  #download-icon{
+  #download-icon {
     font-size: 3vw;
   }
   .brief-contents.collapsed {
     height: 16vh;
   }
-  
+
   .brief-contents.expanded {
     max-height: none; /* Allows the full text to be shown */
     overflow-y: scroll;
     height: 17vh;
   }
-  .yt-dialog{
+  .yt-dialog {
     /* width: 10vw; */
     margin-top: 40%;
     height: 40vh;
     /* width: 100%; */
     background-color: transparent;
   }
-  .youtube-video{
+  .youtube-video {
     width: 80vw;
     height: 100%;
-  }
-  .bottom-buttons{
-    /* gap: 14rem; */
-    margin-top: 5%;
-  }
-  .bottom-buttons-yt{
-    margin-left: 70%;
     width: 20vw;
   }
-  
-  
 }
-@media (max-width: 500px){
-  .card-subdatas{
+@media (max-width: 500px) {
+  .card-subdatas {
     /* height: 30vh; */
     /* background-color: #565add; */
   }
-  .bronchurewithoutyt{
+  .bronchurewithoutyt {
     width: 30%;
     align-items: center;
     display: flex;
     margin-left: 60%;
   }
-  .bronchure-yt{
+  .bronchure-yt {
     /* width: 100%; */
     margin-left: 17%;
   }
-  .bronchure{
+  .bronchure {
     width: 30%;
   }
-   .yt-img{
+  .yt-img {
     /* width: 100vw; */
   }
-  .bronchure-yt{
+  .bronchure-yt {
     width: 0vw;
   }
-  .card-subdatas{
+  .card-subdatas {
     /* height: 28vh; */
   }
-  .icon-container-youtube{
+  .icon-container-youtube {
     margin-left: 0%;
   }
-  
-  
+  .brief-contents.collapsed {
+    /* display: none; */
+  }
 }
 @media (max-width: 1278px) and (max-height: 2526px) and (min-height: 1000px) {
   .bronchure {
@@ -611,6 +610,7 @@ dialog{
   .brief-contents {
     line-height: 2rem;
     font-size: 15px;
+    /* display: none; */
   }
   .subtitle-productspage {
     font-size: 15px;
@@ -618,150 +618,229 @@ dialog{
   .title-productspage {
     font-size: 55px;
   }
-   .products-contents{
+  .products-contents {
     /* width: 100%; */
     display: grid;
-    grid-template-columns: repeat(1,3fr);
+    grid-template-columns: repeat(1, 3fr);
   }
-  .card-container{
+  .card-container {
     width: 100%;
   }
-  .yt-img{
+  .yt-img {
     /* width: 100vw; */
     display: none;
   }
-  
-  
-  
-}
-@media (max-width: 1278px) and (max-height: 926px) {
-  
-  .bottom-buttons{
-    gap: 3.5rem;
-    margin-top: 5%;
-  }
-  .bottom-buttons-yt{
-    margin-left: 60%;
-    margin-top: 7%;
-  }
-  
- .view-button{
-  margin-left: 75%;
- }
 }
 
-@media (max-width: 400px) and (max-height: 660px){
-  .yt-img{
+
+@media (max-width: 1278px) and (max-height: 926px) {
+  .bottom-buttons {
+    
+    gap: 13rem; 
+    margin-top: 3%;
+  }
+  .bottom-buttons-yt {
+    margin-left: 80%;
+    margin-top: 1%;
+  }
+  .video-icon{
+    width: 5vw;
+    text-align: center;
+  }
+
+  .view-button {
+    margin-left: 81%;
+    margin-top: 1%;
+  }
+  .brief-contents.collapsed {
+    /* display: none; */
+  }
+}
+
+
+@media (max-width: 400px) and (max-height: 660px) {
+  .yt-img {
     /* width: 100vw; */
   }
-  .bronchure-yt{
+  .bronchure-yt {
     width: 10vw;
     margin-left: 60%;
   }
-  .card-subdatas{
+  .card-subdatas {
     /* height: 10vh; */
   }
-  .card-container{
+  .card-container {
     /* background-color: #565add; */
     height: 100%;
     border-radius: 20px;
     /* gap: 2rem; */
   }
-  .products-contents{
+  .products-contents {
     /* align-items: center; */
     /* border-radius: 20px; */
     /* gap: 2rem; */
   }
-  .genomics-main{
+  .genomics-main {
     /* border-radius: 1px; */
     padding: 2%;
-    
   }
-  #download-icon{
+  #download-icon {
     font-size: 3vw;
-    
   }
-  .bottom-buttons{
+  .bottom-buttons {
     margin-top: 0%;
   }
   .brief-contents.collapsed {
     height: 20vh;
     background-color: #565add;
+    /* display: none; */
   }
-  
+
   .brief-contents.expanded {
     max-height: none; /* Allows the full text to be shown */
     overflow-y: scroll;
     height: 20vh;
-
   }
-  
-  
 }
 
-@media (min-width: 640px) and (max-width: 1300px){
-  .bottom-buttons{
+
+/* Phone desktop view */
+@media (min-width: 640px) and (max-width: 1300px) {
+  .bottom-buttons {
     /* margin-top: -5%; */
     margin-left: 0%;
   }
-  .yt-img{
-    width: 100%;
+  .yt-img {
+    /* width: 100%; */
+  }
+  .icon-container-yt{
+    display: contents;
+  margin-left: 10px;
+  /* position: fixed; */
+  align-items: center;
+  transition: transform 0.4s ease-in-out;
   }
   .card-subdatas {
     /* display: none; */
   }
-  .title-productspage{
+  .title-productspage {
     /* width: 80%; */
     justify-content: center;
     display: flex;
     height: 30vh;
   }
-  .subtitle-name{
+  .subtitle-name {
     margin-top: 3%;
   }
-  .brief-contents.collapsed{
-    margin-top: 2%;
-  }
-  .card-subdatas{
+  .brief-contents.collapsed {
     margin-top: 0%;
+    height: 11vh;
+    /* display: none; */
   }
-  .view-button{
+  .card-subdatas {
+    margin-top: -20%;
+    /* height: 20vh; */
+  }
+  .view-button {
     margin-top: 1%;
   }
-  .products-contents{
+  .products-contents {
     height: 73vh;
     display: grid;
-    grid-template-columns: repeat(3,3fr);
+    grid-template-columns: repeat(3, 3fr);
   }
-  .genomics-main{
+  .genomics-main {
     /* height: 100%; */
     /* background-color: #565add; */
   }
-  .genomics-main::-webkit-scrollbar{
+  .genomics-main::-webkit-scrollbar {
     display: none;
   }
-  .yt-dialog{
+  .yt-dialog {
     /* width: 10vw; */
     margin-top: 20%;
     height: 40vh;
     /* width: 100%; */
     background-color: transparent;
   }
-  .youtube-video{
+  .youtube-video {
     width: 50vw;
     height: 100%;
   }
-  .bottom-buttons{
+  .bottom-buttons {
     gap: 1.5rem;
     margin-top: 5%;
   }
-  
- .view-button{
-  margin-left: 75%;
- }
- .bottom-buttons-yt{
-  width: 8vw;
-  margin-left: 55%;
- }
-  
+
+  .view-button {
+    margin-left: 75%;
+  }
+  .bottom-buttons-yt {
+    width: 8vw;
+    margin-left: 55%;
+  }
+  .card-container{
+    height: 30vh;
+  }
+  .title-productspage {
+    height: 10vh;
+  }
+}
+
+
+
+/* small laptop responsive*/
+@media (max-width: 1920px) and (min-width: 1250px) and (max-height: 680px) {
+  .brief-contents.collapsed {
+    /* display: none; */
+    height: 20vh;
+  }
+  .title-productspage {
+    height: 22vh;
+  }
+  .yt-dialog {
+    /* width: 10vw; */
+    margin-top: 20%;
+    height: 40vh;
+    /* width: 100%; */
+    background-color: transparent;
+  }
+  .youtube-video {
+    width: 50vw;
+    height: 100%;
+  }
+  .view-button{
+    margin-bottom: 0%;
+    height: 5vh;
+  }
+  .button-container-brochure {
+    margin: 0% 0% 0% 3%;
+  }
+}
+
+
+/* Phone view horizontal type */
+@media (min-width: 640px) and (max-width: 1300px) and (min-height: 100px) and (max-height: 300px){
+  .products-contents {
+    height: 73vh;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+  }
+  .card-container{
+    height: 125vh;
+  }
+  .title-productspage {
+    height: 30vh;
+  }
+  .brief-contents.collapsed {
+    margin-top: 40%;
+    height: 30vh;
+    /* display: none; */
+  }
+  .right-sub-contents{
+    width: 26vw
+  }
+  .view-button{
+    margin-left: 55%;
+  }
 }

@@ -17,10 +17,19 @@ export default function SarVision_Biologics() {
   }, []);
 
   const downloadPDF = () => {
-    const link = document.createElement("a");
-    link.href = "/SARvision_Biologics.pdf";
-    link.download = "SARvision_Biologics.pdf";
-    link.click();
+    fetch("https://molecularsolutions.co.in/products/SARvision_Biologics.pdf")
+      .then(response => response.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(blob); 
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "SARvision_Biologics.pdf"); 
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+      })
+      .catch(err => console.error("Error downloading PDF:", err));
   };
 
   const handleClickOpenVideoDialog = () => {
@@ -35,7 +44,7 @@ export default function SarVision_Biologics() {
     <div className="right-sub-contents">
       <div className="title-productspage">
         <img
-          src={SarVisionBiologyImg}
+          src="https://molecularsolutions.co.in/products/assets/biology-img-De61GI7u.jpg"
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle">
@@ -63,7 +72,7 @@ export default function SarVision_Biologics() {
           enhances research workflow by providing deeper insights and
           streamlining data management for more impactful discoveries
         </div>
-        <div style={{ height: "2vh" }}>
+        <div>
           {isOverflowing && (
             <div
               onClick={() => setIsExpanded(!isExpanded)}
@@ -76,7 +85,7 @@ export default function SarVision_Biologics() {
 
       <div className="bottom-buttons">
       <div className="button-containers" onClick={downloadPDF}>
-          <a href="/brochure.pdf" download className="refined-animated-button">
+          <a className="refined-animated-button">
             <div style={{ fontSize: "13px" }}>BROCHURE</div>
             <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>
@@ -84,8 +93,10 @@ export default function SarVision_Biologics() {
         </div>
             <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
               <div className="icon-container-yt" style={{ display: "flex" }}>
-                <img src={YtIcon} className="yt-img" />
-                <p className="presentation">Video Presentation</p>
+              <img src={YtIcon} className="yt-img" />
+              <p className="presentation">Video Presentation</p>
+                
+                
               </div>
             </div>
         

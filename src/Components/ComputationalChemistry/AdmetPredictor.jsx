@@ -17,11 +17,21 @@ export default function AdmetPredictor() {
   }, []);
 
   const downloadPDF = () => {
-    const link = document.createElement("a");
-    link.href = "/ADMET_Predictor_Flyer.pdf";
-    link.download = "ADMET_Predictor_Flyer.pdf";
-    link.click();
+    fetch("https://molecularsolutions.co.in/products/ADMET_Predictor_Flyer.pdf")
+      .then(response => response.blob()) // Convert response to a blob
+      .then(blob => {
+        const url = window.URL.createObjectURL(blob); // Create a URL for the blob
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "ADMET_Predictor_Flyer.pdf"); // Set the download attribute
+        document.body.appendChild(link);
+        link.click(); // Simulate click to trigger download
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url); // Clean up
+      })
+      .catch(err => console.error("Error downloading PDF:", err));
   };
+  
 
   const handleClickOpenVideoDialog = () => {
     setOpenVideoDialog(true);
@@ -35,7 +45,8 @@ export default function AdmetPredictor() {
     <div className="right-sub-contents">
       <div className="title-productspage">
         <img
-          src={AdmetpredictorImg}
+                   src="https://molecularsolutions.co.in/products/assets/admetpredictor-img-DTHVXktW.jpg"
+
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle"></div>
@@ -59,7 +70,7 @@ export default function AdmetPredictor() {
           intuitive user interface that allows one to easily manipulate and
           visualize data.
         </div>
-        <div style={{ height: "2vh" }}>
+        <div>
           {isOverflowing && (
             <div
               onClick={() => setIsExpanded(!isExpanded)}
@@ -72,7 +83,7 @@ export default function AdmetPredictor() {
 
       <div className="bottom-buttons">
       <div className="button-containers" onClick={downloadPDF}>
-          <a href="/brochure.pdf" download className="refined-animated-button">
+          <a className="refined-animated-button">
             <div style={{ fontSize: "13px" }}>BROCHURE</div>
             <i class="fa-solid fa-cloud-arrow-down"></i>
             <div className="wave-animation"></div>

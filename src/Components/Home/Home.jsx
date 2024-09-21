@@ -68,14 +68,14 @@ export default function Home() {
 
   const [Sidebars, setSidebars] = useState(false);
 
-  const [Genomics, setGenomics] = useState(false);
+  const [Genomics, setGenomics] = useState(true);
   const [Biology, setBiology] = useState(false);
   const [Chemistry, setChemistry] = useState(false);
   const [ComputationalChemistry, setComputationalChemistry] = useState(false);
   const [DMPK, setDMPK] = useState(false);
   const [ELN_LIMS, setELN_LIMS] = useState(false);
   const [VirtualReality, setVirtualReality] = useState(false);
-  const [AIML, setAIML] = useState(true);
+  const [AIML, setAIML] = useState(false);
 
   const [Commander, setCommander] = useState(false);
 
@@ -1439,7 +1439,7 @@ useEffect(() => {
     <div className="home-page">
       <div className="header">
         <div className="logo-container">
-          <img src={Logo} alt="logo" className="logo" />
+          <img src="https://molecularsolutions.co.in/products/assets/logo-BC31OmR4.svg" alt="logo" className="logo" />
         </div>
         <div
           className={`header-bars ${topbarOpen ? "open" : ""}`}
@@ -1455,7 +1455,7 @@ useEffect(() => {
               style={{ cursor: "pointer" }}
               className={`products-title ${ProductsPage ? "open" : ""}`}
               onClick={handleProductsPage}>
-              <p>Products</p><i class="fa-solid fa-caret-down" style={{fontSize: "0.8rem",marginLeft: "-10%",marginTop: "5%"}}></i>
+              <p>Products</p>
             </div>
             <div
               style={{ cursor: "pointer" }}
@@ -1507,6 +1507,17 @@ useEffect(() => {
           <div
             className={`left-navbars ${sidebarOpen ? "open" : ""}`}
             ref={sidebarRef}>
+               <div className="main-container">
+              <div
+                style={{ cursor: "pointer", display: "flex", gap: "0.4rem" }}
+                onClick={handleGenomics}
+                className={`Genomics ${Genomics ? "edit" : ""}`}>
+                {/* <img src={AI} alt="VirtualReality img" width={28} height={28}/> */}
+                <div style={{ marginTop: "1.5%", width: "65%" }}>All Products</div>
+                <i
+                  className="fa-solid fa-caret-right rotate-right"></i>
+              </div>
+              </div>
               <div className="main-container">
               <div
                 style={{ cursor: "pointer", display: "flex", gap: "0.4rem" }}
