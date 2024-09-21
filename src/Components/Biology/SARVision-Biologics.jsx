@@ -3,6 +3,7 @@ import "./Biology";
 import { Dialog } from "@mui/material";
 import SarVisionBiologyImg from "../../assets/biology-img.jpg";
 import YtIcon from "../../assets/yt.svg";
+import { IoVideocam } from "react-icons/io5";
 
 export default function SarVision_Biologics() {
   const [openVideoDialog, setOpenVideoDialog] = useState(false);
@@ -85,20 +86,22 @@ export default function SarVision_Biologics() {
 
       <div className="bottom-buttons">
       <div className="button-containers" onClick={downloadPDF}>
-          <a className="refined-animated-button">
+          <a  className="refined-animated-button">
             <div style={{ fontSize: "13px" }}>BROCHURE</div>
-            <i class="fa-solid fa-cloud-arrow-down"></i>
+            <i class="fa-solid fa-file"></i>
             <div className="wave-animation"></div>
           </a>
         </div>
-            <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
-              <div className="icon-container-yt" style={{ display: "flex" }}>
-              <img src={YtIcon} className="yt-img" />
-              <p className="presentation">Video Presentation</p>
-                
-                
-              </div>
-            </div>
+        <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
+          <div className="icon-container-yt" style={{ display: "flex" }}>
+          <div className="refined-animated-button-yt">
+            <p className="presentation">VIDEO</p>
+            <IoVideocam className="video-icon"/>
+            <div className="wave-animation"></div>
+</div>
+          </div>
+        </div>
+      
         
         
 

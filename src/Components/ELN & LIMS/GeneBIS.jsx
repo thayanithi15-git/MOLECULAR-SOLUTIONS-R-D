@@ -72,7 +72,7 @@ export default function GeneBIS() {
       <div className="button-container-brochure" onClick={downloadPDF}>
           <a className="refined-animated-button">
             <div style={{ fontSize: "13px" }}>BROCHURE</div>
-            <i class="fa-solid fa-cloud-arrow-down"></i>
+            <i class="fa-solid fa-file"></i>
             <div className="wave-animation"></div>
           </a>
         </div>

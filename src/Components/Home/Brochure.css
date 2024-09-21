@@ -32,12 +32,12 @@
       text-decoration: none;
       /* overflow: hidden; */
       transition: background 0.3s, transform 0.3s ease;
-      box-shadow: 0 0 20px rgba(46, 91, 146, 0.6);
+      box-shadow: 0 0 20px #e0c5aa;
       gap: 0.5rem;
     }
 
     .refined-animated-button-yt:hover{
-      background: linear-gradient(135deg, #f15a5a, #ff0000);
+      background: linear-gradient(135deg,  #e8c19a, #fd7f01);
       transform: translateY(-5px) scale(1.05);
       box-shadow: 0 0 30px rgba(146, 46, 46, 0.8);
     }

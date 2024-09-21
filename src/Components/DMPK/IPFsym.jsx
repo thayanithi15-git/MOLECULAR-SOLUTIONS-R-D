@@ -3,6 +3,7 @@ import "./DMPK.css";
 import { Dialog } from "@mui/material";
 import IPFsymImg from "../../assets/IPFsym-img.jpg";
 import YtIcon from "../../assets/yt.svg";
+import { IoVideocam } from "react-icons/io5";
 
 export default function IPFsym() {
   const [openVideoDialog, setOpenVideoDialog] = useState(false);
@@ -18,18 +19,18 @@ export default function IPFsym() {
 
   const downloadPDF = () => {
     fetch("https://molecularsolutions.co.in/products/IPFsym.pdf")
-      .then(response => response.blob())
-      .then(blob => {
-        const url = window.URL.createObjectURL(blob); 
+      .then((response) => response.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(blob);
         const link = document.createElement("a");
         link.href = url;
-        link.setAttribute("download", "IPFsym.pdf"); 
+        link.setAttribute("download", "IPFsym.pdf");
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
         window.URL.revokeObjectURL(url);
       })
-      .catch(err => console.error("Error downloading PDF:", err));
+      .catch((err) => console.error("Error downloading PDF:", err));
   };
 
   const handleClickOpenVideoDialog = () => {
@@ -58,12 +59,17 @@ export default function IPFsym() {
           className={`brief-contents ${isExpanded ? "expanded" : "collapsed"}`}
           ref={textRef}>
           IPFsym ® a platform to support the development of effective treatments
-          for IPF patients.<br/><br/>IPFsym ®  can be used to predict efficacy for
-          treatment modalities developed for IPF (and other lung diseases with
-          custom modifications and additions).<br/><br/>IPFsym has been utilized to
-          evaluate a number of compounds within drug development, supporting
-          clinical trial design optimization and clinical development decision
-          making.
+          for IPF patients.
+          <br />
+          <br />
+          IPFsym ®  can be used to predict efficacy for treatment modalities
+          developed for IPF (and other lung diseases with custom modifications
+          and additions).
+          <br />
+          <br />
+          IPFsym has been utilized to evaluate a number of compounds within drug
+          development, supporting clinical trial design optimization and
+          clinical development decision making.
         </div>
         <div>
           {isOverflowing && (
@@ -77,17 +83,20 @@ export default function IPFsym() {
       </div>
 
       <div className="bottom-buttons">
-      <div className="button-containers" onClick={downloadPDF}>
+        <div className="button-containers" onClick={downloadPDF}>
           <a className="refined-animated-button">
             <div style={{ fontSize: "13px" }}>BROCHURE</div>
-            <i class="fa-solid fa-cloud-arrow-down"></i>
+            <i class="fa-solid fa-file"></i>
             <div className="wave-animation"></div>
           </a>
         </div>
         <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
           <div className="icon-container-yt" style={{ display: "flex" }}>
-            <img src={YtIcon} className="yt-img" />
-            <p className="presentation">Video Presentation</p>
+            <div className="refined-animated-button-yt">
+              <p className="presentation">VIDEO</p>
+              <IoVideocam className="video-icon" />
+              <div className="wave-animation"></div>
+            </div>
           </div>
         </div>
         <Dialog

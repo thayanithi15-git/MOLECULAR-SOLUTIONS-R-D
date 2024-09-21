@@ -3,6 +3,7 @@ import "./DMPK.css";
 import { Dialog } from "@mui/material";
 import ILDsymImg from "../../assets/ILDsym-img.jpg";
 import YtIcon from "../../assets/yt.svg";
+import { IoVideocam } from "react-icons/io5";
 
 export default function ILDsym() {
   const [openVideoDialog, setOpenVideoDialog] = useState(false);
@@ -15,23 +16,22 @@ export default function ILDsym() {
       setIsOverflowing(true);
     }
   }, []);
-  
+
   const downloadPDF = () => {
     fetch("https://molecularsolutions.co.in/products/ILDsym_Flyer.pdf")
-      .then(response => response.blob())
-      .then(blob => {
-        const url = window.URL.createObjectURL(blob); 
+      .then((response) => response.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(blob);
         const link = document.createElement("a");
         link.href = url;
-        link.setAttribute("download", "ILDsym_Flyer.pdf"); 
+        link.setAttribute("download", "ILDsym_Flyer.pdf");
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
         window.URL.revokeObjectURL(url);
       })
-      .catch(err => console.error("Error downloading PDF:", err));
+      .catch((err) => console.error("Error downloading PDF:", err));
   };
-
 
   const handleClickOpenVideoDialog = () => {
     setOpenVideoDialog(true);
@@ -60,11 +60,17 @@ export default function ILDsym() {
           ref={textRef}>
           The ILDsym® QSP modeling software is a mechanistic, mathematical model
           of interstitial lung disease (ILD) associated with systemic sclerosis
-          (SSc).<br/><br/>ILDsym® can be used to predict efficacy for treatment modalities
+          (SSc).
+          <br />
+          <br />
+          ILDsym® can be used to predict efficacy for treatment modalities
           developed for SSc-ILD (and other interstitial lung diseases with
-          custom modifications and additions).<br/><br/>This can support evaluating
-          compounds during drug development, help inform clinical trial design
-          optimization, and guide clinical development decision-making.
+          custom modifications and additions).
+          <br />
+          <br />
+          This can support evaluating compounds during drug development, help
+          inform clinical trial design optimization, and guide clinical
+          development decision-making.
         </div>
         <div>
           {isOverflowing && (
@@ -78,17 +84,20 @@ export default function ILDsym() {
       </div>
 
       <div className="bottom-buttons">
-      <div className="button-containers" onClick={downloadPDF}>
+        <div className="button-containers" onClick={downloadPDF}>
           <a className="refined-animated-button">
             <div style={{ fontSize: "13px" }}>BROCHURE</div>
-            <i class="fa-solid fa-cloud-arrow-down"></i>
+            <i class="fa-solid fa-file"></i>
             <div className="wave-animation"></div>
           </a>
         </div>
         <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
           <div className="icon-container-yt" style={{ display: "flex" }}>
-            <img src={YtIcon} className="yt-img" />
-            <p className="presentation">Video Presentation</p>
+            <div className="refined-animated-button-yt">
+              <p className="presentation">VIDEO</p>
+              <IoVideocam className="video-icon" />
+              <div className="wave-animation"></div>
+            </div>
           </div>
         </div>
 

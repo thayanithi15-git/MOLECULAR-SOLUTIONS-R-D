@@ -3,6 +3,7 @@ import "./ELN_LIMS.css";
 import { Dialog } from "@mui/material";
 import LabarchivesImg from "../../assets/labarchives-img.jpg";
 import YtIcon from "../../assets/yt.svg";
+import { IoVideocam } from "react-icons/io5";
 
 export default function LabArchives() {
   const [openVideoDialog, setOpenVideoDialog] = useState(false);
@@ -58,8 +59,13 @@ export default function LabArchives() {
       <div className="bottom-buttons-yt">
       <div className="bronchure-t" onClick={handleClickOpenVideoDialog}>
           <div className="icon-container-yt" style={{ display: "flex" }}>
-            <img src={YtIcon} className="yt-img" />
-            <p className="presentation">Video Presentation</p>
+            {/* <img src={YtIcon} className="yt-img" /> */}
+            <div className="refined-animated-button-yt">
+            <p className="presentation">VIDEO</p>
+            <IoVideocam style={{width: "2vw",textAlign: "center"}}/>
+            <div className="wave-animation"></div>
+</div>
+            
           </div>
         </div>
 

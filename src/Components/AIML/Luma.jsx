@@ -91,6 +91,7 @@ export default function Luma() {
           <div className="refined-animated-button-yt">
             <p className="presentation">VIDEO</p>
             <IoVideocam className="video-icon"/>
+            <div className="wave-animation"></div>
 </div>
           </div>
         </div>
