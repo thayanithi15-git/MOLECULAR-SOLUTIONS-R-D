@@ -454,6 +454,10 @@ dialog {
   width: 2vw;
   text-align: center;
 }
+.title-products-ab{
+  position: absolute;
+  z-index: 1000;
+}
 /* display: "flex",
               borderRadius: "20px",
               padding: "0.3%",

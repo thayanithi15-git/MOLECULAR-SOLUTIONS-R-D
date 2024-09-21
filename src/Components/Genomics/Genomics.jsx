@@ -34,16 +34,17 @@ export default function GenomicsMain() {
     <div className="genomics-main" id="genomics-main">
       <div className="products-contents">
         <div className="card-container">
-          <Mara />
+          
+          <AdmetPredictor />
         </div>
         <div className="card-container">
-          <Commander />
+          <ChemAIRS />
         </div>
         <div className="card-container">
           <Luma />
         </div>
         <div className="card-container">
-          <AdmetPredictor />
+        <Mara />
         </div>
 
         <div className="card-container">
