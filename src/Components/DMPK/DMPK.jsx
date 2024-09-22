@@ -16,7 +16,7 @@ import "./DMPK.css";
 export default function DMPK() {
   return (
     <div className="genomics-main" id="dmpk-main">
-      <div className="products-contents">
+      <div className="products-contents-individual">
         <div className="card-container">
           <GastroPlus />
         </div>

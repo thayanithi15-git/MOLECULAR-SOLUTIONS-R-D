@@ -10,7 +10,7 @@ import "./ELN_LIMS.css";
 export default function ELN_LIMS() {
   return (
     <div className="genomics-main"  id="elnlims-main">
-      <div className="products-contents">
+      <div className="products-contents-individual">
         <div className="card-container">
           <DotmaticsELN />
         </div>

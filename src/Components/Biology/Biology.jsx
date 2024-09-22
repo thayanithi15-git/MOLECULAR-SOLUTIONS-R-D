@@ -6,7 +6,7 @@ import "./Biology.css";
 export default function BiologyMain() {
   return (
     <div className="genomics-main"  id="biology-main">
-      <div className="products-contents">
+     <div className="products-contents-individual">
           <div className="card-container">
             <SarVision_Biologics />
           </div>

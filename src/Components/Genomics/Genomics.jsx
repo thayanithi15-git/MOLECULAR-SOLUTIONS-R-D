@@ -32,24 +32,37 @@ import "./Genomics.css";
 export default function GenomicsMain() {
   return (
     <div className="genomics-main" id="genomics-main">
-      <div className="products-contents">
-        <div className="card-container">
-          
-          <AdmetPredictor />
+      <div className="main-cards">
+        <h1 className="product-head-title">AIML</h1>
+        <div className="products-contents">
+          <div className="card-container">
+            <AdmetPredictor />
+          </div>
+          <div className="card-container">
+            <ChemAIRS />
+          </div>
+          <div className="card-container">
+            <Luma />
+          </div>
+          <div className="card-container">
+            <Mara />
+          </div>
         </div>
-        <div className="card-container">
-          <ChemAIRS />
-        </div>
-        <div className="card-container">
-          <Luma />
-        </div>
-        <div className="card-container">
-        <Mara />
-        </div>
-
-        <div className="card-container">
-          <SarVision_Biologics />
-        </div>
+        <br />
+        <hr style={{ border: "none" }} />
+        <h1 className="product-head-title">BIOLOGY R&D</h1>
+        <div className="products-contents">
+          <div className="card-container">
+            <SarVision_Biologics />
+          </div>
+          <div className="card-container">
+            <Commander />
+          </div>
+          </div>
+        <br />
+        <hr style={{ border: "none" }} />
+        <h1 className="product-head-title">CHEMISTRY R&D</h1>
+        <div className="products-contents">
         <div className="card-container">
           <ChemAIRS />
         </div>
@@ -62,6 +75,19 @@ export default function GenomicsMain() {
         <div className="card-container">
           <Vortex />
         </div>
+        </div>
+        <br />
+        <hr style={{ border: "none" }} />
+        <h1 className="product-head-title">COMPUTATIONAL CHEMISTRY</h1>
+        <div className="products-contents">
+        <div className="card-container">
+          <AdmetPredictor />
+        </div>
+      </div>
+        <br />
+        <hr style={{ border: "none" }} />
+        <h1 className="product-head-title">DMPK</h1>
+        <div className="products-contents">
         <div className="card-container">
           <GastroPlus />
         </div>
@@ -98,6 +124,11 @@ export default function GenomicsMain() {
         <div className="card-container">
           <RENAsym />
         </div>
+        </div>
+        <br />
+        <hr style={{ border: "none" }} />
+        <h1 className="product-head-title">ELN & LIMS</h1>
+        <div className="products-contents">
         <div className="card-container">
           <DotmaticsELN />
         </div>
@@ -116,9 +147,15 @@ export default function GenomicsMain() {
         <div className="card-container">
           <GeneBIS />
         </div>
+        </div>
+        <br />
+        <hr style={{ border: "none" }} />
+        <h1 className="product-head-title">VIRTUAL REALITY</h1>
+        <div className="products-contents">
         <div className="card-container">
           <Nanome />
         </div>
+      </div>
       </div>
     </div>
   );

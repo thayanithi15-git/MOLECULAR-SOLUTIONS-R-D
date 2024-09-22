@@ -73,7 +73,7 @@ export default function Simulx() {
             {/* <img src={YtIcon} className="yt-img" /> */}
             <div className="refined-animated-button-yt">
             <p className="presentation">VIDEO</p>
-            <IoVideocam style={{width: "2vw",textAlign: "center"}}/>
+            <IoVideocam className="video-icon"/>
             <div className="wave-animation"></div>
 </div>
             
