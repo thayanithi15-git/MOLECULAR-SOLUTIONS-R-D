@@ -605,6 +605,9 @@ dialog {
     width: 20vw;
   }
   .video-icon{
-    width: 5vw;
+    width: 8vw;
+  }
+  .product-head-title{
+    margin-left: 5%;
   }
 }

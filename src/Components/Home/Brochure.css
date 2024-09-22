@@ -33,7 +33,7 @@
       /* overflow: hidden; */
       transition: background 0.3s, transform 0.3s ease;
       box-shadow: 0 0 20px #e0c5aa;
-      gap: 0.5rem;
+      gap: 0.2rem;
     }
 
     .refined-animated-button-yt:hover{
