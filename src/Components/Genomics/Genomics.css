@@ -494,6 +494,14 @@ dialog {
   .bottom-buttons,.bottom-buttons-yt,.button-container-brochure{
     margin-top: 0%;
   }
+  .card-container {
+    /* width: 90%; */
+    height: 75vh;
+  }
+  .view-button{
+    display: flex;
+    justify-content: end;
+  }
 }
 /* Mobile in desktop site mode - Portrait */
 @media (min-width: 651px) and (max-width: 1024px) and (orientation: portrait) {
