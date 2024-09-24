@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./VirtualReality.css";
 import { Dialog } from "@mui/material";
-import NanomeImg from "../../assets/nanome-img.jpg";
+import NanomeImg from "../../assets/nanome-img.png";
 import YtIcon from "../../assets/yt.svg";
 import { IoVideocam } from "react-icons/io5";
 

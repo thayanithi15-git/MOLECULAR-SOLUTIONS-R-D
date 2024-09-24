@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import CommanderImg from "../../assets/commander-img.jpg";
+import CommanderImg from "../../assets/commander-img.png";
 import "./Genomics.css";
 
 export default function Commander() {

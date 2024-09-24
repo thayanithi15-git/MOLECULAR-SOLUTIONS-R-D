@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Chemistry.css";
 import { Dialog } from "@mui/material";
-import ChemAIRSImg from "../../assets/chemairs-img.jpg";
+import ChemAIRSImg from "../../assets/chemairs-img.png";
 import YtIcon from "../../assets/yt.svg";
 import Brochure from "../Home/Brochure";
 import { IoVideocam } from "react-icons/io5";

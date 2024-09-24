@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Biology";
 import { Dialog } from "@mui/material";
-import SarVisionBiologyImg from "../../assets/biology-img.jpg";
+import SarVisionBiologyImg from "../../assets/biology-img.png";
 import YtIcon from "../../assets/yt.svg";
 import { IoVideocam } from "react-icons/io5";
 
