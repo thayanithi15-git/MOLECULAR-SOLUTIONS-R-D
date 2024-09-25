@@ -46,7 +46,7 @@ export default function SarVision_SM() {
     <div className="right-sub-contents">
       <div className="title-productspage">
         <img
-          src="https://molecularsolutions.co.in/products/assets/sarvision-img-yGhno1_h.png"
+          src="https://molecularsolutions.co.in/products/assets/sarvision-img--ixJ6i2_.png"
           style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
         <div className="title-subtitle">

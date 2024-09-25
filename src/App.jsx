@@ -1,11 +1,16 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
-import "./App.css";
+// import AllProducts from "./Components/AllProducts/AllProducts"; 
+import GenomicsMain from "./Components/Genomics/Genomics";
 
 function App() {
   return (
-    <div>
-      <Home/> 
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/allproducts" element={<GenomicsMain />} />  */}
+      </Routes>
+    </Router>
   );
 }
 

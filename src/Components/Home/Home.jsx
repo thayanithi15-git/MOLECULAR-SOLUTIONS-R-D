@@ -159,6 +159,7 @@ export default function Home() {
   };
 
   const handleGenomics = () => {
+    
     setGenomics((prevState) => !prevState);
     setSidebars(false);
     closeSidebar();
