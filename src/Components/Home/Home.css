@@ -51,6 +51,14 @@
     font-weight: normal;
     color: #000000;
 }
+.header-bars .titles a, 
+.header-bars .titles .home-title,
+.header-bars .titles .leadership-title,
+.header-bars .titles .advisoryboard-title,
+.header-bars .contactus-title a {
+  text-decoration: none;
+  color: black;
+}
 .products-title a{
   /* color: rgb(198, 5, 5); */
   /* width: 12%; */
@@ -599,14 +607,7 @@
 }
 
 
-.header-bars .titles a, 
-.header-bars .titles .home-title,
-.header-bars .titles .products-title,
-.header-bars .titles .leadership-title,
-.header-bars .titles .advisoryboard-title,
-.header-bars .contactus-title a {
-  text-decoration: none;
-}
+
 
 .left-navbars .main-container a,
 .left-navbars .main-container {

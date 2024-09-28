@@ -1,27 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link , NavLink, Outlet, useLocation } from "react-router-dom";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 import "./Home.css";
 import SideNavbar from "../../assets/sidenavbar.svg";
 import GenomicsMain from "../Genomics/Genomics";
 
 export default function Home() {
-
   const location = useLocation();
-  
-  const [Home, setHome] = useState(false);
-  const [Products, setProducts] = useState(true);
-  const [Leadership, setLeadership] = useState(false);
-  const [AdvisoryBoard, setAdvisoryBoard] = useState(false);
-  const [Contactus, setContactus] = useState(false);
 
-  const [AllProducts, setAllProducts] = useState(true);
-  const [AIML, setAIML] = useState(false);
-  const [Biology, setBiology] = useState(false);
-  const [Chemistry, setChemistry] = useState(false);
-  const [ComputationalChemistry, setComputationalChemistry] = useState(false);
-  const [DMPK, setDMPK] = useState(false);
-  const [ELN_LIMS, setELN_LIMS] = useState(false);
-  const [VirtualReality, setVirtualReality] = useState(false);
+  const [activePath, setActivePath] = useState(location.pathname);
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [topbarOpen, setTopbarOpen] = useState(false);
@@ -29,133 +15,10 @@ export default function Home() {
   const sidebarRef = useRef(null);
   const topbarRef = useRef(null);
 
-  const handleHome = () => {
-    setHome(true);
-    setProducts(false);
-    setLeadership(false);
-    setAdvisoryBoard(false);
-    setContactus(false);
-  };
-
-  const handleProducts = () => {
-    setHome(false);
-    setProducts(true);
-    setLeadership(false);
-    setAdvisoryBoard(false);
-    setContactus(false);
-  };
-
-  const handleLeadership = () => {
-    setHome(false);
-    setProducts(false);
-    setLeadership(true);
-    setAdvisoryBoard(false);
-    setContactus(false);
-  };
-
-  const handleAdvisoryBoard = () => {
-    setHome(false);
-    setProducts(false);
-    setLeadership(false);
-    setAdvisoryBoard(true);
-    setContactus(false);
-  };
-
-  const handleContactus = () => {
-    setHome(false);
-    setProducts(false);
-    setLeadership(false);
-    setAdvisoryBoard(false);
-    setContactus(true);
-  };
-
-  const handleAllProducts = () => {
-    setAllProducts(true);
-    setAIML(false);
-    setBiology(false);
-    setChemistry(false);
-    setComputationalChemistry(false);
-    setDMPK(false);
-    setELN_LIMS(false);
-    setVirtualReality(false);
-  };
-
-  const handleAIML = () => {
-    setAllProducts(false);
-    setAIML(true);
-    setBiology(false);
-    setChemistry(false);
-    setComputationalChemistry(false);
-    setDMPK(false);
-    setELN_LIMS(false);
-    setVirtualReality(false);
-  };
-
-  const handleBiology = () => {
-    setAllProducts(false);
-    setAIML(false);
-    setBiology(true);
-    setChemistry(false);
-    setComputationalChemistry(false);
-    setDMPK(false);
-    setELN_LIMS(false);
-    setVirtualReality(false);
-  };
-
-  const handleChemistry = () => {
-    setAllProducts(false);
-    setAIML(false);
-    setBiology(false);
-    setChemistry(true);
-    setComputationalChemistry(false);
-    setDMPK(false);
-    setELN_LIMS(false);
-    setVirtualReality(false);
-  };
-
-  const handleComputationalChemistry = () => {
-    setAllProducts(false);
-    setAIML(false);
-    setBiology(false);
-    setChemistry(false);
-    setComputationalChemistry(true);
-    setDMPK(false);
-    setELN_LIMS(false);
-    setVirtualReality(false);
-  };
-
-  const handleDMPK = () => {
-    setAllProducts(false);
-    setAIML(false);
-    setBiology(false);
-    setChemistry(false);
-    setComputationalChemistry(false);
-    setDMPK(true);
-    setELN_LIMS(false);
-    setVirtualReality(false);
-  };
-
-  const handleELN_LIMS = () => {
-    setAllProducts(false);
-    setAIML(false);
-    setBiology(false);
-    setChemistry(false);
-    setComputationalChemistry(false);
-    setDMPK(false);
-    setELN_LIMS(true);
-    setVirtualReality(false);
-  };
-
-  const handleVirtualReality = () => {
-    setAllProducts(false);
-    setAIML(false);
-    setBiology(false);
-    setChemistry(false);
-    setComputationalChemistry(false);
-    setDMPK(false);
-    setELN_LIMS(false);
-    setVirtualReality(true);
-  };
+  // Update activePath when location changes
+  useEffect(() => {
+    setActivePath(location.pathname);
+  }, [location.pathname]);
 
   // Close both sidebar and topbar
   const closeSidebar = () => {
@@ -212,32 +75,45 @@ export default function Home() {
         </div>
         <div
           className={`header-bars ${topbarOpen ? "open" : ""}`}
-          ref={topbarRef}>
+          ref={topbarRef}
+        >
           <div className={`titles ${topbarOpen ? "open" : ""}`}>
             <div
               style={{ cursor: "pointer" }}
-              className={`home-title ${Home ? "open" : ""}`}
-              onClick={handleHome}>
+              className={`home-title ${
+                activePath === "/" ? "open" : ""
+              }`}
+              onClick={() => setActivePath("/")}
+            >
               <a href="https://molecularsolutions.co.in/">Home</a>
             </div>
             <div
               style={{ cursor: "pointer" }}
-              className={`products-title ${Products ? "open" : ""}`}
-              onClick={handleProducts}>
-              <Link to="/allproducts">Products</Link>
+              className={`products-title ${
+                activePath.startsWith("/products") ? "open" : ""
+              }`}
+              onClick={() => setActivePath("/products")}
+            >
+              <div>Products</div>
             </div>
             <div
               style={{ cursor: "pointer" }}
-              className={`leadership-title ${Leadership ? "open" : ""}`}
-              onClick={handleLeadership}>
+              className={`leadership-title ${
+                activePath === "/leadership" ? "open" : ""
+              }`}
+              onClick={() => setActivePath("/leadership")}
+            >
               <a href="https://molecularsolutions.co.in/leadership/">
                 Leadership
               </a>
             </div>
             <div
               style={{ cursor: "pointer" }}
-              className={`advisoryboard-title ${AdvisoryBoard ? "open" : ""}`}
-              onClick={handleAdvisoryBoard}>
+              className={`advisoryboard-title ${
+                activePath === "/advisory-board" ? "open" : ""
+              }`}
+              onClick={() => setActivePath("/advisory-board")}
+            >
               <a href="https://molecularsolutions.co.in/advisory-board/">
                 Advisory board
               </a>
@@ -245,44 +121,55 @@ export default function Home() {
           </div>
           <div
             style={{ cursor: "pointer" }}
-            className={`contactus-title ${Contactus ? "open" : ""}`}
-            onClick={handleContactus}>
+            className={`contactus-title ${
+              activePath === "/contact-us" ? "open" : ""
+            }`}
+            onClick={() => setActivePath("/contact-us")}
+          >
             <a href="https://molecularsolutions.co.in/contact-us/">
               Contact us
             </a>
           </div>
         </div>
         <div
-          className={`menu-icon-header ${sidebarOpen ? "open" : ""}`}
-          onClick={toggleTopbar}>
+          className={`menu-icon-header ${topbarOpen ? "open" : ""}`}
+          onClick={toggleTopbar}
+        >
           <i className="fa fa-bars"></i>
         </div>
         {topbarOpen && <div className="overlay" onClick={closeSidebar}></div>}
       </div>
 
       {/* Sidebar and Content */}
-        <div className="productspage-contents">
+      <div className="productspage-contents">
         <div
           className={`menu-icon ${sidebarOpen ? "open" : ""}`}
-          onClick={toggleSidebar}>
+          onClick={toggleSidebar}
+        >
           <img className="sidebar-img" src={SideNavbar} alt="sidebar" />
         </div>
 
         <div
           className={`left-navbars ${sidebarOpen ? "open" : ""}`}
-          ref={sidebarRef}>
+          ref={sidebarRef}
+        >
           <NavLink
             to="/products"
             end
             className="main-container"
-            onClick={closeSidebar}>
-            <div className="Genomics">
+            onClick={() => setActivePath("/products")}
+          >
+            <div className={`Genomics ${activePath === "/products" ? "edit" : ""}`}>
               <div>All Products</div>
               <i className="fa-solid fa-caret-right rotate-right"></i>
             </div>
           </NavLink>
-          <NavLink to="/products/aiml" className="main-container" onClick={handleAIML}>
-            <div className={`Genomics ${AIML ? "edit" : ""}`}>
+          <NavLink
+            to="/products/aiml"
+            className="main-container"
+            onClick={() => setActivePath("/products/aiml")}
+          >
+            <div className={`Genomics ${activePath === "/products/aiml" ? "edit" : ""}`}>
               <div>AI/ML</div>
               <i className="fa-solid fa-caret-right rotate-right"></i>
             </div>
@@ -290,71 +177,75 @@ export default function Home() {
           <NavLink
             to="/products/biology"
             className="main-container"
-            onClick={handleBiology}>
-              <div className={`Genomics ${Biology ? "edit" : ""}`}>
-            <div >
-              Biology R & D
-            </div>
-            <i className="fa-solid fa-caret-right rotate-right"></i>
+            onClick={() => setActivePath("/products/biology")}
+          >
+            <div className={`Genomics ${activePath === "/products/biology" ? "edit" : ""}`}>
+              <div>Biology R &amp; D</div>
+              <i className="fa-solid fa-caret-right rotate-right"></i>
             </div>
           </NavLink>
           <NavLink
             to="/products/chemistry"
             className="main-container"
-            onClick={handleChemistry}>
-              <div className={`Genomics ${Chemistry ? "edit" : ""}`}>
-            <div >
-              Chemistry R & D
-            </div>
-            <i className="fa-solid fa-caret-right rotate-right"></i>
-
+            onClick={() => setActivePath("/products/chemistry")}
+          >
+            <div className={`Genomics ${activePath === "/products/chemistry" ? "edit" : ""}`}>
+              <div>Chemistry R &amp; D</div>
+              <i className="fa-solid fa-caret-right rotate-right"></i>
             </div>
           </NavLink>
           <NavLink
             to="/products/computational-chemistry"
             className="main-container"
-            onClick={handleComputationalChemistry}>
-              <div className={`Genomics ${ComputationalChemistry ? "edit" : ""}`}>
-            <div >
-              Computational Chemistry
-            </div>
-            <i className="fa-solid fa-caret-right rotate-right"></i>
+            onClick={() => setActivePath("/products/computational-chemistry")}
+          >
+            <div
+              className={`Genomics ${
+                activePath === "/products/computational-chemistry" ? "edit" : ""
+              }`}
+            >
+              <div>Computational Chemistry</div>
+              <i className="fa-solid fa-caret-right rotate-right"></i>
             </div>
           </NavLink>
-          <NavLink to="/products/dmpk" className="main-container" onClick={handleDMPK}>
-          <div className={`Genomics ${DMPK ? "edit" : ""}`}>
-            <div >DMPK</div>
-            <i className="fa-solid fa-caret-right rotate-right"></i>
+          <NavLink
+            to="/products/dmpk"
+            className="main-container"
+            onClick={() => setActivePath("/products/dmpk")}
+          >
+            <div className={`Genomics ${activePath === "/products/dmpk" ? "edit" : ""}`}>
+              <div>DMPK</div>
+              <i className="fa-solid fa-caret-right rotate-right"></i>
             </div>
           </NavLink>
           <NavLink
             to="/products/eln-lims"
             className="main-container"
-            onClick={handleELN_LIMS}>
-              <div className={`Genomics ${ELN_LIMS ? "edit" : ""}`}>
-            <div >
-              ELN & LIMS
-            </div>
-            <i className="fa-solid fa-caret-right rotate-right"></i>
+            onClick={() => setActivePath("/products/eln-lims")}
+          >
+            <div className={`Genomics ${activePath === "/products/eln-lims" ? "edit" : ""}`}>
+              <div>ELN &amp; LIMS</div>
+              <i className="fa-solid fa-caret-right rotate-right"></i>
             </div>
           </NavLink>
           <NavLink
             to="/products/virtual-reality"
             className="main-container"
-            onClick={handleVirtualReality}>
-            <div className={`Genomics ${VirtualReality ? "edit" : ""}`}>
-              <div>
-              Virtual Reality
-            </div>
-            <i className="fa-solid fa-caret-right rotate-right"></i>
+            onClick={() => setActivePath("/products/virtual-reality")}
+          >
+            <div
+              className={`Genomics ${
+                activePath === "/products/virtual-reality" ? "edit" : ""
+              }`}
+            >
+              <div>Virtual Reality</div>
+              <i className="fa-solid fa-caret-right rotate-right"></i>
             </div>
           </NavLink>
         </div>
 
         <div className="right-contents">
-          {/* {AllProducts ? <GenomicsMain /> :  */}
           <Outlet />
-          {/* } */}
         </div>
       </div>
     </div>
