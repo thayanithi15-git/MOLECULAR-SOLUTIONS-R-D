@@ -268,7 +268,7 @@ export default function Home() {
         <div
           className={`left-navbars ${sidebarOpen ? "open" : ""}`}
           ref={sidebarRef}>
-          <Link to="/products/allproducts" className="main-container" onClick={handleAllProducts}>
+          <Link to="/products" className="main-container" onClick={handleAllProducts}>
             <div className={`Genomics ${AllProducts ? "edit" : ""}`}>
               <div>All Products</div>
               <i className="fa-solid fa-caret-right rotate-right"></i>

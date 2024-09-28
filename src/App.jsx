@@ -13,8 +13,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />}>
-          <Route path="/products/allproducts" element={<GenomicsMain />} />
+        <Route path="/products" element={<Home />}>
+          {/* <Route path="/products/allproducts" element={<GenomicsMain />} /> */}
           <Route path="/products/aiml" element={<AIML />} />
           <Route path="/products/biology" element={<BiologyMain />} />
           <Route path="/products/chemistry" element={<ChemistryMain />} />
