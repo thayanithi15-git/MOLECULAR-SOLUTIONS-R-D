@@ -159,7 +159,7 @@ export default function Home() {
             className="main-container"
             onClick={() => setActivePath("/products")}
           >
-            <div className={`Genomics ${activePath === "/products" ? "edit" : ""}`}>
+            <div className={`Genomics ${activePath === "/products" || "/products/" ? "edit" : ""}`}>
               <div>All Products</div>
               <i className="fa-solid fa-caret-right rotate-right"></i>
             </div>
