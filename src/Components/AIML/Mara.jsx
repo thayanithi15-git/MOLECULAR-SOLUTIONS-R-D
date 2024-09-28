@@ -96,7 +96,7 @@ export default function Mara() {
           <video
             className="ytvideo"
             controls
-            src="https://molecularsolutions.co.in/products/assets/MARA-BQoUcnH0.mp4"
+            src="https://molecularsolutions.co.in/products/MARA.mp4"
             title="Local video player">
             Your browser does not support the video tag.
           </video>
