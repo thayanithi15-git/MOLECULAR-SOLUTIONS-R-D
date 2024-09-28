@@ -62,7 +62,7 @@ export default function Luma() {
           LUMA is a low-code laboratory informatics platform by Dotmatics
           integrating various scientific software to streamline data
           management and collaboration.
-          <br />
+          <br /><br/>
           It offers visualization and analysis tools, enabling scientists to
           efficiently organize and share data. LUMA enhances research
           productivity by tailoring to unique scientific needs.

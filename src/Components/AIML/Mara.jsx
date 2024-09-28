@@ -45,7 +45,7 @@ export default function Mara() {
           MARA is an advanced AI
           system designed for Scientific Informatics, acting as a co-pilot for
           your research and analysis needs.
-          <br/>
+          <br/><br/>
             It enables seamless tool
           and workflow integration, allowing your team to easily create, access,
           and integrate internal databases and tasks. <br />

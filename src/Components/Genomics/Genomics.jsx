@@ -33,7 +33,7 @@ export default function GenomicsMain() {
   return (
     <div className="genomics-main" id="genomics-main">
       <div className="main-cards">
-        <h1 className="product-head-title">AIML</h1>
+        <h1 className="product-head-title">AI/ML</h1>
         <div className="products-contents">
           <div className="card-container">
             <AdmetPredictor />

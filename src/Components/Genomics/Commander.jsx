@@ -51,7 +51,7 @@ export default function Commander() {
           ref={textRef}>
           COMMANDER is a user-friendly
           software for NGS data analysis, generating professional reports on
-          sequence quality, quantity, coverage, mutations, and variants. It
+          sequence quality, quantity, coverage, mutations, and variants. <br/><br/>It
           features a GUI-based interface that eliminates the need for
           command-line scripting, making complex analyses accessible with a
           click. <br/><br/>Compatible with major NGS platforms like Oxford Nanopore,
