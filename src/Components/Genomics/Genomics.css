@@ -378,6 +378,7 @@
   /* border: 1px solid black; */
   /* justify-content: end; */
 }
+
 .bottom-buttons-yt {
   margin-left: 68%;
   margin-top: 2%;
@@ -492,7 +493,7 @@ dialog {
     grid-template-columns: repeat(2, 3fr);
   }
   .bottom-buttons,.bottom-buttons-yt,.button-container-brochure{
-    margin-top: 0%;
+    margin-top: 5%;
   }
   .card-container {
     /* width: 90%; */
@@ -596,7 +597,7 @@ dialog {
   }
   .bottom-buttons {
     /* gap: 5.6rem; */
-    margin-top: 7%;
+    margin-top: 5%;
   }
   .bottom-buttons-yt {
     margin-left: 70%;

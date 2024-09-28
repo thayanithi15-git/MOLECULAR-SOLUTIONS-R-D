@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Home />} />
         {/* <Route path="/allproducts" element={<GenomicsMain />} />  */}
       </Routes>
     </Router>
@@ -15,3 +15,4 @@ function App() {
 }
 
 export default App;
+
