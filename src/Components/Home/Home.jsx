@@ -1,10 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link , NavLink, Outlet, useLocation } from "react-router-dom";
 import "./Home.css";
 import SideNavbar from "../../assets/sidenavbar.svg";
 import GenomicsMain from "../Genomics/Genomics";
 
 export default function Home() {
+
+  const location = useLocation();
+  
   const [Home, setHome] = useState(false);
   const [Products, setProducts] = useState(true);
   const [Leadership, setLeadership] = useState(false);
@@ -258,7 +261,7 @@ export default function Home() {
       </div>
 
       {/* Sidebar and Content */}
-      <div className="productspage-contents">
+        <div className="productspage-contents">
         <div
           className={`menu-icon ${sidebarOpen ? "open" : ""}`}
           onClick={toggleSidebar}>
@@ -268,19 +271,23 @@ export default function Home() {
         <div
           className={`left-navbars ${sidebarOpen ? "open" : ""}`}
           ref={sidebarRef}>
-          <Link to="/products" className="main-container" onClick={handleAllProducts}>
-            <div className={`Genomics ${AllProducts ? "edit" : ""}`}>
+          <NavLink
+            to="/products"
+            end
+            className="main-container"
+            onClick={closeSidebar}>
+            <div className="Genomics">
               <div>All Products</div>
               <i className="fa-solid fa-caret-right rotate-right"></i>
             </div>
-          </Link>
-          <Link to="/products/aiml" className="main-container" onClick={handleAIML}>
+          </NavLink>
+          <NavLink to="/products/aiml" className="main-container" onClick={handleAIML}>
             <div className={`Genomics ${AIML ? "edit" : ""}`}>
               <div>AI/ML</div>
               <i className="fa-solid fa-caret-right rotate-right"></i>
             </div>
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/products/biology"
             className="main-container"
             onClick={handleBiology}>
@@ -290,8 +297,8 @@ export default function Home() {
             </div>
             <i className="fa-solid fa-caret-right rotate-right"></i>
             </div>
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/products/chemistry"
             className="main-container"
             onClick={handleChemistry}>
@@ -302,8 +309,8 @@ export default function Home() {
             <i className="fa-solid fa-caret-right rotate-right"></i>
 
             </div>
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/products/computational-chemistry"
             className="main-container"
             onClick={handleComputationalChemistry}>
@@ -313,14 +320,14 @@ export default function Home() {
             </div>
             <i className="fa-solid fa-caret-right rotate-right"></i>
             </div>
-          </Link>
-          <Link to="/products/dmpk" className="main-container" onClick={handleDMPK}>
+          </NavLink>
+          <NavLink to="/products/dmpk" className="main-container" onClick={handleDMPK}>
           <div className={`Genomics ${DMPK ? "edit" : ""}`}>
             <div >DMPK</div>
             <i className="fa-solid fa-caret-right rotate-right"></i>
             </div>
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/products/eln-lims"
             className="main-container"
             onClick={handleELN_LIMS}>
@@ -330,8 +337,8 @@ export default function Home() {
             </div>
             <i className="fa-solid fa-caret-right rotate-right"></i>
             </div>
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/products/virtual-reality"
             className="main-container"
             onClick={handleVirtualReality}>
@@ -341,11 +348,13 @@ export default function Home() {
             </div>
             <i className="fa-solid fa-caret-right rotate-right"></i>
             </div>
-          </Link>
+          </NavLink>
         </div>
 
         <div className="right-contents">
-          {AllProducts ? <GenomicsMain /> : <Outlet />}
+          {/* {AllProducts ? <GenomicsMain /> :  */}
+          <Outlet />
+          {/* } */}
         </div>
       </div>
     </div>
