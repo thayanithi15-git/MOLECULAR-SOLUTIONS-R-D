@@ -14,9 +14,9 @@ export default function ELN_LIMS() {
         <div className="card-container">
           <DotmaticsELN />
         </div>
-        <div className="card-container">
+        {/* <div className="card-container">
           <LabArchives />
-        </div>
+        </div> */}
         <div className="card-container">
           <GeneCDMS />
         </div>

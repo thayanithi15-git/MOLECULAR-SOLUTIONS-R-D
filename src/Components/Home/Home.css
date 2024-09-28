@@ -51,15 +51,21 @@
     font-weight: normal;
     color: #000000;
 }
-.products-title{
+.products-title a{
   /* color: rgb(198, 5, 5); */
   /* width: 12%; */
   /* display: none; */
   gap: 1rem;
   display: flex;
-}
-.home-title:hover,.products-title:hover,.leadership-title:hover,.advisoryboard-title:hover,.contactus-title:hover{
   color: rgb(198, 5, 5);
+}
+.home-title a:hover,
+.products-title a:hover,
+.leadership-title a:hover,
+.advisoryboard-title a:hover,
+.contactus-title a:hover {
+  color: rgb(198, 5, 5); /* Change color on hover */
+  text-decoration: none; 
   cursor: pointer;
 }
 .home-title.open,.products-title.open,.leadership-title.open,.advisoryboard-title.open,.contactus-title.open{
@@ -122,7 +128,13 @@
 }
 .Genomics {
   /* color: rgb(99, 98, 98); */
-  font-size: 16px;
+  font-size: 17px;
+  display: flex;
+    justify-content: space-between;
+    width: 75%;
+  font-weight: 550;
+  cursor: pointer;
+  color:  black;
   font-weight: 550;
 
 }
@@ -259,6 +271,8 @@
 }
 .menu-icon-header.show {
   display: block; }
+
+ 
 
 @media (max-width: 1278px) and (max-height: 926px) {
   .right-contents{
@@ -582,4 +596,19 @@
     margin-left: 0.2%;
   }
   
+}
+
+
+.header-bars .titles a, 
+.header-bars .titles .home-title,
+.header-bars .titles .products-title,
+.header-bars .titles .leadership-title,
+.header-bars .titles .advisoryboard-title,
+.header-bars .contactus-title a {
+  text-decoration: none;
+}
+
+.left-navbars .main-container a,
+.left-navbars .main-container {
+  text-decoration: none;
 }
